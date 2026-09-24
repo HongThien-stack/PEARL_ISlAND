@@ -1,0 +1,992 @@
+{
+  "version": "1.0.0",
+  "totalObjects": 39,
+  "objects": [
+    {
+      "id": "7ca86879-05ce-45d8-9e29-2de635753c31",
+      "name": "base",
+      "filename": "7ca86879-05ce-45d8-9e29-2de635753c31.png",
+      "boundingBox": {
+        "x": 726,
+        "y": 77,
+        "width": 68,
+        "height": 68
+      },
+      "groundBounds": {
+        "x": 736.0,
+        "y": 115.0,
+        "width": 48.0,
+        "height": 17.0
+      },
+      "layer": 1,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:16:54.322Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "26f5efec-19a3-4334-a98d-01df5e8025fe",
+      "name": "base",
+      "filename": "26f5efec-19a3-4334-a98d-01df5e8025fe.png",
+      "boundingBox": {
+        "x": 508,
+        "y": 114,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 522.0,
+        "y": 146.0,
+        "width": 22.0,
+        "height": 12.0
+      },
+      "layer": 2,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:18:11.560Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "97cee9d7-5b4a-4070-8a27-2616bcc0e2e7",
+      "name": "base",
+      "filename": "97cee9d7-5b4a-4070-8a27-2616bcc0e2e7.png",
+      "boundingBox": {
+        "x": 393,
+        "y": 96,
+        "width": 68,
+        "height": 68
+      },
+      "groundBounds": {
+        "x": 408.0,
+        "y": 137.0,
+        "width": 39.0,
+        "height": 17.0
+      },
+      "layer": 3,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:18:41.953Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "5cce2708-a32d-4345-9efa-be17119737a9",
+      "name": "base",
+      "filename": "5cce2708-a32d-4345-9efa-be17119737a9.png",
+      "boundingBox": {
+        "x": 249,
+        "y": 506,
+        "width": 68,
+        "height": 68
+      },
+      "groundBounds": {
+        "x": 265.0,
+        "y": 553.0,
+        "width": 35.0,
+        "height": 17.0
+      },
+      "layer": 4,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:18:55.793Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "e51ec3e9-fade-4921-852c-d1bd9c8eae3d",
+      "name": "base",
+      "filename": "e51ec3e9-fade-4921-852c-d1bd9c8eae3d.png",
+      "boundingBox": {
+        "x": 1026,
+        "y": 503,
+        "width": 68,
+        "height": 68
+      },
+      "groundBounds": {
+        "x": 1050.0,
+        "y": 549.0,
+        "width": 21.0,
+        "height": 17.0
+      },
+      "layer": 5,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:19:12.614Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "85229314-296c-414e-a713-d7d7d2d86e4f",
+      "name": "base",
+      "filename": "85229314-296c-414e-a713-d7d7d2d86e4f.png",
+      "boundingBox": {
+        "x": 1024,
+        "y": 311,
+        "width": 68,
+        "height": 68
+      },
+      "groundBounds": {
+        "x": 1038.0,
+        "y": 355.0,
+        "width": 33.0,
+        "height": 17.0
+      },
+      "layer": 6,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (north-west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:19:25.662Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "e5ea055d-6cb1-48db-88ea-110359cebb8b",
+      "name": "base",
+      "filename": "e5ea055d-6cb1-48db-88ea-110359cebb8b.png",
+      "boundingBox": {
+        "x": 444,
+        "y": 97,
+        "width": 68,
+        "height": 68
+      },
+      "groundBounds": {
+        "x": 459.0,
+        "y": 138.0,
+        "width": 39.0,
+        "height": 17.0
+      },
+      "layer": 7,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:52:13.361Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "9d918867-a3ec-476b-ae99-729e071af554",
+      "name": "base",
+      "filename": "9d918867-a3ec-476b-ae99-729e071af554.png",
+      "boundingBox": {
+        "x": 331.5,
+        "y": 72.5,
+        "width": 97,
+        "height": 97
+      },
+      "groundBounds": {
+        "x": 366.5,
+        "y": 124.5,
+        "width": 27.0,
+        "height": 24.0
+      },
+      "layer": 8,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:52:26.596Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "47bfde14-7cba-4a63-9a92-778aa9a46505",
+      "name": "base",
+      "filename": "47bfde14-7cba-4a63-9a92-778aa9a46505.png",
+      "boundingBox": {
+        "x": 284.5,
+        "y": 74.5,
+        "width": 97,
+        "height": 97
+      },
+      "groundBounds": {
+        "x": 308.5,
+        "y": 124.5,
+        "width": 50.0,
+        "height": 24.0
+      },
+      "layer": 9,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:53:46.464Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "5c647f70-65dd-4b54-be31-1c8b50830f3f",
+      "name": "base",
+      "filename": "5c647f70-65dd-4b54-be31-1c8b50830f3f.png",
+      "boundingBox": {
+        "x": 227.5,
+        "y": 75.5,
+        "width": 97,
+        "height": 97
+      },
+      "groundBounds": {
+        "x": 251.5,
+        "y": 125.5,
+        "width": 50.0,
+        "height": 24.0
+      },
+      "layer": 10,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T02:53:58.026Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "2b9eea57-aa44-406c-92d8-576286e93e8e",
+      "name": "Object 0",
+      "filename": "2b9eea57-aa44-406c-92d8-576286e93e8e.png",
+      "boundingBox": {
+        "x": 617.5,
+        "y": 228.5,
+        "width": 200,
+        "height": 51
+      },
+      "groundBounds": {
+        "x": 633.5,
+        "y": 263.5,
+        "width": 168.0,
+        "height": 13.0
+      },
+      "layer": 11,
+      "visible": true,
+      "locked": false,
+      "description": "Create a 64x64 top-down 2D cooking game asset of a food pickup counter / serving station.\nThis object is used in a restaurant cooking game as the place where finished dishes appear after cooking. The gameplay purpose is clear: when food is completed, it is placed on this counter, and the player walks over to pick it up.\nDesign the asset in a top-down cooking game style, similar to casual restaurant management and kitchen games. The counter should look like a functional serving station, not just decoration. It must immediately communicate to the player that this is the place for ready-to-pick-up food.\nThe asset should include:\n- a clear countertop surface,\n- a compact counter body,\n- 2 to 3 visible serving spots on top where completed food can appear,\n- simple kitchen or serving details that support the function,\n- enough empty space on the top surface so food sprites can be placed later.\nThe style should be:\n- 2D top-down game asset,\n- cartoon / casual cooking game style,\n- clean and readable,\n- simple shapes,\n- strong silhouette,\n- slightly colorful,\n- cozy restaurant atmosphere,\n- suitable for a 64x64 sprite,\n- easy to recognize in gameplay at small size.\nThe counter may be made of:\n- wood,\n- stainless steel,\n- diner-style restaurant material,\n  depending on a cozy kitchen theme.\nOptional small details:\n- a serving tray,\n- subtle plate placement marks,\n- a tiny serving bell,\n- small warm lamp detail,\n- clean front panel,\n- slight highlights to separate the countertop from the base.\nImportant design rules:\n- keep the top surface mostly empty,\n- do not permanently place too much food on it,\n- do not add characters,\n- do not include a full kitchen background,\n- do not add large text,\n- do not overload the sprite with tiny details,\n- make the object readable and functional first.\nThe visual idea should clearly show this gameplay loop:\ncook food \u2192 finished dish appears on the counter \u2192 player walks there \u2192 player picks it up.\nThe final result should be:\n- a single standalone 2D sprite,\n- transparent background,\n- ready to use in a top-down cooking game,\n- designed for a 64x64 tile,\n- readable, clean, and game-friendly.\nKeywords: 64x64 sprite, top-down cooking game, serving counter, food pickup station, ready dish counter, restaurant game asset, kitchen object, cartoon 2D sprite, transparent background.",
+      "metadata": {
+        "lastEdited": "2026-09-23T03:05:34.612699",
+        "generatedAt": "2026-09-23T03:05:32.050Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "723d9d66-58f0-4ee0-a55e-461f2e05b225",
+      "name": "base",
+      "filename": "723d9d66-58f0-4ee0-a55e-461f2e05b225.png",
+      "boundingBox": {
+        "x": 308,
+        "y": 387,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 325.0,
+        "y": 425.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 12,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:08:43.854Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "5f6d5d0f-4580-4c1d-baad-87968167eb3a",
+      "name": "base",
+      "filename": "5f6d5d0f-4580-4c1d-baad-87968167eb3a.png",
+      "boundingBox": {
+        "x": 282,
+        "y": 387,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 296.0,
+        "y": 420.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 13,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:08:57.236Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "857ab5a2-e5c8-422f-b191-2f7969449ecf",
+      "name": "base",
+      "filename": "857ab5a2-e5c8-422f-b191-2f7969449ecf.png",
+      "boundingBox": {
+        "x": 347,
+        "y": 386,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 363.0,
+        "y": 419.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 14,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:09:10.945Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "0a9849c3-fd00-4391-86bd-085d993fe4a0",
+      "name": "base",
+      "filename": "0a9849c3-fd00-4391-86bd-085d993fe4a0.png",
+      "boundingBox": {
+        "x": 458,
+        "y": 387,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 475.0,
+        "y": 425.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 15,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:09:26.197Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "9787bc80-91bf-4f02-92bf-197d754c5328",
+      "name": "base",
+      "filename": "9787bc80-91bf-4f02-92bf-197d754c5328.png",
+      "boundingBox": {
+        "x": 433,
+        "y": 389,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 447.0,
+        "y": 422.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 16,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:09:50.402Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "0489f528-70ed-464e-a14d-fcb7bae477f7",
+      "name": "base",
+      "filename": "0489f528-70ed-464e-a14d-fcb7bae477f7.png",
+      "boundingBox": {
+        "x": 500,
+        "y": 390,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 516.0,
+        "y": 423.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 17,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:10:07.222Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "1eaeadd3-918b-48d6-9f61-00314376dabd",
+      "name": "base",
+      "filename": "1eaeadd3-918b-48d6-9f61-00314376dabd.png",
+      "boundingBox": {
+        "x": 606,
+        "y": 387,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 623.0,
+        "y": 425.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 18,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:10:22.389Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "af22d1b7-03ec-4eb5-b573-fafa1e0ecc50",
+      "name": "base",
+      "filename": "af22d1b7-03ec-4eb5-b573-fafa1e0ecc50.png",
+      "boundingBox": {
+        "x": 578,
+        "y": 390,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 592.0,
+        "y": 423.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 19,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:10:33.881Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "9806db1e-dd5a-4754-a5e2-00912315c7f3",
+      "name": "base",
+      "filename": "9806db1e-dd5a-4754-a5e2-00912315c7f3.png",
+      "boundingBox": {
+        "x": 645,
+        "y": 388,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 661.0,
+        "y": 421.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 20,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:10:50.784Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "8f59cf9e-a367-49b3-97f2-db89d5dbf030",
+      "name": "base",
+      "filename": "8f59cf9e-a367-49b3-97f2-db89d5dbf030.png",
+      "boundingBox": {
+        "x": 753,
+        "y": 385,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 770.0,
+        "y": 423.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 21,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:11:38.577Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "d2779bba-ad9c-46cf-98fa-96cdd1fe7d6f",
+      "name": "base",
+      "filename": "d2779bba-ad9c-46cf-98fa-96cdd1fe7d6f.png",
+      "boundingBox": {
+        "x": 728,
+        "y": 389,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 742.0,
+        "y": 422.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 22,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:12:00.081Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "413dcb58-2eb6-4082-adb5-13c6b7562c01",
+      "name": "base",
+      "filename": "413dcb58-2eb6-4082-adb5-13c6b7562c01.png",
+      "boundingBox": {
+        "x": 794,
+        "y": 389,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 810.0,
+        "y": 422.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 23,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:12:14.659Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "ac9d078d-7b2f-4706-aa77-fc5443e015cc",
+      "name": "base",
+      "filename": "ac9d078d-7b2f-4706-aa77-fc5443e015cc.png",
+      "boundingBox": {
+        "x": 919,
+        "y": 385,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 936.0,
+        "y": 423.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 24,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:12:30.226Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "69b94e88-b06c-481a-bea7-f25b026f70eb",
+      "name": "base",
+      "filename": "69b94e88-b06c-481a-bea7-f25b026f70eb.png",
+      "boundingBox": {
+        "x": 892,
+        "y": 388,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 906.0,
+        "y": 421.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 25,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:17:07.213Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "b53c50e6-06fd-40c2-9bb6-346bbb90fcc9",
+      "name": "base",
+      "filename": "b53c50e6-06fd-40c2-9bb6-346bbb90fcc9.png",
+      "boundingBox": {
+        "x": 960,
+        "y": 387,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 976.0,
+        "y": 420.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 26,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:17:16.241Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "cfaf542b-5f1f-4c73-af87-fca50f842c62",
+      "name": "base",
+      "filename": "cfaf542b-5f1f-4c73-af87-fca50f842c62.png",
+      "boundingBox": {
+        "x": 444,
+        "y": 488,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 461.0,
+        "y": 526.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 27,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:24:21.307Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "c5e83602-0360-4c85-a8b9-5f87eb510a45",
+      "name": "base (Copy)",
+      "filename": "c5e83602-0360-4c85-a8b9-5f87eb510a45.png",
+      "boundingBox": {
+        "x": 625,
+        "y": 488,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 642.0,
+        "y": 526.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 27,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:24:23.868Z",
+        "duplicatedFromObjectId": "cddf0328-53f2-49de-a7cc-15cb38275f04"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "19c92d5d-8c5c-4377-a4cf-5db0ccca50b4",
+      "name": "base (Copy 2)",
+      "filename": "19c92d5d-8c5c-4377-a4cf-5db0ccca50b4.png",
+      "boundingBox": {
+        "x": 811,
+        "y": 488,
+        "width": 64,
+        "height": 64
+      },
+      "groundBounds": {
+        "x": 828.0,
+        "y": 526.0,
+        "width": 29.0,
+        "height": 16.0
+      },
+      "layer": 27,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:24:39.645Z",
+        "duplicatedFromObjectId": "cddf0328-53f2-49de-a7cc-15cb38275f04"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "619fc722-b568-4802-9933-6a1ce6a2842b",
+      "name": "base (Copy 3)",
+      "filename": "619fc722-b568-4802-9933-6a1ce6a2842b.png",
+      "boundingBox": {
+        "x": 786,
+        "y": 494,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 800.0,
+        "y": 527.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 13,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:25:15.480Z",
+        "duplicatedFromObjectId": "3429ee2e-cc42-4e4a-a2d6-52b8f447aeb2"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "52c96e90-e193-4c5a-91f7-a44da1118e06",
+      "name": "base (Copy 4)",
+      "filename": "52c96e90-e193-4c5a-91f7-a44da1118e06.png",
+      "boundingBox": {
+        "x": 417,
+        "y": 490,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 431.0,
+        "y": 523.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 13,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:25:16.083Z",
+        "duplicatedFromObjectId": "3429ee2e-cc42-4e4a-a2d6-52b8f447aeb2"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "2bac6877-7371-4db7-a9bf-f0f917ee3a68",
+      "name": "base (Copy 5)",
+      "filename": "2bac6877-7371-4db7-a9bf-f0f917ee3a68.png",
+      "boundingBox": {
+        "x": 599,
+        "y": 491,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 613.0,
+        "y": 524.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 13,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:25:16.659Z",
+        "duplicatedFromObjectId": "3429ee2e-cc42-4e4a-a2d6-52b8f447aeb2"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "b2a621c3-324d-4fc9-99bd-0368500edd3c",
+      "name": "base (Copy 6)",
+      "filename": "b2a621c3-324d-4fc9-99bd-0368500edd3c.png",
+      "boundingBox": {
+        "x": 484,
+        "y": 491,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 500.0,
+        "y": 524.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 26,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:25:35.160Z",
+        "duplicatedFromObjectId": "3429ee2e-cc42-4e4a-a2d6-52b8f447aeb2"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "335ee909-26a2-4eb3-931a-686f18fc57f2",
+      "name": "base (Copy 7)",
+      "filename": "335ee909-26a2-4eb3-931a-686f18fc57f2.png",
+      "boundingBox": {
+        "x": 665,
+        "y": 493,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 681.0,
+        "y": 526.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 26,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:25:35.624Z",
+        "duplicatedFromObjectId": "3429ee2e-cc42-4e4a-a2d6-52b8f447aeb2"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "7ec46b9f-d3a3-4b6a-beda-6669e3ef9ddf",
+      "name": "base (Copy 8)",
+      "filename": "7ec46b9f-d3a3-4b6a-beda-6669e3ef9ddf.png",
+      "boundingBox": {
+        "x": 851,
+        "y": 493,
+        "width": 48,
+        "height": 48
+      },
+      "groundBounds": {
+        "x": 867.0,
+        "y": 526.0,
+        "width": 20.0,
+        "height": 12.0
+      },
+      "layer": 26,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (west)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:25:36.110Z",
+        "duplicatedFromObjectId": "3429ee2e-cc42-4e4a-a2d6-52b8f447aeb2"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "d0c2fa6f-0365-4846-a177-e48ce52d6ed7",
+      "name": "base",
+      "filename": "d0c2fa6f-0365-4846-a177-e48ce52d6ed7.png",
+      "boundingBox": {
+        "x": 923,
+        "y": 82.5,
+        "width": 68,
+        "height": 60
+      },
+      "groundBounds": {
+        "x": 924.0,
+        "y": 126.5,
+        "width": 66.0,
+        "height": 15.0
+      },
+      "layer": 36,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (unknown)",
+      "metadata": {
+        "lastEdited": "2026-09-23T08:50:34.725510",
+        "generatedAt": "2026-09-23T03:44:15.084Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "4f749f4b-51bf-4e7e-8df1-6c86dffb5b5f",
+      "name": "base",
+      "filename": "4f749f4b-51bf-4e7e-8df1-6c86dffb5b5f.png",
+      "boundingBox": {
+        "x": 341.5,
+        "y": 140.5,
+        "width": 97,
+        "height": 97
+      },
+      "groundBounds": {
+        "x": 353.5,
+        "y": 191.5,
+        "width": 74.0,
+        "height": 24.0
+      },
+      "layer": 37,
+      "visible": true,
+      "locked": false,
+      "description": "Object: base (south)",
+      "metadata": {
+        "generatedAt": "2026-09-23T03:45:26.563Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "23b8671b-7100-4948-ae47-ed436959b4bc",
+      "name": "Object 0",
+      "filename": "23b8671b-7100-4948-ae47-ed436959b4bc.png",
+      "boundingBox": {
+        "x": 591,
+        "y": 86,
+        "width": 87,
+        "height": 46
+      },
+      "groundBounds": {
+        "x": 592.0,
+        "y": 120.0,
+        "width": 67.0,
+        "height": 12.0
+      },
+      "layer": 38,
+      "visible": true,
+      "locked": false,
+      "description": "Create a 2D pixel art wall decoration asset for a top-down restaurant / cooking game.\nThe asset should be a wall-mounted kitchen utensil rack / cookware display used as a decorative object inside a restaurant kitchen. Use the real-life reference as inspiration for the types of hanging cookware, and match the overall cozy wooden restaurant style shown in the game map reference.\nDesign a decorative wall section with kitchen tools and cookware hanging neatly on the wall. The asset should look like something placed in the kitchen area of a restaurant to make the environment feel more detailed, warm, and believable.\nThe asset should include:\n- a wall-mounted hanging rack, pegboard, or bar for kitchen tools,\n- several hanging kitchen items such as:\n  - frying pans,\n  - saucepans,\n  - pots,\n  - ladles,\n  - spatulas,\n  - strainers,\n  - whisks,\n  - cooking utensils,\n- the items should be arranged neatly and look decorative rather than messy.\nStyle requirements:\n- 2D pixel art\n- top-down game asset\n- cozy restaurant / cooking game style\n- clean and readable\n- slightly decorative but simple\n- suitable for a warm wooden restaurant interior\n- matches a restaurant map with wooden flooring and cozy furniture\n- readable at game scale\n- charming and game-friendly, not too realistic\nVisual design notes:\n- the wall rack should feel compact and suitable as a decorative kitchen wall asset\n- cookware should have small but clear silhouettes\n- use warm neutral tones with metallic accents\n- pans and pots can be dark iron, copper, or steel\n- include subtle pixel shading to give form and readability\n- keep the arrangement balanced and visually pleasing\n- the asset should look like it belongs in the back kitchen or food prep area\nImportant:\n- this is mainly a decorative asset, not the main gameplay object\n- do not make it too large or too detailed\n- do not include characters\n- do not include a full room or background scene\n- do not make it photorealistic\n- keep the design clean so it works well in a pixel art top-down game\n- the final asset should be a single standalone wall decoration sprite\n- transparent background preferred\nThe final result should feel like a cozy kitchen wall decoration in a restaurant, showing hanging cookware and utensils in a visually appealing way, suitable for a pixel art top-down cooking game.\nKeywords: pixel art, top-down kitchen decoration, wall-mounted cookware rack, hanging kitchen tools, restaurant kitchen asset, cooking game decoration, cozy restaurant pixel art, utensil wall display, 2D game asset, transparent background.",
+      "metadata": {
+        "lastEdited": "2026-09-23T03:50:20.755229",
+        "generatedAt": "2026-09-23T03:50:17.659Z"
+      },
+      "isProgress": false
+    },
+    {
+      "id": "f34c4ee8-d1be-4549-89e7-55e047a7a51f",
+      "name": "The farmer stands co",
+      "filename": "f34c4ee8-d1be-4549-89e7-55e047a7a51f.png",
+      "boundingBox": {
+        "x": 653.9999847412109,
+        "y": 298.4285659790039,
+        "width": 80,
+        "height": 80
+      },
+      "groundBounds": {
+        "x": 682.9999847412109,
+        "y": 356.4285659790039,
+        "width": 23.0,
+        "height": 20.0
+      },
+      "layer": 39,
+      "visible": true,
+      "locked": false,
+      "description": "Character: The farmer stands co (north-east)",
+      "metadata": {
+        "generatedAt": "2026-09-23T13:31:46.487Z"
+      },
+      "isProgress": false
+    }
+  ]
+}

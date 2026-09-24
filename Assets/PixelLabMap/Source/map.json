@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "name": "Untitled Map",
+  "exportDate": "2026-09-23T13:57:29.113151Z",
+  "engine": "pixellab-map-editor",
+  "mapConfig": {
+    "tileSize": 32,
+    "dimensions": {
+      "width": 37,
+      "height": 20,
+      "pixelWidth": 1184,
+      "pixelHeight": 640
+    },
+    "boundingBox": {
+      "maxX": 36,
+      "maxY": 20,
+      "minX": 0,
+      "minY": 1
+    }
+  },
+  "terrains": [
+    {
+      "id": 1,
+      "name": "weathered wooden floorboards showing gentle grain texture and soft tonal variations under medium depth shading",
+      "color": "#9ca3af",
+      "baseTileId": "2b02abe9-f19e-404b-bd4f-bd35f29e0d6e",
+      "walkable": null
+    },
+    {
+      "id": 2,
+      "name": "solid black void rendered in flat uniform darkness with no gradients or surface marks",
+      "color": "#9ca3af",
+      "baseTileId": "9ad8df2b-7c57-40db-8d90-868d93e9d589",
+      "walkable": null
+    },
+    {
+      "id": 3,
+      "name": "weathered wooden floorboards showing gentle grain texture and soft tonal variations under medium depth shading \u2194 solid black void rendered in flat uniform darkness with no gradients or surface marks",
+      "color": "#858b95",
+      "baseTileId": "transition-57378015-e897-4403-87b8-b3cb1f11ba9b",
+      "walkable": null
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "57378015-e897-4403-87b8-b3cb1f11ba9b",
+      "filename": "weathered wooden floorboards showing gentle grain texture and soft tonal variations under m-95e9dab0.png",
+      "lowerTerrain": "weathered wooden floorboards showing gentle grain texture and soft tonal variations under medium depth shading",
+      "upperTerrain": "solid black void rendered in flat uniform darkness with no gradients or surface marks",
+      "lowerTerrainId": 1,
+      "upperTerrainId": 2,
+      "transitionSize": 1,
+      "transitionDescription": "tall vertical wooden wall featuring exposed vertical planks with soft highlights and natural grain patterns",
+      "tileSize": 32,
+      "gridLayout": "4x8",
+      "wangIndexMapping": "transition",
+      "view": "high top-down",
+      "metadataFilename": "57378015-e897-4403-87b8-b3cb1f11ba9b.json"
+    }
+  ],
+  "overlays": [
+    {
+      "id": 0,
+      "filename": "overlay-0.png",
+      "type": "inpainting",
+      "dimensions": {
+        "width": 160,
+        "height": 64
+      },
+      "worldCoordinates": {
+        "x": 928,
+        "y": 64
+      },
+      "layer": "custom"
+    }
+  ],
+  "background": null,
+  "mapId": "e5e8e2b1-c9e9-4268-9976-01fe770c871e"
+}

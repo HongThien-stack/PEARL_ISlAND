@@ -1,0 +1,12 @@
+{
+  "transitions": [
+    {
+      "from": "weathered wooden floorboards showing gentle grain texture and soft tonal variations under medium depth shading",
+      "to": "solid black void rendered in flat uniform darkness with no gradients or surface marks",
+      "fromId": 1,
+      "toId": 2,
+      "tilesetId": "57378015-e897-4403-87b8-b3cb1f11ba9b",
+      "transitionSize": 1
+    }
+  ]
+}
