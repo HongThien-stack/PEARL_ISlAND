@@ -1,0 +1,341 @@
+{
+  "group_id": "1938c6c2-1366-4ab9-91fd-30e01eb0d15a",
+  "states": [
+    {
+      "character": {
+        "id": "78ab51e2-dfe1-4fee-9ac7-32c806d10387",
+        "name": "Idle",
+        "prompt": "A friendly young adult male farmer standing in a relaxed, upright pose. He has short brown hair and a warm, welcoming expression. He wears a wide-brimmed straw hat with a distinct red ribbon, a white long-sleeved shirt with sleeves neatly rolled to the elbows, a dark red sleeveless vest, durable blue work trousers, and sturdy brown leather boots. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-08-30T21:22:14.606369+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Water_plant": {
+            "west": [
+              "Idle/animations/Water_plant/west/frame_000.png",
+              "Idle/animations/Water_plant/west/frame_001.png",
+              "Idle/animations/Water_plant/west/frame_002.png",
+              "Idle/animations/Water_plant/west/frame_003.png",
+              "Idle/animations/Water_plant/west/frame_004.png",
+              "Idle/animations/Water_plant/west/frame_005.png",
+              "Idle/animations/Water_plant/west/frame_006.png",
+              "Idle/animations/Water_plant/west/frame_007.png",
+              "Idle/animations/Water_plant/west/frame_008.png"
+            ],
+            "north": [
+              "Idle/animations/Water_plant/north/frame_000.png",
+              "Idle/animations/Water_plant/north/frame_001.png",
+              "Idle/animations/Water_plant/north/frame_002.png",
+              "Idle/animations/Water_plant/north/frame_003.png",
+              "Idle/animations/Water_plant/north/frame_004.png",
+              "Idle/animations/Water_plant/north/frame_005.png",
+              "Idle/animations/Water_plant/north/frame_006.png",
+              "Idle/animations/Water_plant/north/frame_007.png",
+              "Idle/animations/Water_plant/north/frame_008.png"
+            ],
+            "south": [
+              "Idle/animations/Water_plant/south/frame_000.png",
+              "Idle/animations/Water_plant/south/frame_001.png",
+              "Idle/animations/Water_plant/south/frame_002.png",
+              "Idle/animations/Water_plant/south/frame_003.png",
+              "Idle/animations/Water_plant/south/frame_004.png",
+              "Idle/animations/Water_plant/south/frame_005.png",
+              "Idle/animations/Water_plant/south/frame_006.png",
+              "Idle/animations/Water_plant/south/frame_007.png",
+              "Idle/animations/Water_plant/south/frame_008.png"
+            ],
+            "east": [
+              "Idle/animations/Water_plant/east/frame_000.png",
+              "Idle/animations/Water_plant/east/frame_001.png",
+              "Idle/animations/Water_plant/east/frame_002.png",
+              "Idle/animations/Water_plant/east/frame_003.png",
+              "Idle/animations/Water_plant/east/frame_004.png",
+              "Idle/animations/Water_plant/east/frame_005.png",
+              "Idle/animations/Water_plant/east/frame_006.png",
+              "Idle/animations/Water_plant/east/frame_007.png",
+              "Idle/animations/Water_plant/east/frame_008.png"
+            ]
+          },
+          "Fishing": {
+            "north": [
+              "Idle/animations/Fishing/north/frame_000.png",
+              "Idle/animations/Fishing/north/frame_001.png",
+              "Idle/animations/Fishing/north/frame_002.png",
+              "Idle/animations/Fishing/north/frame_003.png",
+              "Idle/animations/Fishing/north/frame_004.png",
+              "Idle/animations/Fishing/north/frame_005.png",
+              "Idle/animations/Fishing/north/frame_006.png",
+              "Idle/animations/Fishing/north/frame_007.png",
+              "Idle/animations/Fishing/north/frame_008.png"
+            ],
+            "south": [
+              "Idle/animations/Fishing/south/frame_000.png",
+              "Idle/animations/Fishing/south/frame_001.png",
+              "Idle/animations/Fishing/south/frame_002.png",
+              "Idle/animations/Fishing/south/frame_003.png",
+              "Idle/animations/Fishing/south/frame_004.png",
+              "Idle/animations/Fishing/south/frame_005.png",
+              "Idle/animations/Fishing/south/frame_006.png",
+              "Idle/animations/Fishing/south/frame_007.png",
+              "Idle/animations/Fishing/south/frame_008.png"
+            ],
+            "west": [
+              "Idle/animations/Fishing/west/frame_000.png",
+              "Idle/animations/Fishing/west/frame_001.png",
+              "Idle/animations/Fishing/west/frame_002.png",
+              "Idle/animations/Fishing/west/frame_003.png",
+              "Idle/animations/Fishing/west/frame_004.png",
+              "Idle/animations/Fishing/west/frame_005.png",
+              "Idle/animations/Fishing/west/frame_006.png",
+              "Idle/animations/Fishing/west/frame_007.png",
+              "Idle/animations/Fishing/west/frame_008.png"
+            ],
+            "east": [
+              "Idle/animations/Fishing/east/frame_000.png",
+              "Idle/animations/Fishing/east/frame_001.png",
+              "Idle/animations/Fishing/east/frame_002.png",
+              "Idle/animations/Fishing/east/frame_003.png",
+              "Idle/animations/Fishing/east/frame_004.png",
+              "Idle/animations/Fishing/east/frame_005.png",
+              "Idle/animations/Fishing/east/frame_006.png",
+              "Idle/animations/Fishing/east/frame_007.png",
+              "Idle/animations/Fishing/east/frame_008.png"
+            ]
+          },
+          "Walk": {
+            "east": [
+              "Idle/animations/Walk/east/frame_000.png",
+              "Idle/animations/Walk/east/frame_001.png",
+              "Idle/animations/Walk/east/frame_002.png",
+              "Idle/animations/Walk/east/frame_003.png",
+              "Idle/animations/Walk/east/frame_004.png",
+              "Idle/animations/Walk/east/frame_005.png"
+            ],
+            "north": [
+              "Idle/animations/Walk/north/frame_000.png",
+              "Idle/animations/Walk/north/frame_001.png",
+              "Idle/animations/Walk/north/frame_002.png",
+              "Idle/animations/Walk/north/frame_003.png",
+              "Idle/animations/Walk/north/frame_004.png",
+              "Idle/animations/Walk/north/frame_005.png"
+            ],
+            "west": [
+              "Idle/animations/Walk/west/frame_000.png",
+              "Idle/animations/Walk/west/frame_001.png",
+              "Idle/animations/Walk/west/frame_002.png",
+              "Idle/animations/Walk/west/frame_003.png",
+              "Idle/animations/Walk/west/frame_004.png",
+              "Idle/animations/Walk/west/frame_005.png"
+            ],
+            "south": [
+              "Idle/animations/Walk/south/frame_000.png",
+              "Idle/animations/Walk/south/frame_001.png",
+              "Idle/animations/Walk/south/frame_002.png",
+              "Idle/animations/Walk/south/frame_003.png",
+              "Idle/animations/Walk/south/frame_004.png",
+              "Idle/animations/Walk/south/frame_005.png"
+            ]
+          },
+          "The_farmer_stands_in_place_facing_away_from_the_ca": {
+            "north-341146aa": [
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_000.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_001.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_002.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_003.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_004.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_005.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_006.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_007.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_008.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_009.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-341146aa/frame_010.png"
+            ],
+            "north-99c1fb84": [
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_000.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_001.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_002.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_003.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_004.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_005.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_006.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_007.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_008.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_009.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/north-99c1fb84/frame_010.png"
+            ],
+            "west": [
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_000.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_001.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_002.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_003.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_004.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_005.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_006.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_007.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_008.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_009.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/west/frame_010.png"
+            ],
+            "south": [
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_000.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_001.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_002.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_003.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_004.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_005.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_006.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_007.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_008.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_009.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/south/frame_010.png"
+            ],
+            "east": [
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_000.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_001.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_002.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_003.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_004.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_005.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_006.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_007.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_008.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_009.png",
+              "Idle/animations/The_farmer_stands_in_place_facing_away_from_the_ca/east/frame_010.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "Idle/portrait.png",
+        "size": 128,
+        "generated_at": "2026-09-09T00:25:28.991526"
+      },
+      "vocal_animation": {
+        "path": "Idle/vocal/grid.png",
+        "moods": [
+          "happy"
+        ],
+        "visemes": [
+          "rest",
+          "closed",
+          "small_open",
+          "medium_open",
+          "wide_open",
+          "round",
+          "teeth"
+        ],
+        "viseme_count": 7,
+        "width": 896,
+        "height": 128,
+        "generated_at": "2026-09-09T02:51:57.423581",
+        "layout": "grid",
+        "columns": "visemes",
+        "rows": "moods"
+      }
+    },
+    {
+      "character": {
+        "id": "168e54bf-5bb9-481c-83f6-5eaae527fd9e",
+        "name": "The farmer stands co",
+        "prompt": "A friendly young adult male farmer standing in a relaxed, upright pose. He has short brown hair and a warm, welcoming expression. He wears a wide-brimmed straw hat with a distinct red ribbon, a white long-sleeved shirt with sleeves neatly rolled to the elbows, a dark red sleeveless vest, durable blue work trousers, and sturdy brown leather boots. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-09-23T08:38:05.436236+00:00"
+      },
+      "folder": "The_farmer_stands_co",
+      "frames": {
+        "rotations": {
+          "south": "The_farmer_stands_co/rotations/south.png",
+          "south-east": "The_farmer_stands_co/rotations/south-east.png",
+          "east": "The_farmer_stands_co/rotations/east.png",
+          "north-east": "The_farmer_stands_co/rotations/north-east.png",
+          "north": "The_farmer_stands_co/rotations/north.png",
+          "north-west": "The_farmer_stands_co/rotations/north-west.png",
+          "west": "The_farmer_stands_co/rotations/west.png",
+          "south-west": "The_farmer_stands_co/rotations/south-west.png"
+        },
+        "animations": {
+          "The_farmer_walks_naturally_while_holding_a_rectang": {
+            "north": [
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_000.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_001.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_002.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_003.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_004.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_005.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_006.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_007.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_008.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_009.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/north/frame_010.png"
+            ],
+            "east": [
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_000.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_001.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_002.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_003.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_004.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_005.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_006.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_007.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_008.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_009.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/east/frame_010.png"
+            ],
+            "west": [
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_000.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_001.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_002.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_003.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_004.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_005.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_006.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_007.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_008.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_009.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/west/frame_010.png"
+            ],
+            "south": [
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_000.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_001.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_002.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_003.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_004.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_005.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_006.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_007.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_008.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_009.png",
+              "The_farmer_stands_co/animations/The_farmer_walks_naturally_while_holding_a_rectang/south/frame_010.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-29T07:13:25.624854"
+}

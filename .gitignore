@@ -1,4 +1,4 @@
-﻿[L|l]ibrary/
+[L|l]ibrary/
 [T|t]emp/
 [O|o]bj/
 [B|b]uild/
@@ -7,3 +7,18 @@
 [U|u]ser[S|s]ettings/
 [M|m]emoryCaptures/
 .vs/
+.vscode/
+.agent/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db

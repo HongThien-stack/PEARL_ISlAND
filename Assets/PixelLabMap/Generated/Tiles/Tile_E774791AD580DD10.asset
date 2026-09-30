@@ -37,6 +37,6 @@ MonoBehaviour:
   tileIndex: 30
   paintTerrain: -1
   paintableTerrain: 1
-  sourceLayerIndex: 0
+  sourceLayerIndex: -1
   assetPath: Assets/PixelLabMap/Source/tilesets/weathered wooden floorboards showing
     gentle grain texture and soft tonal variations under m-95e9dab0.png

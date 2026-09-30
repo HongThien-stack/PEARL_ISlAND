@@ -1,0 +1,125 @@
+{
+  "group_id": "8c7a12a2-51d8-40ec-95c6-f012eec5153c",
+  "states": [
+    {
+      "character": {
+        "id": "d46bee27-e951-4f1e-8a4d-836da9c8be0b",
+        "name": "Idle",
+        "prompt": "A friendly adult male villager with short black hair, wearing a clean white collared shirt, simple dark brown trousers, and leather sandals. Standing in a relaxed, welcoming posture with arms loosely at his sides, crisp black outlines, warm color palette with soft shading, low top-down perspective.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-09-07T15:03:03.355207+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "The_character_holds_a_pair_of_chopsticks_in_one_ha": {
+            "east": [
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_000.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_001.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_002.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_003.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_004.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_005.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_006.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_007.png",
+              "Idle/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_008.png"
+            ]
+          },
+          "Walk": {
+            "west": [
+              "Idle/animations/Walk/west/frame_000.png",
+              "Idle/animations/Walk/west/frame_001.png",
+              "Idle/animations/Walk/west/frame_002.png",
+              "Idle/animations/Walk/west/frame_003.png",
+              "Idle/animations/Walk/west/frame_004.png",
+              "Idle/animations/Walk/west/frame_005.png"
+            ],
+            "north": [
+              "Idle/animations/Walk/north/frame_000.png",
+              "Idle/animations/Walk/north/frame_001.png",
+              "Idle/animations/Walk/north/frame_002.png",
+              "Idle/animations/Walk/north/frame_003.png",
+              "Idle/animations/Walk/north/frame_004.png",
+              "Idle/animations/Walk/north/frame_005.png"
+            ],
+            "south": [
+              "Idle/animations/Walk/south/frame_000.png",
+              "Idle/animations/Walk/south/frame_001.png",
+              "Idle/animations/Walk/south/frame_002.png",
+              "Idle/animations/Walk/south/frame_003.png",
+              "Idle/animations/Walk/south/frame_004.png",
+              "Idle/animations/Walk/south/frame_005.png"
+            ],
+            "east": [
+              "Idle/animations/Walk/east/frame_000.png",
+              "Idle/animations/Walk/east/frame_001.png",
+              "Idle/animations/Walk/east/frame_002.png",
+              "Idle/animations/Walk/east/frame_003.png",
+              "Idle/animations/Walk/east/frame_004.png",
+              "Idle/animations/Walk/east/frame_005.png"
+            ]
+          },
+          "The_character_sits_naturally_on_an_invisible_chair": {
+            "south": [
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_000.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_001.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_002.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_003.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_004.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_005.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_006.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_007.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_008.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_009.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/south/frame_010.png"
+            ],
+            "west": [
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_000.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_001.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_002.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_003.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_004.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_005.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_006.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_007.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_008.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_009.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/west/frame_010.png"
+            ],
+            "east": [
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_000.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_001.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_002.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_003.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_004.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_005.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_006.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_007.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_008.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_009.png",
+              "Idle/animations/The_character_sits_naturally_on_an_invisible_chair/east/frame_010.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-29T07:13:36.690602"
+}

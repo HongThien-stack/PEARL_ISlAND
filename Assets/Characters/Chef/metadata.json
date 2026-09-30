@@ -1,0 +1,84 @@
+{
+  "group_id": "80ab2ce4-f6be-4276-8b60-04fbf150da46",
+  "states": [
+    {
+      "character": {
+        "id": "2ea3e807-e954-4b67-bb43-28b6525b51cf",
+        "name": "Idle",
+        "prompt": "A middle-aged male Vietnamese chef, around 45\u201350 years old, with short dark hair, a thick black mustache, and a friendly experienced expression. He wears a clean white chef hat, white chef jacket with short sleeves, dark red apron, dark pants, and brown shoes. Full body, standing upright, relaxed pose. Classic low top-down RPG perspective, clean 2D pixel art, simple shading, game-ready character, no tools, no food, no tray, no background.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-09-29T05:26:36.201115+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Walk": {
+            "west": [
+              "Idle/animations/Walk/west/frame_000.png",
+              "Idle/animations/Walk/west/frame_001.png",
+              "Idle/animations/Walk/west/frame_002.png",
+              "Idle/animations/Walk/west/frame_003.png",
+              "Idle/animations/Walk/west/frame_004.png",
+              "Idle/animations/Walk/west/frame_005.png"
+            ],
+            "east": [
+              "Idle/animations/Walk/east/frame_000.png",
+              "Idle/animations/Walk/east/frame_001.png",
+              "Idle/animations/Walk/east/frame_002.png",
+              "Idle/animations/Walk/east/frame_003.png",
+              "Idle/animations/Walk/east/frame_004.png",
+              "Idle/animations/Walk/east/frame_005.png"
+            ],
+            "north": [
+              "Idle/animations/Walk/north/frame_000.png",
+              "Idle/animations/Walk/north/frame_001.png",
+              "Idle/animations/Walk/north/frame_002.png",
+              "Idle/animations/Walk/north/frame_003.png",
+              "Idle/animations/Walk/north/frame_004.png",
+              "Idle/animations/Walk/north/frame_005.png"
+            ],
+            "south": [
+              "Idle/animations/Walk/south/frame_000.png",
+              "Idle/animations/Walk/south/frame_001.png",
+              "Idle/animations/Walk/south/frame_002.png",
+              "Idle/animations/Walk/south/frame_003.png",
+              "Idle/animations/Walk/south/frame_004.png",
+              "Idle/animations/Walk/south/frame_005.png"
+            ]
+          },
+          "The_chef_holds_a_visible_kitchen_knife_in_one_hand": {
+            "south": [
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_000.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_001.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_002.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_003.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_004.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_005.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_006.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_007.png",
+              "Idle/animations/The_chef_holds_a_visible_kitchen_knife_in_one_hand/south/frame_008.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-29T07:13:29.578046"
+}
