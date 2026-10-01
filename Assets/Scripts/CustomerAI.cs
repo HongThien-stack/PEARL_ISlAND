@@ -45,6 +45,13 @@ public class CustomerAI : MonoBehaviour, IInteractable
     [Tooltip("Additional sorting order offset when customer is seated (+1 to draw in front of chair, -1 to draw behind).")]
     [SerializeField] private int seatedSortingOffset = 0;
 
+    [Header("Table Food Display")]
+    [Tooltip("SpriteRenderer on child object displaying food on the table while eating.")]
+    [SerializeField] private SpriteRenderer tableFoodRenderer;
+    [SerializeField] private Vector3 foodDisplayLocalOffset = new Vector3(0.4f, 0.1f, 0f);
+    [SerializeField] private Vector3 foodDisplayScale = new Vector3(0.5f, 0.5f, 1f);
+    [SerializeField] private int foodSortingOffset = 2;
+
     [Header("Direct Animation State Names (Inspector Configurable)")]
     [SerializeField] private string idleDownState = "customer-idle-down";
     [SerializeField] private string idleUpState = "customer-idle-up";
@@ -95,6 +102,24 @@ public class CustomerAI : MonoBehaviour, IInteractable
             spriteRenderer.spriteSortPoint = SpriteSortPoint.Pivot;
         }
 
+        if (tableFoodRenderer == null)
+        {
+            Transform foodChild = transform.Find("TableFood");
+            if (foodChild != null)
+            {
+                tableFoodRenderer = foodChild.GetComponent<SpriteRenderer>();
+            }
+            else
+            {
+                GameObject newFoodChild = new GameObject("TableFood");
+                newFoodChild.transform.SetParent(transform, false);
+                newFoodChild.transform.localPosition = foodDisplayLocalOffset;
+                newFoodChild.transform.localScale = foodDisplayScale;
+                tableFoodRenderer = newFoodChild.AddComponent<SpriteRenderer>();
+                newFoodChild.SetActive(false);
+            }
+        }
+
         if (animator != null && animator.runtimeAnimatorController != null && animator.layerCount == 0)
         {
             animator.Rebind();
@@ -135,6 +160,12 @@ public class CustomerAI : MonoBehaviour, IInteractable
             int baseOrder = sortingOrderOffset + Mathf.RoundToInt(-transform.position.y * ySortingMultiplier);
             bool isSeated = (currentState == CustomerState.WaitingToOrder || currentState == CustomerState.WaitingForFood || currentState == CustomerState.Eating);
             spriteRenderer.sortingOrder = baseOrder + (isSeated ? seatedSortingOffset : 0);
+
+            if (tableFoodRenderer != null && tableFoodRenderer.gameObject.activeSelf)
+            {
+                tableFoodRenderer.sortingLayerID = spriteRenderer.sortingLayerID;
+                tableFoodRenderer.sortingOrder = spriteRenderer.sortingOrder + foodSortingOffset;
+            }
         }
     }
 
@@ -216,20 +247,24 @@ public class CustomerAI : MonoBehaviour, IInteractable
             PlayerFoodCarrier carrier = player.GetComponent<PlayerFoodCarrier>();
             if (carrier != null && carrier.IsCarrying())
             {
+                Sprite deliveredFood = carrier.GetCurrentFoodSprite();
                 carrier.ClearFood();
-                StartCoroutine(EatingRoutine());
+                StartCoroutine(EatingRoutine(deliveredFood));
                 Debug.Log("[CustomerAI] 🍲 MC đã giao đồ ăn cho Khách! Khách đang ăn...");
             }
         }
     }
 
-    private IEnumerator EatingRoutine()
+    private IEnumerator EatingRoutine(Sprite foodSprite = null)
     {
         currentState = CustomerState.Eating;
         UpdateBubbles();
         PlayAnimationState(eatingState);
+        ShowFoodOnTable(foodSprite);
 
         yield return new WaitForSeconds(eatingDuration);
+
+        HideFoodOnTable();
 
         // Finished eating -> Leave
         currentState = CustomerState.Leaving;
@@ -249,6 +284,26 @@ public class CustomerAI : MonoBehaviour, IInteractable
 
         onCustomerLeftCallback?.Invoke();
         Destroy(gameObject);
+    }
+
+    private void ShowFoodOnTable(Sprite foodSprite)
+    {
+        Sprite spriteToDisplay = foodSprite != null ? foodSprite : desiredFoodSprite;
+        if (tableFoodRenderer != null && spriteToDisplay != null)
+        {
+            tableFoodRenderer.sprite = spriteToDisplay;
+            tableFoodRenderer.transform.localPosition = foodDisplayLocalOffset;
+            tableFoodRenderer.transform.localScale = foodDisplayScale;
+            tableFoodRenderer.gameObject.SetActive(true);
+        }
+    }
+
+    private void HideFoodOnTable()
+    {
+        if (tableFoodRenderer != null)
+        {
+            tableFoodRenderer.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator NavigateToTarget(Vector3 targetPos)
