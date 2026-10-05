@@ -1,0 +1,329 @@
+{
+  "version": "1.0.0",
+  "name": "Untitled Map",
+  "exportDate": "2026-10-05T16:57:28.652570Z",
+  "engine": "pixellab-map-editor",
+  "mapConfig": {
+    "tileSize": 32,
+    "dimensions": {
+      "width": 96,
+      "height": 63,
+      "pixelWidth": 3072,
+      "pixelHeight": 2016
+    },
+    "boundingBox": {
+      "maxX": 93,
+      "maxY": 53,
+      "minX": -2,
+      "minY": -9
+    }
+  },
+  "terrains": [
+    {
+      "id": 1,
+      "name": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "color": "#22c55e",
+      "baseTileId": "748fa0e0-4496-4f32-916c-7fc472ece613",
+      "walkable": null
+    },
+    {
+      "id": 9,
+      "name": "warm golden brown farm dirt path featuring compact dry soil with subtle tiny pebbles and moderate surface texture under soft natural highlights",
+      "color": "#92400e",
+      "baseTileId": "7e540aa5-32ed-4056-9f6d-f42df6783bc5",
+      "walkable": null
+    },
+    {
+      "id": 11,
+      "name": "rich warm brown cultivated farmland soil with neat tilled earth texture, subtle farming rows, soft natural soil variation, gentle depth and warm highlights",
+      "color": "#9ca3af",
+      "baseTileId": "978d4f77-948f-4572-9477-b32fdbcb3852",
+      "walkable": null
+    },
+    {
+      "id": 5,
+      "name": "warm light golden beach sand featuring a soft natural grain texture, subtle sand speckles, and gentle undulating ripples under medium shadows",
+      "color": "#fbbf24",
+      "baseTileId": "8aa58f9f-de52-4742-a4e7-d4ca2fb2d103",
+      "walkable": null
+    },
+    {
+      "id": 7,
+      "name": "warm golden beach sand with gentle undulating ripples and soft natural highlights",
+      "color": "#fbbf24",
+      "baseTileId": "18eac992-a638-44d7-901b-36cb5ded8890",
+      "walkable": null
+    },
+    {
+      "id": 3,
+      "name": "lush green grass with moderate surface texture and soft natural highlights",
+      "color": "#22c55e",
+      "baseTileId": "4859219f-4c04-435b-ae9f-a5e2a11d874b",
+      "walkable": null
+    },
+    {
+      "id": 4,
+      "name": "clean compacted soil ground with warm brown earth tones, featuring moderate surface texture and soft natural highlights",
+      "color": "#9ca3af",
+      "baseTileId": "bd0815ea-0c22-4ed1-a105-8f5a812fcce6",
+      "walkable": null
+    },
+    {
+      "id": 6,
+      "name": "vibrant green island grass with moderate surface texture, gentle tonal variation, and soft natural highlights cast under medium shadows",
+      "color": "#22c55e",
+      "baseTileId": "0965ee76-cc50-495c-883f-e55bf9ce5ac0",
+      "walkable": null
+    },
+    {
+      "id": 12,
+      "name": "soft tropical beach sand with moderate grain texture, warm beige tones, and soft gentle undulations",
+      "color": "#fbbf24",
+      "baseTileId": "2fd31432-8c6a-4a72-9b66-0124a2b4312e",
+      "walkable": null
+    },
+    {
+      "id": 8,
+      "name": "deep tropical ocean water with moderate surface texture, gentle ripple patterns and soft natural turquoise highlights, medium shading with soft depth",
+      "color": "#1e40af",
+      "baseTileId": "888b2981-ae6b-4a98-b4f7-256078beeaed",
+      "walkable": null
+    },
+    {
+      "id": 10,
+      "name": "asphalt road surface with moderate aggregate texture and soft natural highlights in medium grey",
+      "color": "#9ca3af",
+      "baseTileId": "525a0175-0d4f-4e84-a078-7ceb71b027de",
+      "walkable": null
+    },
+    {
+      "id": 14,
+      "name": "shimmering blue-green water surface with gentle ripples and soft tonal depth",
+      "color": "#2563eb",
+      "baseTileId": "194ab137-a945-4bc1-a707-200ef8390605",
+      "walkable": null
+    },
+    {
+      "id": 15,
+      "name": "shimmering blue-green water surface with gentle ripples and soft tonal depth \u2194 lush green grass with moderate surface texture and soft natural highlights",
+      "color": "#1f7e8c",
+      "baseTileId": "transition-992d9d10-66c2-42d5-8f1b-8dafa7c8708f",
+      "walkable": null
+    },
+    {
+      "id": 17,
+      "name": "weathered warm brown wooden dock flooring featuring horizontal rustic timber planks with gentle grain variation and subtle dark gaps between boards",
+      "color": "#9ca3af",
+      "baseTileId": "b4eda23d-3f48-4c0d-89cb-d07acafa622e",
+      "walkable": null
+    },
+    {
+      "id": 13,
+      "name": "warm brown tilled farm soil with moderate earthy texture, subtle small stones, and soft natural highlights in medium shading",
+      "color": "#9ca3af",
+      "baseTileId": "154ebb6d-5a81-4be3-83d0-bb723fae127a",
+      "walkable": null
+    },
+    {
+      "id": 2,
+      "name": "neat small cobblestone blocks in light warm grey with subtle natural variation and soft gentle depth",
+      "color": "#9ca3af",
+      "baseTileId": "342c14fe-fba5-4482-b979-585c42ea225f",
+      "walkable": null
+    },
+    {
+      "id": 16,
+      "name": "neat small cobblestone blocks in light warm grey with moderate surface texture and soft gentle depth",
+      "color": "#9ca3af",
+      "baseTileId": "31d608ca-30f1-4007-8b67-c6de14f99ade",
+      "walkable": null
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "13a0552b-888b-4814-aa97-24d1f7a16b70",
+      "filename": "lush green grass with moderate surface texture and soft natural highlights-soft tropical be-e22692c4.png",
+      "lowerTerrain": "lush green grass with moderate surface texture and soft natural highlights",
+      "upperTerrain": "soft tropical beach sand with moderate grain texture, warm beige tones, and soft gentle undulations",
+      "lowerTerrainId": 3,
+      "upperTerrainId": 12,
+      "transitionSize": 0.25,
+      "transitionDescription": "low coastal sand ledge curving smoothly into the adjacent terrain with soft tonal depth",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "07090a23-9224-4192-af70-9c48bb47ba06",
+      "filename": "elevated lush green grassy plateau with moderate surface texture and soft natural highlight-29fa7ad5.png",
+      "lowerTerrain": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "upperTerrain": "warm golden brown farm dirt path featuring compact dry soil with subtle tiny pebbles and moderate surface texture under soft natural highlights",
+      "lowerTerrainId": 1,
+      "upperTerrainId": 9,
+      "transitionSize": 0.06,
+      "transitionDescription": "narrow rim of warm golden brown farm dirt gently blending into lush green grass with a thin worn soil edge and tiny pebbles",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "10ffb7c7-4a54-4922-8d9c-75fb16412670",
+      "filename": "asphalt road surface with moderate aggregate texture and soft natural highlights in medium-0b51a786.png",
+      "lowerTerrain": "asphalt road surface with moderate aggregate texture and soft natural highlights in medium grey",
+      "upperTerrain": "lush green grass with moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 10,
+      "upperTerrainId": 3,
+      "transitionSize": 0.25,
+      "transitionDescription": "narrow crumbling muddy dirt rim with embedded pebbles and soft damp patches casting gentle shadows",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "dfe068af-64a0-4562-ba1c-06068053e5e7",
+      "filename": "deep tropical ocean water with moderate surface texture, gentle ripple patterns and soft na-8ead3905.png",
+      "lowerTerrain": "deep tropical ocean water with moderate surface texture, gentle ripple patterns and soft natural turquoise highlights, medium shading with soft depth",
+      "upperTerrain": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 8,
+      "upperTerrainId": 1,
+      "transitionSize": 0.25,
+      "transitionDescription": "warm golden beach sand forming a shallow coastal ledge with moderate surface texture and soft natural shadows, medium shading with gentle depth",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "6d894037-66ab-463c-8a43-a6386fed0530",
+      "filename": "warm light golden beach sand featuring a soft natural grain texture, subtle sand speckles,-c93adf9e.png",
+      "lowerTerrain": "warm light golden beach sand featuring a soft natural grain texture, subtle sand speckles, and gentle undulating ripples under medium shadows",
+      "upperTerrain": "vibrant green island grass with moderate surface texture, gentle tonal variation, and soft natural highlights cast under medium shadows",
+      "lowerTerrainId": 5,
+      "upperTerrainId": 6,
+      "transitionSize": 0.32,
+      "transitionDescription": "rugged coastal rock wall with moderate earthy layering, brown stone strata, and weathered crevices casting soft medium shadows",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "992d9d10-66c2-42d5-8f1b-8dafa7c8708f",
+      "filename": "shimmering blue-green water surface with gentle ripples and soft tonal depth-lush green gra-ba3e2ad2.png",
+      "lowerTerrain": "shimmering blue-green water surface with gentle ripples and soft tonal depth",
+      "upperTerrain": "lush green grass with moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 14,
+      "upperTerrainId": 3,
+      "transitionSize": 1,
+      "transitionDescription": "tall natural shoreline transition between water and grass featuring smooth curved edges, wet soil, and subtle vegetation along the boundary with moderate depth",
+      "tileSize": 32,
+      "gridLayout": "4x8",
+      "wangIndexMapping": "transition",
+      "view": "high top-down"
+    },
+    {
+      "id": "87ce6f47-c936-4b62-9a52-dc1170ca9630",
+      "filename": "warm light golden beach sand featuring a soft natural grain texture, subtle sand speckles,-2195c4da.png",
+      "lowerTerrain": "warm light golden beach sand featuring a soft natural grain texture, subtle sand speckles, and gentle undulating ripples under medium shadows",
+      "upperTerrain": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 5,
+      "upperTerrainId": 1,
+      "transitionSize": 0.2,
+      "transitionDescription": "thin low earthy brown cliff rim with embedded grey stones and rounded coastal edges descending onto the sand, featuring soft natural relief and shadows",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "a4db452c-ead6-4188-90bf-11fa89cde432",
+      "filename": "shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05.png",
+      "lowerTerrain": "shimmering blue-green water surface with gentle ripples and soft tonal depth",
+      "upperTerrain": "weathered warm brown wooden dock flooring featuring horizontal rustic timber planks with gentle grain variation and subtle dark gaps between boards",
+      "lowerTerrainId": 14,
+      "upperTerrainId": 17,
+      "transitionSize": 0.07,
+      "transitionDescription": "narrow wooden dock rim meeting the water edge with clean straight timber planks showing moderate grain texture and soft tonal depth",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "fd4743d6-fafa-4bcd-806f-2077694be260",
+      "filename": "lush green grass with moderate surface texture and soft natural highlights-elevated lush gr-47326485.png",
+      "lowerTerrain": "lush green grass with moderate surface texture and soft natural highlights",
+      "upperTerrain": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 3,
+      "upperTerrainId": 1,
+      "transitionSize": 0.22,
+      "transitionDescription": "warm earthy brown vertical cliff wall with embedded grey stones and moderate natural weathering",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "69c7dc30-5aeb-4619-8705-b9ab8a1fe5a9",
+      "filename": "lush green grass with moderate surface texture and soft natural highlights-clean compacted-eddb0f70.png",
+      "lowerTerrain": "lush green grass with moderate surface texture and soft natural highlights",
+      "upperTerrain": "clean compacted soil ground with warm brown earth tones, featuring moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 3,
+      "upperTerrainId": 4,
+      "transitionSize": 0.25,
+      "transitionDescription": "thin crumbling muddy dirt cliff face with embedded pebbles and soft damp patches casting gentle shadows",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "fd6315af-17c2-442b-8cc6-d6aeff2d2ec8",
+      "filename": "lush green grass with moderate surface texture and soft natural highlights-warm brown tille-53c9de19.png",
+      "lowerTerrain": "lush green grass with moderate surface texture and soft natural highlights",
+      "upperTerrain": "warm brown tilled farm soil with moderate earthy texture, subtle small stones, and soft natural highlights in medium shading",
+      "lowerTerrainId": 3,
+      "upperTerrainId": 13,
+      "transitionSize": 0.25,
+      "transitionDescription": "soft irregular natural grass-to-dirt edge with gentle organic blending and moderate tonal variation in medium shading",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "19359d9b-6fd3-45e9-ba86-20519b1e0292",
+      "filename": "elevated lush green grassy plateau with moderate surface texture and soft natural highlight-6ef1d109.png",
+      "lowerTerrain": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "upperTerrain": "rich warm brown cultivated farmland soil with neat tilled earth texture, subtle farming rows, soft natural soil variation, gentle depth and warm highlights",
+      "lowerTerrainId": 1,
+      "upperTerrainId": 11,
+      "transitionSize": 0.05,
+      "transitionDescription": "thin low boundary rim of dark tilled soil softly merging into lush green grass with gentle natural variation and mild soft shadows",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    },
+    {
+      "id": "3f24fc6f-b6d3-456d-8356-630602256190",
+      "filename": "warm golden beach sand with gentle undulating ripples and soft natural highlights-elevated-a277e0c4.png",
+      "lowerTerrain": "warm golden beach sand with gentle undulating ripples and soft natural highlights",
+      "upperTerrain": "elevated lush green grassy plateau with moderate surface texture and soft natural highlights",
+      "lowerTerrainId": 7,
+      "upperTerrainId": 1,
+      "transitionSize": 0.25,
+      "transitionDescription": "compact earthy brown cliff face with subtle soil layering and embedded grey stones, featuring soft natural highlights",
+      "tileSize": 32,
+      "gridLayout": "4x4",
+      "wangIndexMapping": "standard",
+      "view": "high top-down"
+    }
+  ],
+  "overlays": [],
+  "background": null,
+  "mapId": "ee60b042-ef36-4009-bbdc-d16789acaa92"
+}

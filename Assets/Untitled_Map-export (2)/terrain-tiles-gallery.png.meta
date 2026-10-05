@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: a8daf5747a47e694fab2f337a5be96d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1986767006778095376
+    second: terrain-tiles-gallery_0
+  - first:
+      213: -6129879776394081424
+    second: terrain-tiles-gallery_1
+  - first:
+      213: 249032244600778870
+    second: terrain-tiles-gallery_2
+  - first:
+      213: -780524142891901836
+    second: terrain-tiles-gallery_3
+  - first:
+      213: -4937226287816014283
+    second: terrain-tiles-gallery_4
+  - first:
+      213: 297606311390837683
+    second: terrain-tiles-gallery_5
+  - first:
+      213: -8605725904838398354
+    second: terrain-tiles-gallery_6
+  - first:
+      213: -6314372128266519530
+    second: terrain-tiles-gallery_7
+  - first:
+      213: 102705511784333629
+    second: terrain-tiles-gallery_8
+  - first:
+      213: -3311187975011132160
+    second: terrain-tiles-gallery_9
+  - first:
+      213: -915551030239455024
+    second: terrain-tiles-gallery_10
+  - first:
+      213: 7457185491286101270
+    second: terrain-tiles-gallery_11
+  - first:
+      213: -7637147857537254991
+    second: terrain-tiles-gallery_12
+  - first:
+      213: -1804633559483215810
+    second: terrain-tiles-gallery_13
+  - first:
+      213: -9066963975612700360
+    second: terrain-tiles-gallery_14
+  - first:
+      213: 2384216249369486701
+    second: terrain-tiles-gallery_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017797af01a629b10800000000000000
+      internalID: 1986767006778095376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b0e2422da4eeaa0800000000000000
+      internalID: -6129879776394081424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 98
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6703c0dc18db47300800000000000000
+      internalID: 249032244600778870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47cdf4c6d650b25f0800000000000000
+      internalID: -780524142891901836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 98
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536810b89d27b7bb0800000000000000
+      internalID: -4937226287816014283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb7d590d5f412400800000000000000
+      internalID: 297606311390837683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6eeab772e1529880800000000000000
+      internalID: -8605725904838398354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 65
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cfb0b1108de58a0800000000000000
+      internalID: -6314372128266519530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31416a6e12ec6100800000000000000
+      internalID: 102705511784333629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d9ae4841c4c02d0800000000000000
+      internalID: -3311187975011132160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d895d4503f4b43f0800000000000000
+      internalID: -915551030239455024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d0e48c1be3d7760800000000000000
+      internalID: 7457185491286101270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b93b56ac76630690800000000000000
+      internalID: -7637147857537254991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e301149c657a4f6e0800000000000000
+      internalID: -1804633559483215810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 32
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83967529d4cab2280800000000000000
+      internalID: -9066963975612700360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain-tiles-gallery_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65e163fb00761120800000000000000
+      internalID: 2384216249369486701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      terrain-tiles-gallery_0: 1986767006778095376
+      terrain-tiles-gallery_1: -6129879776394081424
+      terrain-tiles-gallery_10: -915551030239455024
+      terrain-tiles-gallery_11: 7457185491286101270
+      terrain-tiles-gallery_12: -7637147857537254991
+      terrain-tiles-gallery_13: -1804633559483215810
+      terrain-tiles-gallery_14: -9066963975612700360
+      terrain-tiles-gallery_15: 2384216249369486701
+      terrain-tiles-gallery_2: 249032244600778870
+      terrain-tiles-gallery_3: -780524142891901836
+      terrain-tiles-gallery_4: -4937226287816014283
+      terrain-tiles-gallery_5: 297606311390837683
+      terrain-tiles-gallery_6: -8605725904838398354
+      terrain-tiles-gallery_7: -6314372128266519530
+      terrain-tiles-gallery_8: 102705511784333629
+      terrain-tiles-gallery_9: -3311187975011132160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
