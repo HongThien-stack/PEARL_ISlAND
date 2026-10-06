@@ -1,0 +1,41 @@
+{
+  "group_id": "7294a3db-ec2b-467b-abea-e4a554ed23d5",
+  "objects": [
+    {
+      "id": "e389391c-3249-4094-a5cc-5597f7ff693e",
+      "name": "base",
+      "prompt": "lush evergreen pine tree, cozy farming RPG pixel art, low top-down view, dense layered dark green foliage, slightly rounded triangular silhouette, warm brown trunk, bright vibrant highlights, clean readable shape, consistent scale with a 32x32 island farm village map, suitable to place around houses, cliffs, rivers and forest paths, single complete object, centered, occupies about 85% of the canvas, isolated, transparent background, no grass tile, no rocks, no fence, no extra props",
+      "size": {
+        "width": 88,
+        "height": 88
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/lush_evergreen_pine_tree_cozy.png"
+      },
+      "animations": {
+        "The_tree_is_chopped_by_an_axe_and_slowly_falls_to": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_000.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_001.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_002.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_003.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_004.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_005.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_006.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_007.png",
+                "animations/The_tree_is_chopped_by_an_axe_and_slowly_falls_to/unknown/frame_008.png"
+              ],
+              "frame_count": 9
+            }
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-06T07:27:02.844792"
+}

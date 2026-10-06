@@ -38,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -52,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,11 +106,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 128
-        height: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -123,11 +123,356 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c744847c6037d184aaa82d73ec705a5d
+      internalID: -1690862714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3afc1bc8947b643b3ea27250e89581
+      internalID: 1602210307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c589d1732d98db345b47b7646288fef1
+      internalID: 1006688529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7feda4bda1aae7244909f3a7b41434cf
+      internalID: 227852798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd87344cdfd6644d9161cf8a2c7f7bc
+      internalID: 923787468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41af2c866d5d88a4380c0566eab0f263
+      internalID: 1269313339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93654e88fdb7604db9495465ebd8672
+      internalID: -305333254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10d288dc500ef844baf67bfa5a932d4
+      internalID: 1924632337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08709c8956e18444da69875d331253de
+      internalID: 1843460143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1429695e6d1834fbbe4692031f33bf
+      internalID: 1030324005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd684adf7db0cb64ab43008cffda0f27
+      internalID: -1120055019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8c0aad7d752594e92f8c5d32391f58
+      internalID: -2137087856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fe85f7cd4836448bde2ff831933ccf
+      internalID: -1820910661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e2dad15776b8d459b3c67a6b4cda1c
+      internalID: 796897312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shimmering blue-green water surface with gentle ripples and soft tonal
+        depth-weathered warm-a43c8b05_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f3eb4f250ae1a4fb96f9ce9f131d75
+      internalID: -1565202970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4f85c7680c48074c8c4c8ffb5dcb9ce
     internalID: 0
     vertices: []
     indices: 
@@ -135,9 +480,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_0: -7362843334019349167
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_1: -1690862714
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_10: 1030324005
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_11: -1120055019
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_12: -2137087856
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_13: -1820910661
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_14: 796897312
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_15: -1565202970
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_2: 1602210307
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_3: 1006688529
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_4: 227852798
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_5: 923787468
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_6: 1269313339
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_7: -305333254
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_8: 1924632337
+      shimmering blue-green water surface with gentle ripples and soft tonal depth-weathered warm-a43c8b05_9: 1843460143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
