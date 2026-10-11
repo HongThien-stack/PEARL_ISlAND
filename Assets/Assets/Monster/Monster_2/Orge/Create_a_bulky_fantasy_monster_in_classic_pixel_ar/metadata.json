@@ -1,0 +1,249 @@
+{
+  "group_id": "04db64e0-7983-4dcd-8086-240ab5c18b53",
+  "objects": [
+    {
+      "id": "24473a9d-a1c1-477d-9478-53afa3116608",
+      "name": "base",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Create_a_bulky_fantasy_monster_in_classic_pixel_ar.png"
+      },
+      "animations": {
+        "Add_an_animation_of_the_monster_opening_its_mouth": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_000.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_001.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_002.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_003.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_004.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_005.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_006.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_007.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_008.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_009.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_010.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_011.png",
+                "animations/Add_an_animation_of_the_monster_opening_its_mouth/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        },
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "72a91764-4571-4edd-83f7-aadbf1839188",
+      "name": "Make the monster tur",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_tur.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "b5b7bab0-a528-4fbc-93ab-d96889d7ce20",
+      "name": "Make the monster tur",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_tur_2.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a202c549-18ff-4221-ac3b-8d084ae72991",
+      "name": "Make the monster tur",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_tur_3.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "0c3378c6-cb02-4b6a-bf36-cabca618fa07",
+      "name": "Add an animation of",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Add_an_animation_of.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "21f9c25f-6f6e-47cb-9bdb-924469a55fc4",
+      "name": "Make the monster hol",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_hol.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "41d7c6b4-086c-4491-9c53-f1ac2943c74c",
+      "name": "Make the monster sla",
+      "prompt": "Create a bulky fantasy monster in classic pixel art style, inspired by retro 16-bit video games. The monster has a large muscular body, blue-green skin, a big head, small eyes, a wide nose, and a fierce but simple expression. It has thick arms, large feet, and a heavy wooden club in front of its body. Use chunky square pixels, crisp black outlines, limited vibrant colors, strong pixelated shading, and clearly defined shapes. Front-facing full-body character, low top-down game perspective, no background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_sla.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-07T06:02:23.435684"
+}

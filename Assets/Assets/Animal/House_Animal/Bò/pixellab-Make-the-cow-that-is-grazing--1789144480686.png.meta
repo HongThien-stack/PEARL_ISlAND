@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: 044f5b2367a6ee14f907c6853fdec395
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3113983695298330751
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_0
+  - first:
+      213: 7137421335201520484
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_1
+  - first:
+      213: -4308239243906241463
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_2
+  - first:
+      213: 2363906527671395159
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_3
+  - first:
+      213: 793205182548394776
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_4
+  - first:
+      213: 2595196394146370525
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_5
+  - first:
+      213: 4715999782133701651
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_6
+  - first:
+      213: -5371365331689156491
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_7
+  - first:
+      213: -7363593022674114175
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_8
+  - first:
+      213: 6942788964024312576
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_9
+  - first:
+      213: -5396635146966884646
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_10
+  - first:
+      213: 2951297748766715996
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_11
+  - first:
+      213: -1954002295812922997
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_12
+  - first:
+      213: -4792613550384960212
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_13
+  - first:
+      213: 8095121773721275076
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_14
+  - first:
+      213: -4898461164172016495
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_15
+  - first:
+      213: -2462548530457479205
+    second: pixellab-Make-the-cow-that-is-grazing--1789144480686_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f7265e358e8c4d0800000000000000
+      internalID: -3113983695298330751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b1bf083e63d0360800000000000000
+      internalID: 7137421335201520484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c2293db3f0634c0800000000000000
+      internalID: -4308239243906241463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753a41066784ec020800000000000000
+      internalID: 2363906527671395159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813cbc339e7020b00800000000000000
+      internalID: 793205182548394776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3187bde5df30420800000000000000
+      internalID: 2595196394146370525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c16eeb0d8927140800000000000000
+      internalID: 4715999782133701651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570d1d580b31575b0800000000000000
+      internalID: -5371365331689156491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189e6fce8234fc990800000000000000
+      internalID: -7363593022674114175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003eb2f37cdb95060800000000000000
+      internalID: 6942788964024312576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade96aa2dec4b15b0800000000000000
+      internalID: -5396635146966884646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5076a57aad15f820800000000000000
+      internalID: 2951297748766715996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81e5c3c34df1e4e0800000000000000
+      internalID: -1954002295812922997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2da4974e573d7db0800000000000000
+      internalID: -4792613550384960212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cacf280d56a75070800000000000000
+      internalID: 8095121773721275076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1940b7b368b250cb0800000000000000
+      internalID: -4898461164172016495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-cow-that-is-grazing--1789144480686_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7fbef982543ddd0800000000000000
+      internalID: -2462548530457479205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 37060bd08cd7c5044a5a45c85d581031
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_0: -3113983695298330751
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_1: 7137421335201520484
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_10: -5396635146966884646
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_11: 2951297748766715996
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_12: -1954002295812922997
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_13: -4792613550384960212
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_14: 8095121773721275076
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_15: -4898461164172016495
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_16: -2462548530457479205
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_2: -4308239243906241463
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_3: 2363906527671395159
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_4: 793205182548394776
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_5: 2595196394146370525
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_6: 4715999782133701651
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_7: -5371365331689156491
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_8: -7363593022674114175
+      pixellab-Make-the-cow-that-is-grazing--1789144480686_9: 6942788964024312576
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

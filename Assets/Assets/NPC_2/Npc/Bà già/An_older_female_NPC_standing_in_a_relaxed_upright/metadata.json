@@ -1,0 +1,189 @@
+{
+  "group_id": "0c2a9250-9942-46b8-a080-d8bf981578f6",
+  "objects": [
+    {
+      "id": "c5bb8412-a92d-4b04-8666-c59037c60dac",
+      "name": "base",
+      "prompt": "An older female NPC standing in a relaxed, upright pose. She has short black hair and a friendly, warm expression. She wears a colorful floral-patterned T-shirt, yellow shorts, and simple comfortable sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, warm color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/An_older_female_NPC_standing_in_a_relaxed_upright.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "61c10a1b-3907-4d73-81e1-6fc923f784da",
+      "name": "Make the NPC turn th",
+      "prompt": "An older female NPC standing in a relaxed, upright pose. She has short black hair and a friendly, warm expression. She wears a colorful floral-patterned T-shirt, yellow shorts, and simple comfortable sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, warm color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "fe650e9d-19b5-4de3-b7d8-0807d53d8191",
+      "name": "Make the NPC turn th",
+      "prompt": "An older female NPC standing in a relaxed, upright pose. She has short black hair and a friendly, warm expression. She wears a colorful floral-patterned T-shirt, yellow shorts, and simple comfortable sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, warm color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th_2.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "48c49802-5ddb-429f-bf5f-6c842ad82cbc",
+      "name": "Make the NPC turn ar",
+      "prompt": "An older female NPC standing in a relaxed, upright pose. She has short black hair and a friendly, warm expression. She wears a colorful floral-patterned T-shirt, yellow shorts, and simple comfortable sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, warm color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_ar.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "e91afe14-55ff-4d85-a23c-6b3942ab90e0",
+      "name": "Make the character s",
+      "prompt": "An older female NPC standing in a relaxed, upright pose. She has short black hair and a friendly, warm expression. She wears a colorful floral-patterned T-shirt, yellow shorts, and simple comfortable sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, warm color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_s.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "fae7069d-7fa4-4425-a36c-8174007a626a",
+      "name": "Remove the chair com",
+      "prompt": "An older female NPC standing in a relaxed, upright pose. She has short black hair and a friendly, warm expression. She wears a colorful floral-patterned T-shirt, yellow shorts, and simple comfortable sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, warm color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Remove_the_chair_com.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-05T14:49:27.392145"
+}

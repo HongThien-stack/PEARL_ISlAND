@@ -1,0 +1,189 @@
+{
+  "group_id": "ac5bcb5b-5266-4b2b-968a-3aa80eb2a42a",
+  "objects": [
+    {
+      "id": "fd5fa25e-193e-4590-83e9-4cc1cc0c5f23",
+      "name": "base",
+      "prompt": "A rebellious young adult male NPC standing in a relaxed, confident pose. He has short messy black hair and a bold, mischievous expression. He wears a casual rebellious outfit consisting of a black oversized T-shirt, dark ripped jeans, a black jacket, and black sneakers. The character features clean, crisp black outlines, readable shapes, and a cool, edgy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/A_rebellious_young_adult_male_NPC_standing_in_a_re.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "b02d8198-e827-4d48-8f0e-96a8a811ec98",
+      "name": "Make the NPC turn th",
+      "prompt": "A rebellious young adult male NPC standing in a relaxed, confident pose. He has short messy black hair and a bold, mischievous expression. He wears a casual rebellious outfit consisting of a black oversized T-shirt, dark ripped jeans, a black jacket, and black sneakers. The character features clean, crisp black outlines, readable shapes, and a cool, edgy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "458c8202-df0c-4767-9c87-24875244bb16",
+      "name": "Make the NPC turn ar",
+      "prompt": "A rebellious young adult male NPC standing in a relaxed, confident pose. He has short messy black hair and a bold, mischievous expression. He wears a casual rebellious outfit consisting of a black oversized T-shirt, dark ripped jeans, a black jacket, and black sneakers. The character features clean, crisp black outlines, readable shapes, and a cool, edgy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_ar.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "eb59a1b5-077d-43a7-aad3-d628aa646d15",
+      "name": "Make the character t",
+      "prompt": "A rebellious young adult male NPC standing in a relaxed, confident pose. He has short messy black hair and a bold, mischievous expression. He wears a casual rebellious outfit consisting of a black oversized T-shirt, dark ripped jeans, a black jacket, and black sneakers. The character features clean, crisp black outlines, readable shapes, and a cool, edgy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_t.png"
+      },
+      "animations": {
+        "Make_the_character_walk_naturally_with_clear_walki": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_000.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_001.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_002.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_003.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_004.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_005.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_006.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_007.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_008.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_009.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_010.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_011.png",
+                "animations/Make_the_character_walk_naturally_with_clear_walki/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "d70e7d8d-2b84-40b2-a674-3e4f660067e0",
+      "name": "Make the character s",
+      "prompt": "A rebellious young adult male NPC standing in a relaxed, confident pose. He has short messy black hair and a bold, mischievous expression. He wears a casual rebellious outfit consisting of a black oversized T-shirt, dark ripped jeans, a black jacket, and black sneakers. The character features clean, crisp black outlines, readable shapes, and a cool, edgy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_s.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "c90a50c2-2ce4-45c7-bf4c-9b06c9d78631",
+      "name": "Remove the chair com",
+      "prompt": "A rebellious young adult male NPC standing in a relaxed, confident pose. He has short messy black hair and a bold, mischievous expression. He wears a casual rebellious outfit consisting of a black oversized T-shirt, dark ripped jeans, a black jacket, and black sneakers. The character features clean, crisp black outlines, readable shapes, and a cool, edgy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Remove_the_chair_com.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-05T15:09:57.332301"
+}

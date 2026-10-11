@@ -1,0 +1,219 @@
+{
+  "group_id": "f9d2019f-4e99-403a-ad5a-ad696acdb38f",
+  "objects": [
+    {
+      "id": "5f8abbbb-1c73-4fa0-ae07-1be4621ec704",
+      "name": "base",
+      "prompt": "Create a powerful bull-like fantasy monster in classic retro pixel art style, inspired by 16-bit video games. The monster has a huge muscular humanoid body with dark brown skin, a large bull head, short dark horns, glowing red eyes, a broad nose, sharp teeth, and an aggressive expression. It has large muscular arms, thick legs, and heavy clawed feet. The monster wears dark gray metal armor around its waist and legs, with large armored shoulder and knee pieces, and carries a massive dark metal hammer or mace. Use detailed chunky pixels, dark outlines, earthy brown and gray colors, strong pixelated shading, highlights, and clearly defined shapes. Full-body character, three-quarter side-facing pose, dynamic and intimidating stance, low top-down game perspective, isolated on a transparent background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Create_a_powerful_bull-like_fantasy_monster_in_cla.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        },
+        "Add_a_walking_animation_where_the_monster_takes_he": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "21099e83-4911-4f6e-ae46-40d6f6b7cc09",
+      "name": "Make the monster tur",
+      "prompt": "Create a powerful bull-like fantasy monster in classic retro pixel art style, inspired by 16-bit video games. The monster has a huge muscular humanoid body with dark brown skin, a large bull head, short dark horns, glowing red eyes, a broad nose, sharp teeth, and an aggressive expression. It has large muscular arms, thick legs, and heavy clawed feet. The monster wears dark gray metal armor around its waist and legs, with large armored shoulder and knee pieces, and carries a massive dark metal hammer or mace. Use detailed chunky pixels, dark outlines, earthy brown and gray colors, strong pixelated shading, highlights, and clearly defined shapes. Full-body character, three-quarter side-facing pose, dynamic and intimidating stance, low top-down game perspective, isolated on a transparent background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_tur.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "dcbade82-0afc-4b3d-a051-d9ffc16555ff",
+      "name": "Make the monster tur",
+      "prompt": "Create a powerful bull-like fantasy monster in classic retro pixel art style, inspired by 16-bit video games. The monster has a huge muscular humanoid body with dark brown skin, a large bull head, short dark horns, glowing red eyes, a broad nose, sharp teeth, and an aggressive expression. It has large muscular arms, thick legs, and heavy clawed feet. The monster wears dark gray metal armor around its waist and legs, with large armored shoulder and knee pieces, and carries a massive dark metal hammer or mace. Use detailed chunky pixels, dark outlines, earthy brown and gray colors, strong pixelated shading, highlights, and clearly defined shapes. Full-body character, three-quarter side-facing pose, dynamic and intimidating stance, low top-down game perspective, isolated on a transparent background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_tur_2.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a1bbbc17-6db0-4188-8650-78c58f7f1d18",
+      "name": "Add an animation of",
+      "prompt": "Create a powerful bull-like fantasy monster in classic retro pixel art style, inspired by 16-bit video games. The monster has a huge muscular humanoid body with dark brown skin, a large bull head, short dark horns, glowing red eyes, a broad nose, sharp teeth, and an aggressive expression. It has large muscular arms, thick legs, and heavy clawed feet. The monster wears dark gray metal armor around its waist and legs, with large armored shoulder and knee pieces, and carries a massive dark metal hammer or mace. Use detailed chunky pixels, dark outlines, earthy brown and gray colors, strong pixelated shading, highlights, and clearly defined shapes. Full-body character, three-quarter side-facing pose, dynamic and intimidating stance, low top-down game perspective, isolated on a transparent background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Add_an_animation_of.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_takes_he": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_takes_he/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "b97be354-061f-4c0f-bbf2-51d189eedccd",
+      "name": "Make the monster tur",
+      "prompt": "Create a powerful bull-like fantasy monster in classic retro pixel art style, inspired by 16-bit video games. The monster has a huge muscular humanoid body with dark brown skin, a large bull head, short dark horns, glowing red eyes, a broad nose, sharp teeth, and an aggressive expression. It has large muscular arms, thick legs, and heavy clawed feet. The monster wears dark gray metal armor around its waist and legs, with large armored shoulder and knee pieces, and carries a massive dark metal hammer or mace. Use detailed chunky pixels, dark outlines, earthy brown and gray colors, strong pixelated shading, highlights, and clearly defined shapes. Full-body character, three-quarter side-facing pose, dynamic and intimidating stance, low top-down game perspective, isolated on a transparent background, no text.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_monster_tur_3.png"
+      },
+      "animations": {
+        "Add_a_walking_animation_where_the_monster_walks_fo": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_000.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_001.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_002.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_003.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_004.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_005.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_006.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_007.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_008.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_009.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_010.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_011.png",
+                "animations/Add_a_walking_animation_where_the_monster_walks_fo/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-07T06:04:01.946552"
+}

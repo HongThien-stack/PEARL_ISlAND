@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 6511adf7c32f8f64ea2ba7a284ad4432
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7903549667786366107
+    second: pixellab-Please-create-an-animation-of--1789302165527_0
+  - first:
+      213: -7131673956780500842
+    second: pixellab-Please-create-an-animation-of--1789302165527_1
+  - first:
+      213: 8230429756163582490
+    second: pixellab-Please-create-an-animation-of--1789302165527_2
+  - first:
+      213: 5086998627480399031
+    second: pixellab-Please-create-an-animation-of--1789302165527_3
+  - first:
+      213: 8298464932109764339
+    second: pixellab-Please-create-an-animation-of--1789302165527_4
+  - first:
+      213: -3449799661364653235
+    second: pixellab-Please-create-an-animation-of--1789302165527_5
+  - first:
+      213: 7164642713940470736
+    second: pixellab-Please-create-an-animation-of--1789302165527_6
+  - first:
+      213: 7178372524953027502
+    second: pixellab-Please-create-an-animation-of--1789302165527_7
+  - first:
+      213: 244493582915408182
+    second: pixellab-Please-create-an-animation-of--1789302165527_8
+  - first:
+      213: 8982919899381041500
+    second: pixellab-Please-create-an-animation-of--1789302165527_9
+  - first:
+      213: -2903122183990663127
+    second: pixellab-Please-create-an-animation-of--1789302165527_10
+  - first:
+      213: -796329825045018405
+    second: pixellab-Please-create-an-animation-of--1789302165527_11
+  - first:
+      213: 1421256579765105434
+    second: pixellab-Please-create-an-animation-of--1789302165527_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563efe2b373f05290800000000000000
+      internalID: -7903549667786366107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 65
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69891305254370d90800000000000000
+      internalID: -7131673956780500842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a6feca14c583270800000000000000
+      internalID: 8230429756163582490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc6ed3bc46a89640800000000000000
+      internalID: 5086998627480399031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 66
+        width: 97
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6407b73e11a2370800000000000000
+      internalID: 8298464932109764339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 96
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43d81e5c79df10d0800000000000000
+      internalID: -3449799661364653235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db2303a69ced6360800000000000000
+      internalID: 7164642713940470736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3cf3f57c3be9360800000000000000
+      internalID: 7178372524953027502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 34
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63119874e9d946300800000000000000
+      internalID: 244493582915408182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 34
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5905601e0eb9ac70800000000000000
+      internalID: 8982919899381041500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_10
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 34
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9282eab41c906b7d0800000000000000
+      internalID: -2903122183990663127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 34
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd884264e3ed2f4f0800000000000000
+      internalID: -796329825045018405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Please-create-an-animation-of--1789302165527_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13f593445159b310800000000000000
+      internalID: 1421256579765105434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixellab-Please-create-an-animation-of--1789302165527_0: -7903549667786366107
+      pixellab-Please-create-an-animation-of--1789302165527_1: -7131673956780500842
+      pixellab-Please-create-an-animation-of--1789302165527_10: -2903122183990663127
+      pixellab-Please-create-an-animation-of--1789302165527_11: -796329825045018405
+      pixellab-Please-create-an-animation-of--1789302165527_12: 1421256579765105434
+      pixellab-Please-create-an-animation-of--1789302165527_2: 8230429756163582490
+      pixellab-Please-create-an-animation-of--1789302165527_3: 5086998627480399031
+      pixellab-Please-create-an-animation-of--1789302165527_4: 8298464932109764339
+      pixellab-Please-create-an-animation-of--1789302165527_5: -3449799661364653235
+      pixellab-Please-create-an-animation-of--1789302165527_6: 7164642713940470736
+      pixellab-Please-create-an-animation-of--1789302165527_7: 7178372524953027502
+      pixellab-Please-create-an-animation-of--1789302165527_8: 244493582915408182
+      pixellab-Please-create-an-animation-of--1789302165527_9: 8982919899381041500
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

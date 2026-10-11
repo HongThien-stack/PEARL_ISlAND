@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: dd34a95fade099549af71571482e81a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6795880595094107833
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_0
+  - first:
+      213: -432394361520590343
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_1
+  - first:
+      213: -4360668346907274080
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_2
+  - first:
+      213: -4065428039459706808
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_3
+  - first:
+      213: -4217537821191549587
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_4
+  - first:
+      213: -5298186864695636004
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_5
+  - first:
+      213: 7075511220938832606
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_6
+  - first:
+      213: 9169651234195514782
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_7
+  - first:
+      213: 8779387670886866383
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_8
+  - first:
+      213: -9098670900256578438
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_9
+  - first:
+      213: -5844499882163529707
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_10
+  - first:
+      213: -1735645987367568652
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_11
+  - first:
+      213: 4458836886543608585
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_12
+  - first:
+      213: 1165728969994739051
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_13
+  - first:
+      213: 8357657537152407120
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_14
+  - first:
+      213: -615952973584096098
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_15
+  - first:
+      213: 4032768094564791333
+    second: pixellab-Add-an-animation-of-the-chicke-1790172943774_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 99
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7490279da9e20b1a0800000000000000
+      internalID: -6795880595094107833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 99
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1feae7e93dff9f0800000000000000
+      internalID: -432394361520590343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 99
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a45d470e3bcb73c0800000000000000
+      internalID: -4360668346907274080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 99
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8486718dcb2b497c0800000000000000
+      internalID: -4065428039459706808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 99
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d4a1572bb4875c0800000000000000
+      internalID: -4217537821191549587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 67
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf0d281e1f0976b0800000000000000
+      internalID: -5298186864695636004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 67
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda7950c7f3413260800000000000000
+      internalID: 7075511220938832606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 67
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e952270f635214f70800000000000000
+      internalID: 9169651234195514782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 67
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdd7ac4296a6d970800000000000000
+      internalID: 8779387670886866383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 67
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74e506e5070bb180800000000000000
+      internalID: -9098670900256578438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 35
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51894d9925a24eea0800000000000000
+      internalID: -5844499882163529707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 35
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fabf1b9b2fb9e7e0800000000000000
+      internalID: -1735645987367568652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 35
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b27dd3688f0ed30800000000000000
+      internalID: 4458836886543608585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 35
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d1be862508d2010800000000000000
+      internalID: 1165728969994739051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 35
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056d550df3d5cf370800000000000000
+      internalID: 8357657537152407120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94ac23b802b377f0800000000000000
+      internalID: -615952973584096098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Add-an-animation-of-the-chicke-1790172943774_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524301a273547f730800000000000000
+      internalID: 4032768094564791333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_0: -6795880595094107833
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_1: -432394361520590343
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_10: -5844499882163529707
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_11: -1735645987367568652
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_12: 4458836886543608585
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_13: 1165728969994739051
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_14: 8357657537152407120
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_15: -615952973584096098
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_16: 4032768094564791333
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_2: -4360668346907274080
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_3: -4065428039459706808
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_4: -4217537821191549587
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_5: -5298186864695636004
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_6: 7075511220938832606
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_7: 9169651234195514782
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_8: 8779387670886866383
+      pixellab-Add-an-animation-of-the-chicke-1790172943774_9: -9098670900256578438
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

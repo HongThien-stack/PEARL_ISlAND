@@ -1,0 +1,211 @@
+{
+  "group_id": "f194132a-d124-4195-87c2-7bf721181f03",
+  "objects": [
+    {
+      "id": "c1aa9519-bd9f-42f8-8f92-a8407d7e7bf1",
+      "name": "base",
+      "prompt": "An older male NPC standing in a relaxed, upright pose. He has slightly balding short gray-brown hair and a friendly, warm expression. He wears a simple white sleeveless shirt, short black elastic-waist pants, and simple brown sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/An_older_male_NPC_standing_in_a_relaxed_upright_p.png"
+      },
+      "animations": {
+        "Make_the_NPC_walk_forward_naturally_moving_straig": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_000.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_001.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_002.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_003.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_004.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_005.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_006.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_007.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_008.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_009.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_010.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_011.png",
+                "animations/Make_the_NPC_walk_forward_naturally_moving_straig/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        },
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "e8e0ab90-d217-4aa9-906a-993d44816a5d",
+      "name": "Make the NPC turn th",
+      "prompt": "An older male NPC standing in a relaxed, upright pose. He has slightly balding short gray-brown hair and a friendly, warm expression. He wears a simple white sleeveless shirt, short black elastic-waist pants, and simple brown sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_taking": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "edadde63-ddbf-4f17-8657-e6eaae88d894",
+      "name": "Make the NPC turn th",
+      "prompt": "An older male NPC standing in a relaxed, upright pose. He has slightly balding short gray-brown hair and a friendly, warm expression. He wears a simple white sleeveless shirt, short black elastic-waist pants, and simple brown sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th_2.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_taking": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_taking/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "17bd31ae-f349-4d38-a9c8-f48f5a23eadd",
+      "name": "Make the NPC turn ar",
+      "prompt": "An older male NPC standing in a relaxed, upright pose. He has slightly balding short gray-brown hair and a friendly, warm expression. He wears a simple white sleeveless shirt, short black elastic-waist pants, and simple brown sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_ar.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "112bcde7-3802-4f61-a911-37623e4a4165",
+      "name": "Make the character s",
+      "prompt": "An older male NPC standing in a relaxed, upright pose. He has slightly balding short gray-brown hair and a friendly, warm expression. He wears a simple white sleeveless shirt, short black elastic-waist pants, and simple brown sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_s.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "f20cd304-8ec0-490a-8b9f-a77cfeb33706",
+      "name": "Remove the chair com",
+      "prompt": "An older male NPC standing in a relaxed, upright pose. He has slightly balding short gray-brown hair and a friendly, warm expression. He wears a simple white sleeveless shirt, short black elastic-waist pants, and simple brown sandals. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Remove_the_chair_com.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-05T14:39:12.766005"
+}

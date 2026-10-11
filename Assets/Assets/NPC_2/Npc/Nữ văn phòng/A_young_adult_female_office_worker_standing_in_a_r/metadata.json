@@ -1,0 +1,189 @@
+{
+  "group_id": "60286a6a-23c2-48ef-a8ed-e9863d1fa43e",
+  "objects": [
+    {
+      "id": "ee2ec150-8257-45c1-a360-11c3670ac8e3",
+      "name": "base",
+      "prompt": "A young adult female office worker standing in a relaxed, upright pose. She has long dark brown hair and a friendly, professional expression. She wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/A_young_adult_female_office_worker_standing_in_a_r.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cd0c7a6a-4c1b-4594-9d0e-5ca30d0c9d57",
+      "name": "Make the NPC turn th",
+      "prompt": "A young adult female office worker standing in a relaxed, upright pose. She has long dark brown hair and a friendly, professional expression. She wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ce077e07-7ccf-41b7-b0d4-208804cf1a41",
+      "name": "Make the NPC turn th",
+      "prompt": "A young adult female office worker standing in a relaxed, upright pose. She has long dark brown hair and a friendly, professional expression. She wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th_2.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_with_natural_steps": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_with_natural_steps/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "8ebc6ffa-9c37-4e0f-b8d5-4612b8e7d8ba",
+      "name": "Make the NPC turn ar",
+      "prompt": "A young adult female office worker standing in a relaxed, upright pose. She has long dark brown hair and a friendly, professional expression. She wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_ar.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_with_cle": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_with_cle/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cf14fb91-4f84-4ddc-bae9-5d621804f20a",
+      "name": "Make the character s",
+      "prompt": "A young adult female office worker standing in a relaxed, upright pose. She has long dark brown hair and a friendly, professional expression. She wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_s.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "48731dfb-0f32-46bd-82b5-e044770ee50d",
+      "name": "Remove the chair com",
+      "prompt": "A young adult female office worker standing in a relaxed, upright pose. She has long dark brown hair and a friendly, professional expression. She wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Remove_the_chair_com.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-05T14:43:30.795362"
+}

@@ -1,0 +1,204 @@
+{
+  "group_id": "170b5dd2-245d-4a7e-b583-3ad4c46d50d2",
+  "objects": [
+    {
+      "id": "727fdd3a-3a13-403b-83c1-2dd0cf4562da",
+      "name": "base",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/A_young_adult_male_office_worker_standing_in_a_rel.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "db24986b-70d0-4233-9f99-031c017e661c",
+      "name": "Make the NPC turn th",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "c99aa42a-04e4-4e7d-8e84-c65eddffb747",
+      "name": "Make the NPC turn th",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_th_2.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "4c7a1540-03aa-4d10-9d32-c8bc7e0a5fc9",
+      "name": "Make the NPC turn ar",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_NPC_turn_ar.png"
+      },
+      "animations": {
+        "Make_the_character_walk_forward_naturally_moving": {
+          "directions": {
+            "unknown": {
+              "frames": [
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_000.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_001.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_002.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_003.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_004.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_005.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_006.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_007.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_008.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_009.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_010.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_011.png",
+                "animations/Make_the_character_walk_forward_naturally_moving/unknown/frame_012.png"
+              ],
+              "frame_count": 13
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "e96d7293-f919-438d-9bae-bc9f5d8d1af0",
+      "name": "Make the character s",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_s.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "6cfd388c-c7ff-43a0-a17d-2e2ea836943d",
+      "name": "Make the character s",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Make_the_character_s_2.png"
+      },
+      "animations": {}
+    },
+    {
+      "id": "e19729fb-f7fe-46be-9037-8a6a2a211882",
+      "name": "Remove the chair com",
+      "prompt": "A young adult male office worker standing in a relaxed, upright pose. He has short black hair and a friendly, professional expression. He wears a formal black business suit with a black blazer and matching black trousers, paired with a simple white shirt underneath and black formal shoes. The character features clean, crisp black outlines, readable shapes, and a modern, professional color palette with simple, effective shading suitable for a low top-down perspective.",
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Remove_the_chair_com.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-05T14:46:26.677212"
+}

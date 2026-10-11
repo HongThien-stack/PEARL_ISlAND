@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: c29071564ea00bf4caed9d96d84adf23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5120006055838015279
+    second: pixellab-Make-the-pig-move-forward--1789139615453_0
+  - first:
+      213: 1035022566510001686
+    second: pixellab-Make-the-pig-move-forward--1789139615453_1
+  - first:
+      213: -2763165975689365518
+    second: pixellab-Make-the-pig-move-forward--1789139615453_2
+  - first:
+      213: 376174461339717362
+    second: pixellab-Make-the-pig-move-forward--1789139615453_3
+  - first:
+      213: -950395902860694938
+    second: pixellab-Make-the-pig-move-forward--1789139615453_4
+  - first:
+      213: 7080333584692638638
+    second: pixellab-Make-the-pig-move-forward--1789139615453_5
+  - first:
+      213: -5667904753073502059
+    second: pixellab-Make-the-pig-move-forward--1789139615453_6
+  - first:
+      213: 7560255463990612928
+    second: pixellab-Make-the-pig-move-forward--1789139615453_7
+  - first:
+      213: -5974086094060656708
+    second: pixellab-Make-the-pig-move-forward--1789139615453_8
+  - first:
+      213: -5563677022257762181
+    second: pixellab-Make-the-pig-move-forward--1789139615453_9
+  - first:
+      213: 5310738214813030348
+    second: pixellab-Make-the-pig-move-forward--1789139615453_10
+  - first:
+      213: 8664681798790461633
+    second: pixellab-Make-the-pig-move-forward--1789139615453_11
+  - first:
+      213: -2459857161427213507
+    second: pixellab-Make-the-pig-move-forward--1789139615453_12
+  - first:
+      213: -371003219197845095
+    second: pixellab-Make-the-pig-move-forward--1789139615453_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d02de18e9512f8b0800000000000000
+      internalID: -5120006055838015279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 98
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e775b5a832d5e00800000000000000
+      internalID: 1035022566510001686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 98
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7f69b5f2347a9d0800000000000000
+      internalID: -2763165975689365518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 98
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe4ab5fda0783500800000000000000
+      internalID: 376174461339717362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 99
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a600636f38fc2f0800000000000000
+      internalID: -950395902860694938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 97
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea37fdec1e5624260800000000000000
+      internalID: 7080333584692638638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 66
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5984e4c28ae8751b0800000000000000
+      internalID: -5667904753073502059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 66
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3dd5ed94c6be860800000000000000
+      internalID: 7560255463990612928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7e9e97958c71da0800000000000000
+      internalID: -5974086094060656708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 34
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70b253d939d9c2b0800000000000000
+      internalID: -5563677022257762181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 34
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7d505d44883b940800000000000000
+      internalID: 5310738214813030348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 35
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8b2b440322f3870800000000000000
+      internalID: 8664681798790461633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d332eeec1f4dcddd0800000000000000
+      internalID: -2459857161427213507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-Make-the-pig-move-forward--1789139615453_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991af2da98ee9daf0800000000000000
+      internalID: -371003219197845095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixellab-Make-the-pig-move-forward--1789139615453_0: -5120006055838015279
+      pixellab-Make-the-pig-move-forward--1789139615453_1: 1035022566510001686
+      pixellab-Make-the-pig-move-forward--1789139615453_10: 5310738214813030348
+      pixellab-Make-the-pig-move-forward--1789139615453_11: 8664681798790461633
+      pixellab-Make-the-pig-move-forward--1789139615453_12: -2459857161427213507
+      pixellab-Make-the-pig-move-forward--1789139615453_13: -371003219197845095
+      pixellab-Make-the-pig-move-forward--1789139615453_2: -2763165975689365518
+      pixellab-Make-the-pig-move-forward--1789139615453_3: 376174461339717362
+      pixellab-Make-the-pig-move-forward--1789139615453_4: -950395902860694938
+      pixellab-Make-the-pig-move-forward--1789139615453_5: 7080333584692638638
+      pixellab-Make-the-pig-move-forward--1789139615453_6: -5667904753073502059
+      pixellab-Make-the-pig-move-forward--1789139615453_7: 7560255463990612928
+      pixellab-Make-the-pig-move-forward--1789139615453_8: -5974086094060656708
+      pixellab-Make-the-pig-move-forward--1789139615453_9: -5563677022257762181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
