@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,12 +151,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 98
-        width: 25
-        height: 28
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 98
-        width: 24
-        height: 28
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 98
-        width: 25
-        height: 28
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_3
       rect:
         serializedVersion: 2
-        x: 99
-        y: 98
-        width: 26
-        height: 28
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_4
       rect:
         serializedVersion: 2
-        x: 131
-        y: 99
-        width: 26
-        height: 27
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_5
       rect:
         serializedVersion: 2
-        x: 4
-        y: 66
-        width: 25
-        height: 28
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_6
       rect:
         serializedVersion: 2
-        x: 36
-        y: 66
-        width: 25
-        height: 28
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_7
       rect:
         serializedVersion: 2
-        x: 67
-        y: 66
-        width: 26
-        height: 28
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_8
       rect:
         serializedVersion: 2
-        x: 99
-        y: 66
-        width: 26
-        height: 28
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_9
       rect:
         serializedVersion: 2
-        x: 131
-        y: 66
-        width: 26
-        height: 28
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_10
       rect:
         serializedVersion: 2
-        x: 4
-        y: 34
-        width: 25
-        height: 28
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_11
       rect:
         serializedVersion: 2
-        x: 36
-        y: 34
-        width: 25
-        height: 28
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_12
       rect:
         serializedVersion: 2
-        x: 68
-        y: 34
-        width: 25
-        height: 28
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_13
       rect:
         serializedVersion: 2
-        x: 99
-        y: 34
-        width: 26
-        height: 28
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_14
       rect:
         serializedVersion: 2
-        x: 131
-        y: 35
-        width: 26
-        height: 27
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,12 +481,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_15
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 26
-        height: 28
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: pixellab-Please-create-an-animation-of--1790262924340_16
       rect:
         serializedVersion: 2
-        x: 35
-        y: 2
-        width: 25
-        height: 28
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,7 +525,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9438c2a3a6931f44a8d225941ad7c020
     internalID: 0
     vertices: []
     indices: 
@@ -533,7 +533,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       pixellab-Please-create-an-animation-of--1790262924340_0: -1552594544972608193
       pixellab-Please-create-an-animation-of--1790262924340_1: 4038534813619540814

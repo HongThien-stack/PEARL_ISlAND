@@ -99,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,11 +152,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 98
-        width: 33
-        height: 28
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 98
-        width: 34
-        height: 28
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 98
-        width: 33
-        height: 28
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_3
       rect:
         serializedVersion: 2
-        x: 95
-        y: 98
-        width: 33
-        height: 28
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_4
       rect:
         serializedVersion: 2
-        x: 127
-        y: 98
-        width: 33
-        height: 28
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,11 +262,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 66
+        y: 64
         width: 32
-        height: 28
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_6
       rect:
         serializedVersion: 2
-        x: 31
-        y: 66
-        width: 33
-        height: 28
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_7
       rect:
         serializedVersion: 2
-        x: 63
-        y: 66
-        width: 33
-        height: 28
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_8
       rect:
         serializedVersion: 2
-        x: 95
-        y: 66
+        x: 96
+        y: 64
         width: 32
-        height: 28
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_9
       rect:
         serializedVersion: 2
-        x: 127
-        y: 66
-        width: 33
-        height: 28
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -372,11 +372,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 34
+        y: 32
         width: 32
-        height: 28
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -393,12 +393,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_11
       rect:
         serializedVersion: 2
-        x: 31
-        y: 34
-        width: 33
-        height: 28
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_12
       rect:
         serializedVersion: 2
-        x: 63
-        y: 34
-        width: 33
-        height: 28
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_13
       rect:
         serializedVersion: 2
-        x: 95
-        y: 34
-        width: 33
-        height: 27
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -459,12 +459,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_14
       rect:
         serializedVersion: 2
-        x: 127
-        y: 34
-        width: 33
-        height: 27
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -482,11 +482,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
+        y: 0
         width: 32
-        height: 27
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: pixellab-A-pig-eating-food-from-the-fee-1789139004700_16
       rect:
         serializedVersion: 2
-        x: 31
-        y: 2
-        width: 33
-        height: 28
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,7 +525,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 40ee843b31f3424458239aa4f9171cab
     internalID: 0
     vertices: []
     indices: 
@@ -533,7 +533,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       pixellab-A-pig-eating-food-from-the-fee-1789139004700_0: -4041164522222019235
       pixellab-A-pig-eating-food-from-the-fee-1789139004700_1: 1735888981786446397
