@@ -26,7 +26,8 @@ public sealed class CowPenWanderer : MonoBehaviour
     [SerializeField] private Vector2 eatInterval = new Vector2(5f, 11f);
     [Tooltip("Random time the eating animation is played.")]
     [SerializeField] private Vector2 eatDuration = new Vector2(2f, 4f);
-    [SerializeField] private string walkStateName = "Cow_Walk_Down";
+    [SerializeField] private string walkLeftStateName = "Cow_Walk_Left";
+    [SerializeField] private string walkRightStateName = "Cow_Walk_Right";
     [SerializeField] private string eatStateName = "Cow_Eat";
 
     private SpriteRenderer spriteRenderer;
@@ -37,11 +38,13 @@ public sealed class CowPenWanderer : MonoBehaviour
     private float eatDurationTimer;
     private bool isMoving;
     private bool isEating;
+    private bool isFacingLeft;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        spriteRenderer.flipX = false;
         spriteRenderer.spriteSortPoint = SpriteSortPoint.Pivot;
         ClampInsidePen();
     }
@@ -58,7 +61,7 @@ public sealed class CowPenWanderer : MonoBehaviour
         // Keep the herd from playing the exact same frame at the same time.
         if (animator.runtimeAnimatorController != null)
         {
-            animator.Play(walkStateName, 0, Random.value);
+            PlayWalkAnimation(false, Random.value);
         }
     }
 
@@ -106,11 +109,11 @@ public sealed class CowPenWanderer : MonoBehaviour
         localPosition.y = Mathf.Clamp(localPosition.y, minimum.y + fencePadding, maximum.y - fencePadding);
         transform.localPosition = new Vector3(localPosition.x, localPosition.y, transform.localPosition.z);
 
-        // The supplied cow art is side-facing; horizontal flipping keeps the
-        // cow facing naturally while it can still travel in every 2D direction.
+        // Keep the current facing direction for almost-vertical movement so
+        // the cow does not rapidly switch animations because of tiny X values.
         if (Mathf.Abs(direction.x) > 0.05f)
         {
-            spriteRenderer.flipX = direction.x < 0f;
+            SetFacingLeft(direction.x < 0f);
         }
 
         SetMoving(true);
@@ -163,8 +166,31 @@ public sealed class CowPenWanderer : MonoBehaviour
         pauseTimer = 0f;
         eatIntervalTimer = Random.Range(eatInterval.x, eatInterval.y);
         animator.speed = 1f;
-        animator.Play(walkStateName, 0, Random.value);
+        PlayWalkAnimation(isFacingLeft, Random.value);
         ChooseNewTarget();
+    }
+
+    private void SetFacingLeft(bool faceLeft)
+    {
+        if (isFacingLeft == faceLeft) return;
+
+        float normalizedTime = 0f;
+        if (animator.runtimeAnimatorController != null)
+        {
+            normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime % 1f;
+        }
+
+        PlayWalkAnimation(faceLeft, normalizedTime);
+    }
+
+    private void PlayWalkAnimation(bool faceLeft, float normalizedTime)
+    {
+        isFacingLeft = faceLeft;
+
+        // Facing is authored in the clips: left keeps the source rotation,
+        // while right rotates 180 degrees around Y. Do not flip the renderer
+        // here, otherwise the animation rotation would be reversed again.
+        animator.Play(faceLeft ? walkLeftStateName : walkRightStateName, 0, normalizedTime);
     }
 
     private void ChooseNewTarget()

@@ -192,7 +192,8 @@ MonoBehaviour:
   separationStrength: 0.75
   eatInterval: {x: 5, y: 11}
   eatDuration: {x: 2, y: 4}
-  walkStateName: Cow_Walk_Down
+  walkLeftStateName: Cow_Walk_Left
+  walkRightStateName: Cow_Walk_Right
   eatStateName: Cow_Eat
 --- !u!95 &6339218
 Animator:
@@ -5650,7 +5651,8 @@ MonoBehaviour:
   separationStrength: 0.75
   eatInterval: {x: 5, y: 11}
   eatDuration: {x: 2, y: 4}
-  walkStateName: Cow_Walk_Down
+  walkLeftStateName: Cow_Walk_Left
+  walkRightStateName: Cow_Walk_Right
   eatStateName: Cow_Eat
 --- !u!95 &501879829
 Animator:
@@ -9022,7 +9024,8 @@ MonoBehaviour:
   separationStrength: 0.75
   eatInterval: {x: 5, y: 11}
   eatDuration: {x: 2, y: 4}
-  walkStateName: Cow_Walk_Down
+  walkLeftStateName: Cow_Walk_Left
+  walkRightStateName: Cow_Walk_Right
   eatStateName: Cow_Eat
 --- !u!95 &831662095
 Animator:
@@ -597005,7 +597008,8 @@ MonoBehaviour:
   separationStrength: 0.75
   eatInterval: {x: 5, y: 11}
   eatDuration: {x: 2, y: 4}
-  walkStateName: Cow_Walk_Down
+  walkLeftStateName: Cow_Walk_Left
+  walkRightStateName: Cow_Walk_Right
   eatStateName: Cow_Eat
 --- !u!95 &1779443857
 Animator:

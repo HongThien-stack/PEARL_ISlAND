@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 public static class CowPenSetup
 {
     private const string CowSheetPath = "Assets/Assets/Animal/House_Animal/Bò/pixellab-Make-the-cow-move-forward--1789140977812.png";
+    private const string CowWalkLeftClipPath = "Assets/Assets/Animal/House_Animal/Bò/Cow_Walk_Left.anim";
+    private const string CowWalkRightClipPath = "Assets/Assets/Animal/House_Animal/Bò/Cow_Walk_Right.anim";
     private const string CowEatSheetPath = "Assets/Assets/Animal/House_Animal/Bò/pixellab-Make-the-cow-that-is-grazing--1789144480686.png";
     private const string CowEatClipPath = "Assets/Assets/Animal/House_Animal/Bò/Cow_Eat.anim";
     private const string CowControllerPath = "Assets/Assets/Animal/House_Animal/Bò/COW.controller";
@@ -44,6 +46,7 @@ public static class CowPenSetup
             return;
         }
 
+        EnsureWalkingAnimations(controller);
         EnsureEatingAnimation(controller);
 
         Transform herd = farmer.transform.Find("Cow Herd");
@@ -107,6 +110,51 @@ public static class CowPenSetup
         Debug.Log("[CowPenSetup] Đã gắn Cow_Eat vào controller của 4 con bò.");
     }
 
+    [MenuItem("Tools/Pearl Island/Update Cow Walking Animations")]
+    public static void UpdateCowWalkingAnimations()
+    {
+        AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(CowControllerPath);
+        if (controller == null)
+        {
+            Debug.LogError("[CowPenSetup] Không tải được COW.controller.");
+            return;
+        }
+
+        EnsureWalkingAnimations(controller);
+        Debug.Log("[CowPenSetup] Đã gắn Cow_Walk_Left và Cow_Walk_Right vào controller của 4 con bò.");
+    }
+
+    private static void EnsureWalkingAnimations(AnimatorController controller)
+    {
+        AnimationClip leftClip = AssetDatabase.LoadAssetAtPath<AnimationClip>(CowWalkLeftClipPath);
+        AnimationClip rightClip = AssetDatabase.LoadAssetAtPath<AnimationClip>(CowWalkRightClipPath);
+        Sprite[] walkingFrames = AssetDatabase.LoadAllAssetRepresentationsAtPath(CowSheetPath)
+            .OfType<Sprite>()
+            .OrderBy(sprite => ExtractFrameNumber(sprite.name))
+            .ToArray();
+
+        if (leftClip == null || rightClip == null || walkingFrames.Length == 0)
+        {
+            Debug.LogError("[CowPenSetup] Không tải được animation trái/phải hoặc sprite sheet bò đi.");
+            return;
+        }
+
+        SetSpriteFrames(leftClip, walkingFrames);
+        SetSpriteFrames(rightClip, walkingFrames);
+        SetFacingRotation(leftClip, 0f);
+        SetFacingRotation(rightClip, 180f);
+
+        AnimatorStateMachine stateMachine = controller.layers[0].stateMachine;
+        EnsureState(stateMachine, "Cow_Walk_Left", leftClip, new Vector3(200f, -50f, 0f));
+        AnimatorState rightState = EnsureState(stateMachine, "Cow_Walk_Right", rightClip, new Vector3(200f, 20f, 0f));
+        stateMachine.defaultState = rightState;
+
+        EditorUtility.SetDirty(leftClip);
+        EditorUtility.SetDirty(rightClip);
+        EditorUtility.SetDirty(controller);
+        AssetDatabase.SaveAssets();
+    }
+
     private static void EnsureEatingAnimation(AnimatorController controller)
     {
         AnimationClip eatClip = AssetDatabase.LoadAssetAtPath<AnimationClip>(CowEatClipPath);
@@ -121,28 +169,7 @@ public static class CowPenSetup
             return;
         }
 
-        ObjectReferenceKeyframe[] keyframes = new ObjectReferenceKeyframe[eatingFrames.Length];
-        for (int i = 0; i < eatingFrames.Length; i++)
-        {
-            keyframes[i] = new ObjectReferenceKeyframe
-            {
-                time = i * 0.08f,
-                value = eatingFrames[i]
-            };
-        }
-
-        EditorCurveBinding spriteBinding = new EditorCurveBinding
-        {
-            path = string.Empty,
-            type = typeof(SpriteRenderer),
-            propertyName = "m_Sprite"
-        };
-        AnimationUtility.SetObjectReferenceCurve(eatClip, spriteBinding, keyframes);
-
-        AnimationClipSettings clipSettings = AnimationUtility.GetAnimationClipSettings(eatClip);
-        clipSettings.loopTime = true;
-        AnimationUtility.SetAnimationClipSettings(eatClip, clipSettings);
-        eatClip.frameRate = 12.5f;
+        SetSpriteFrames(eatClip, eatingFrames);
 
         AnimatorStateMachine stateMachine = controller.layers[0].stateMachine;
         AnimatorState eatState = stateMachine.states
@@ -157,6 +184,63 @@ public static class CowPenSetup
         EditorUtility.SetDirty(eatClip);
         EditorUtility.SetDirty(controller);
         AssetDatabase.SaveAssets();
+    }
+
+    private static void SetSpriteFrames(AnimationClip clip, Sprite[] frames)
+    {
+        ObjectReferenceKeyframe[] keyframes = new ObjectReferenceKeyframe[frames.Length];
+        for (int i = 0; i < frames.Length; i++)
+        {
+            keyframes[i] = new ObjectReferenceKeyframe
+            {
+                time = i * 0.08f,
+                value = frames[i]
+            };
+        }
+
+        EditorCurveBinding spriteBinding = new EditorCurveBinding
+        {
+            path = string.Empty,
+            type = typeof(SpriteRenderer),
+            propertyName = "m_Sprite"
+        };
+        AnimationUtility.SetObjectReferenceCurve(clip, spriteBinding, keyframes);
+
+        AnimationClipSettings clipSettings = AnimationUtility.GetAnimationClipSettings(clip);
+        clipSettings.loopTime = true;
+        AnimationUtility.SetAnimationClipSettings(clip, clipSettings);
+        clip.frameRate = 12.5f;
+    }
+
+    private static void SetFacingRotation(AnimationClip clip, float yRotation)
+    {
+        EditorCurveBinding rotationBinding = new EditorCurveBinding
+        {
+            path = string.Empty,
+            type = typeof(Transform),
+            propertyName = "localEulerAnglesRaw.y"
+        };
+
+        AnimationCurve rotationCurve = AnimationCurve.Constant(0f, clip.length, yRotation);
+        AnimationUtility.SetEditorCurve(clip, rotationBinding, rotationCurve);
+    }
+
+    private static AnimatorState EnsureState(
+        AnimatorStateMachine stateMachine,
+        string stateName,
+        AnimationClip clip,
+        Vector3 position)
+    {
+        AnimatorState state = stateMachine.states
+            .Select(child => child.state)
+            .FirstOrDefault(candidate => candidate.name == stateName);
+        if (state == null)
+        {
+            state = stateMachine.AddState(stateName, position);
+        }
+
+        state.motion = clip;
+        return state;
     }
 
     private static T GetOrAdd<T>(GameObject gameObject) where T : Component
