@@ -52,6 +52,21 @@ public class TreeSpawner : MonoBehaviour
         {
             spawnArea.isTrigger = true;
         }
+
+        var colliders = GetComponents<Collider2D>();
+        foreach (var col in colliders)
+        {
+            col.isTrigger = true;
+        }
+    }
+
+    private void OnValidate()
+    {
+        var colliders = GetComponents<Collider2D>();
+        foreach (var col in colliders)
+        {
+            col.isTrigger = true;
+        }
     }
 
     private void Start()

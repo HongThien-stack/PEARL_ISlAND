@@ -34,6 +34,7 @@ public class PlayerChopping : MonoBehaviour
 
     private PlayerMovement playerMovement;
     private bool isChopping = false;
+    private bool movementLockedByMe = false;
 
     private void Awake()
     {
@@ -77,60 +78,64 @@ public class PlayerChopping : MonoBehaviour
             }
         }
 
-        if (targetTree != null)
-        {
-            StartCoroutine(PerformChopRoutine(targetTree));
-        }
-        else
-        {
-            // Play chop animation even if no tree is nearby
-            StartCoroutine(PerformChopRoutine(null));
-        }
+        if (targetTree == null) return;
+
+        StartCoroutine(PerformChopRoutine(targetTree));
     }
 
     private IEnumerator PerformChopRoutine(ChoppableTree targetTree)
     {
         isChopping = true;
 
-        if (playerMovement != null) playerMovement.enabled = false;
+        MovementLock.Lock(this);
+        movementLockedByMe = true;
 
-        // Trigger Animator parameters
-        if (animator != null)
+        try
         {
-            if (HasParameter(animator, chopTriggerParam))
+            // Trigger Animator parameters
+            if (animator != null)
             {
-                animator.SetTrigger(chopTriggerParam);
-            }
-            if (HasParameter(animator, isChoppingParam))
-            {
-                animator.SetBool(isChoppingParam, true);
+                if (HasParameter(animator, chopTriggerParam))
+                {
+                    animator.SetTrigger(chopTriggerParam);
+                }
+                if (HasParameter(animator, isChoppingParam))
+                {
+                    animator.SetBool(isChoppingParam, true);
+                }
+
+                // Direct state play fallback with instant evaluation
+                string chopState = GetChopStateName();
+                int hash = Animator.StringToHash(chopState);
+                if (animator.HasState(0, hash))
+                {
+                    animator.Play(hash, 0, 0f);
+                }
             }
 
-            // Direct state play fallback with instant evaluation
-            string chopState = GetChopStateName();
-            int hash = Animator.StringToHash(chopState);
-            if (animator.HasState(0, hash))
+            // Hit tree
+            if (targetTree != null)
             {
-                animator.Play(hash, 0, 0f);
+                targetTree.HitTree(gameObject);
             }
+
+            yield return new WaitForSeconds(0.95f);
         }
-
-        // Hit tree
-        if (targetTree != null)
+        finally
         {
-            targetTree.HitTree(gameObject);
+            if (animator != null && HasParameter(animator, isChoppingParam))
+            {
+                animator.SetBool(isChoppingParam, false);
+            }
+
+            if (movementLockedByMe)
+            {
+                MovementLock.Unlock(this);
+                movementLockedByMe = false;
+            }
+
+            isChopping = false;
         }
-
-        yield return new WaitForSeconds(0.95f);
-
-        if (animator != null && HasParameter(animator, isChoppingParam))
-        {
-            animator.SetBool(isChoppingParam, false);
-        }
-
-        if (playerMovement != null) playerMovement.enabled = true;
-
-        isChopping = false;
     }
 
     private string GetChopStateName()
@@ -149,19 +154,36 @@ public class PlayerChopping : MonoBehaviour
     private bool ReadChopInput()
     {
 #if ENABLE_INPUT_SYSTEM
-        if (Keyboard.current != null)
+        if (UnityEngine.InputSystem.Keyboard.current != null &&
+            UnityEngine.InputSystem.Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (Keyboard.current.eKey.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
-            {
-                return true;
-            }
+            return true;
         }
 #endif
         try
         {
-            return Input.GetKeyDown(chopKey) || Input.GetKeyDown(KeyCode.Space);
+            return Input.GetKeyDown(chopKey);
         }
         catch { return false; }
+    }
+
+    private void OnDisable()
+    {
+        if (movementLockedByMe)
+        {
+            MovementLock.Unlock(this);
+            movementLockedByMe = false;
+        }
+        isChopping = false;
+    }
+
+    private void OnDestroy()
+    {
+        if (movementLockedByMe)
+        {
+            MovementLock.Unlock(this);
+            movementLockedByMe = false;
+        }
     }
 
     private bool HasParameter(Animator anim, string paramName)

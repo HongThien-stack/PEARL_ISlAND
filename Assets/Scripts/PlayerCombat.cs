@@ -106,23 +106,28 @@ public class PlayerCombat : MonoBehaviour
 
     private void Update()
     {
-        // 1. Toggle Combat Stance with Key 1 (Draw / Sheathe Sword)
+        // 1. If currently in Fishing Mode, don't trigger combat sword actions
+        if (PlayerFishing.Instance != null && PlayerFishing.Instance.IsFishing)
+        {
+            if (ReadToggleCombatInput())
+            {
+                PlayerFishing.Instance.ExitFishingMode();
+                ToggleCombatStance();
+            }
+            return;
+        }
+
+        // 2. Toggle Combat Stance with Key 1 (Draw / Sheathe Sword)
         if (ReadToggleCombatInput())
         {
             ToggleCombatStance();
         }
 
-        // 2. Perform Attack only when holding sword (isFighting == true)
-        if (ReadAttackInput() && !isAttacking)
+        // 3. Perform Attack only when holding sword (isFighting == true)
+        // Ignore attack input while unarmed so normal gameplay cannot be blocked or spam warnings.
+        if (isFighting && ReadAttackInput() && !isAttacking)
         {
-            if (isFighting)
-            {
-                TryAttack();
-            }
-            else
-            {
-                Debug.Log("[PlayerCombat] ⚠️ Cần rút kiếm (Nhấn phím 1) mới có thể tấn công!");
-            }
+            TryAttack();
         }
     }
 
@@ -131,6 +136,12 @@ public class PlayerCombat : MonoBehaviour
     /// </summary>
     public void ToggleCombatStance()
     {
+        // If fishing mode was active, exit it
+        if (PlayerFishing.Instance != null && PlayerFishing.Instance.IsFishing)
+        {
+            PlayerFishing.Instance.ExitFishingMode();
+        }
+
         isFighting = !isFighting;
 
         if (animator != null && HasParameter(animator, isFightingParam))
@@ -139,6 +150,22 @@ public class PlayerCombat : MonoBehaviour
         }
 
         Debug.Log($"[PlayerCombat] ⚔️ Đã chuyển chế độ Cầm kiếm: {(isFighting ? "RÚT KIẾM (BẬT)" : "TRA KIẾM (TẮT)")}");
+    }
+
+    /// <summary>
+    /// Forcefully disarms combat mode and puts away the sword.
+    /// </summary>
+    public void DisarmCombat()
+    {
+        if (isFighting)
+        {
+            isFighting = false;
+            if (animator != null && HasParameter(animator, isFightingParam))
+            {
+                animator.SetBool(isFightingParam, false);
+            }
+            Debug.Log("[PlayerCombat] ⚔️ Đã tra kiếm vào bao để chuyển công cụ.");
+        }
     }
 
     /// <summary>
@@ -154,58 +181,73 @@ public class PlayerCombat : MonoBehaviour
     private IEnumerator PerformAttackRoutine()
     {
         isAttacking = true;
+        MovementLock.Lock(this);
 
-        if (playerMovement != null) playerMovement.enabled = false;
-
-        // Position Hitbox based on facing direction
-        string attackState = GetAttackStateName();
-        PositionHitbox(attackState);
-
-        // Trigger Animator parameters
-        if (animator != null)
+        try
         {
-            if (HasParameter(animator, attackTriggerParam))
+            // Position Hitbox based on facing direction
+            string attackState = GetAttackStateName();
+            PositionHitbox(attackState);
+
+            // Trigger Animator parameters
+            if (animator != null)
             {
-                animator.SetTrigger(attackTriggerParam);
+                if (HasParameter(animator, attackTriggerParam))
+                {
+                    animator.SetTrigger(attackTriggerParam);
+                }
+                if (HasParameter(animator, isAttackingParam))
+                {
+                    animator.SetBool(isAttackingParam, true);
+                }
+
+                int hash = Animator.StringToHash(attackState);
+                if (animator.HasState(0, hash))
+                {
+                    animator.Play(hash, 0, 0f);
+                }
             }
-            if (HasParameter(animator, isAttackingParam))
+
+            Debug.Log("[PlayerCombat] 🥊 MC thực hiện đòn đánh (Fight Attack - Nút J)!");
+
+            // Enable Hitbox during swing peak
+            if (attackHitbox != null)
             {
-                animator.SetBool(isAttackingParam, true);
+                attackHitbox.gameObject.SetActive(true);
             }
 
-            int hash = Animator.StringToHash(attackState);
-            if (animator.HasState(0, hash))
+            yield return new WaitForSeconds(0.35f);
+
+            // Disable Hitbox after swing peak
+            if (attackHitbox != null)
             {
-                animator.Play(hash, 0, 0f);
+                attackHitbox.gameObject.SetActive(false);
+            }
+
+            yield return new WaitForSeconds(Mathf.Max(0f, attackDuration - 0.35f));
+
+            if (animator != null && HasParameter(animator, isAttackingParam))
+            {
+                animator.SetBool(isAttackingParam, false);
             }
         }
-
-        Debug.Log("[PlayerCombat] 🥊 MC thực hiện đòn đánh (Fight Attack - Nút J)!");
-
-        // Enable Hitbox during swing peak
-        if (attackHitbox != null)
+        finally
         {
-            attackHitbox.gameObject.SetActive(true);
+            if (attackHitbox != null) attackHitbox.gameObject.SetActive(false);
+            MovementLock.Unlock(this);
+            isAttacking = false;
         }
+    }
 
-        yield return new WaitForSeconds(0.35f);
-
-        // Disable Hitbox after swing peak
-        if (attackHitbox != null)
-        {
-            attackHitbox.gameObject.SetActive(false);
-        }
-
-        yield return new WaitForSeconds(attackDuration - 0.35f);
-
-        if (animator != null && HasParameter(animator, isAttackingParam))
-        {
-            animator.SetBool(isAttackingParam, false);
-        }
-
-        if (playerMovement != null) playerMovement.enabled = true;
-
+    private void OnDisable()
+    {
+        MovementLock.Unlock(this);
         isAttacking = false;
+    }
+
+    private void OnDestroy()
+    {
+        MovementLock.Unlock(this);
     }
 
     private void PositionHitbox(string attackState)

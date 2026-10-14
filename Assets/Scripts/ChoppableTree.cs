@@ -56,11 +56,14 @@ public class ChoppableTree : MonoBehaviour, IInteractable
 
         originalLocalPos = transform.localPosition;
 
-        if (GetComponent<Collider2D>() == null)
+        BoxCollider2D col = GetComponent<BoxCollider2D>();
+        if (col == null)
         {
-            BoxCollider2D col = gameObject.AddComponent<BoxCollider2D>();
-            col.isTrigger = true;
+            col = gameObject.AddComponent<BoxCollider2D>();
         }
+        col.isTrigger = false;
+        col.offset = new Vector2(0f, -0.32f);
+        col.size = new Vector2(0.26f, 0.2f);
     }
 
     public bool CanInteract(GameObject player)
