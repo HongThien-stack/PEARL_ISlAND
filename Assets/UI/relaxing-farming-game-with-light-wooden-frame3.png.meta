@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 6e96059e6a178ec48a1cd2ee0f4d0f65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5973391093255100144
+    second: relaxing-farming-game-with-light-wooden-frame3_0
+  - first:
+      213: -4727927211767900881
+    second: relaxing-farming-game-with-light-wooden-frame3_1
+  - first:
+      213: 7171727179000855396
+    second: relaxing-farming-game-with-light-wooden-frame3_2
+  - first:
+      213: 2343063785717501520
+    second: relaxing-farming-game-with-light-wooden-frame3_3
+  - first:
+      213: -1002576944403748324
+    second: relaxing-farming-game-with-light-wooden-frame3_4
+  - first:
+      213: 4587826905831227747
+    second: relaxing-farming-game-with-light-wooden-frame3_5
+  - first:
+      213: -5771642853794245206
+    second: relaxing-farming-game-with-light-wooden-frame3_6
+  - first:
+      213: -2641865484597898574
+    second: relaxing-farming-game-with-light-wooden-frame3_7
+  - first:
+      213: -3473161055870867550
+    second: relaxing-farming-game-with-light-wooden-frame3_8
+  - first:
+      213: 2082963088569400533
+    second: relaxing-farming-game-with-light-wooden-frame3_9
+  - first:
+      213: -6285577000183659071
+    second: relaxing-farming-game-with-light-wooden-frame3_10
+  - first:
+      213: 7430312977025681759
+    second: relaxing-farming-game-with-light-wooden-frame3_11
+  - first:
+      213: 6207593665117018478
+    second: relaxing-farming-game-with-light-wooden-frame3_12
+  - first:
+      213: -1083116771924991393
+    second: relaxing-farming-game-with-light-wooden-frame3_13
+  - first:
+      213: -5420174089941463425
+    second: relaxing-farming-game-with-light-wooden-frame3_14
+  - first:
+      213: 5445162185481186093
+    second: relaxing-farming-game-with-light-wooden-frame3_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 190
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0192c06f2704a1da0800000000000000
+      internalID: -5973391093255100144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 190
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25dba22047036eb0800000000000000
+      internalID: -4727927211767900881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 190
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b3c523fd7178360800000000000000
+      internalID: 7171727179000855396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 190
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e06c9591c348020800000000000000
+      internalID: 2343063785717501520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 163
+        width: 115
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a61d8b4912612f0800000000000000
+      internalID: -1002576944403748324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 177
+        width: 25
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361cc05734c3baf30800000000000000
+      internalID: 4587826905831227747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 139
+        width: 131
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa51c29676107efa0800000000000000
+      internalID: -5771642853794245206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 142
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b25d26c655365bd0800000000000000
+      internalID: -2641865484597898574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 115
+        width: 131
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7a819db6adccfc0800000000000000
+      internalID: -3473161055870867550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 91
+        width: 131
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcfd6e94eb28ec10800000000000000
+      internalID: 2082963088569400533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 6
+        width: 107
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c500bf450525c8a0800000000000000
+      internalID: -6285577000183659071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 70
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59479df846cd1760800000000000000
+      internalID: 7430312977025681759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_12
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 46
+        width: 92
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69d3479c8dc52650800000000000000
+      internalID: 6207593665117018478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 46
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52a427d80ff7f0f0800000000000000
+      internalID: -1083116771924991393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e434ce16ca7c4b0800000000000000
+      internalID: -5420174089941463425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relaxing-farming-game-with-light-wooden-frame3_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 6
+        width: 92
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2beef1782a119b40800000000000000
+      internalID: 5445162185481186093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      relaxing-farming-game-with-light-wooden-frame3_0: -5973391093255100144
+      relaxing-farming-game-with-light-wooden-frame3_1: -4727927211767900881
+      relaxing-farming-game-with-light-wooden-frame3_10: -6285577000183659071
+      relaxing-farming-game-with-light-wooden-frame3_11: 7430312977025681759
+      relaxing-farming-game-with-light-wooden-frame3_12: 6207593665117018478
+      relaxing-farming-game-with-light-wooden-frame3_13: -1083116771924991393
+      relaxing-farming-game-with-light-wooden-frame3_14: -5420174089941463425
+      relaxing-farming-game-with-light-wooden-frame3_15: 5445162185481186093
+      relaxing-farming-game-with-light-wooden-frame3_2: 7171727179000855396
+      relaxing-farming-game-with-light-wooden-frame3_3: 2343063785717501520
+      relaxing-farming-game-with-light-wooden-frame3_4: -1002576944403748324
+      relaxing-farming-game-with-light-wooden-frame3_5: 4587826905831227747
+      relaxing-farming-game-with-light-wooden-frame3_6: -5771642853794245206
+      relaxing-farming-game-with-light-wooden-frame3_7: -2641865484597898574
+      relaxing-farming-game-with-light-wooden-frame3_8: -3473161055870867550
+      relaxing-farming-game-with-light-wooden-frame3_9: 2082963088569400533
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
