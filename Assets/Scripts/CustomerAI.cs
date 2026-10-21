@@ -7,6 +7,8 @@ using UnityEngine;
 /// Supports Rigidbody2D physics movement and Waypoint navigation to avoid wall/table clipping.
 /// Implements IInteractable for MC taking order and delivering food using 'F' key.
 /// </summary>
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class CustomerAI : MonoBehaviour, IInteractable
 {
     public enum CustomerState
@@ -131,11 +133,11 @@ public class CustomerAI : MonoBehaviour, IInteractable
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
-        if (GetComponent<Collider2D>() == null)
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        if (collider != null)
         {
-            BoxCollider2D col = gameObject.AddComponent<BoxCollider2D>();
-            col.isTrigger = true;
-            col.size = new Vector2(1f, 1f);
+            collider.isTrigger = false;
+            collider.size = new Vector2(1f, 1f);
         }
 
         UpdateBubbles();
@@ -349,7 +351,6 @@ public class CustomerAI : MonoBehaviour, IInteractable
         }
 
         if (rb != null) rb.linearVelocity = Vector2.zero;
-        transform.position = targetPos;
         UpdateAnimationDirect(Vector2.zero);
     }
 

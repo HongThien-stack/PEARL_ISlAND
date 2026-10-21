@@ -7,6 +7,8 @@ using UnityEngine;
 /// safely playing animation states or parameters without 'Invalid Layer Index' errors or moonwalking,
 /// chopping/cooking at Kitchen Table, placing food on Serve Counter, and returning Home.
 /// </summary>
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class ChefAI : MonoBehaviour
 {
     [Header("Target Positions")]
@@ -88,6 +90,13 @@ public class ChefAI : MonoBehaviour
         {
             rb.gravityScale = 0f;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+        BoxCollider2D collider = GetComponent<BoxCollider2D>();
+        if (collider != null)
+        {
+            collider.isTrigger = false;
+            collider.size = new Vector2(1f, 1f);
         }
 
         if (serveCounter == null)
@@ -226,9 +235,7 @@ public class ChefAI : MonoBehaviour
 
             yield return null;
         }
-
         if (rb != null) rb.linearVelocity = Vector2.zero;
-        transform.position = targetPos;
         UpdateAnimationDirect(Vector2.zero);
     }
 

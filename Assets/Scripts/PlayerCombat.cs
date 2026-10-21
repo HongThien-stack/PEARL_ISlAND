@@ -298,6 +298,16 @@ public class PlayerCombat : MonoBehaviour
 
     private bool ReadAttackInput()
     {
+        if (MovementLock.IsLocked || QuestWindowUI.IsOpen || VisualNovelDialogueUI.IsOpen)
+        {
+            return false;
+        }
+
+        if (UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+        {
+            return false;
+        }
+
         try
         {
             if (Keyboard.current != null && Keyboard.current.jKey.wasPressedThisFrame)

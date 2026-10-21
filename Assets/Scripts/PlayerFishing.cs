@@ -278,6 +278,11 @@ public class PlayerFishing : MonoBehaviour
         fishCount++;
         Debug.Log($"[PlayerFishing] 🐟 BẮT ĐƯỢC CÁ THÀNH CÔNG! (+1 Cá, Tổng số cá: {fishCount})");
 
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.AddProgress(QuestType.CatchFish, 1);
+        }
+
         if (currentBobber != null)
         {
             currentBobber.ReelIn();
@@ -410,6 +415,16 @@ public class PlayerFishing : MonoBehaviour
 
     private bool ReadCastInput()
     {
+        if (MovementLock.IsLocked || QuestWindowUI.IsOpen || VisualNovelDialogueUI.IsOpen)
+        {
+            return false;
+        }
+
+        if (UnityEngine.EventSystems.EventSystem.current != null && UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+        {
+            return false;
+        }
+
         try
         {
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
