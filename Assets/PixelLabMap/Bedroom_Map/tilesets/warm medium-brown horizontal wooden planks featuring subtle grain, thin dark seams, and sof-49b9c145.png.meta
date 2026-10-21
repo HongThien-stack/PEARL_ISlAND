@@ -1,0 +1,891 @@
+fileFormatVersion: 2
+guid: 1509a9428a713854ba59e64e27808c94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2284030378263803574
+    second: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+      dark seams, and sof-49b9c145_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b67d98178182bf10800000000000000
+      internalID: 2284030378263803574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bb4f9cf7fa7d544909a5a4beb9b5c5
+      internalID: 1186985293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18675837b51da94ca03994970b149b3
+      internalID: 774237338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9394b5d4997b91944bd57c975f84798f
+      internalID: 1903317997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662da5d3b75ba5140b8d8bdcf650ee99
+      internalID: 1094110978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f50aec1055423438e7ab306094bb47
+      internalID: 855217969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5896fd3f682f4e140b1adf7ce376a7d3
+      internalID: -817588847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a794669d2c6cba64ab07339e4bb756a5
+      internalID: 809919926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120433c11ad36e947b8d5ea1207551a5
+      internalID: -290331859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844c06c9d7e9d384f8926abd7b0b931d
+      internalID: 1946348273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616deb52b1b0db947a2f80d3edab246f
+      internalID: 1393330416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcafd9513541b945ac6c4a412129dae
+      internalID: 1269140046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d352ca6dfcd694f99b96d228a4ed31
+      internalID: -2038861213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367ac070f38be9488bc0255e41d5548
+      internalID: -180434118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6f905b52f2e3e4cbce9fed36b954c7
+      internalID: -1661591207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d7e68e62560724288816f23e7ba70b
+      internalID: 1508721795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f54f8469ab8c1d42bb8c3dafbd5f5ef
+      internalID: -1550373635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba84342a8f3182f45966596fd28936e5
+      internalID: 1223945931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ccd6369b5119d4cbebaf491ae40e05
+      internalID: 715042421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602ee7fdac53df94490012b05ef494ba
+      internalID: -688522171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca2cbb4029f649418aa1c1ec8e6a563
+      internalID: -274924248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b90a44838453740bbbd8c7999f409e
+      internalID: 752002954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b62a5508a376994480635e056717d97
+      internalID: 1251969475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1601db188e15df541aa10709bda31d5b
+      internalID: 1581922491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4aaea2b46070c459ccbc664d457c14
+      internalID: -1273214996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f43ad5244a9fe4b9e38ca12d24c11d
+      internalID: 956143171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704867e1de62ffb46bfa622afb6777f1
+      internalID: 738858711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d3e5e33b11cb4448e8fad3898d27d5
+      internalID: -520140800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2897e9c51897bef4bba6708030b794d9
+      internalID: -15517161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498410e09a516754aa47ae7769a293d0
+      internalID: -1139006447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbe6c64109025c44948765554b19243
+      internalID: 1195873591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warm medium-brown horizontal wooden planks featuring subtle grain, thin
+        dark seams, and sof-49b9c145_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c6577dee3d27344bdd63b8d39949c6
+      internalID: -687719508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8cab7841349dae74880ba41fd0d8fea5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_0: 2284030378263803574
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_1: 1186985293
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_10: 1393330416
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_11: 1269140046
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_12: -2038861213
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_13: -180434118
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_14: -1661591207
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_15: 1508721795
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_16: -1550373635
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_17: 1223945931
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_18: 715042421
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_19: -688522171
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_2: 774237338
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_20: -274924248
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_21: 752002954
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_22: 1251969475
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_23: 1581922491
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_24: -1273214996
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_25: 956143171
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_26: 738858711
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_27: -520140800
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_28: -15517161
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_29: -1139006447
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_3: 1903317997
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_30: 1195873591
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_31: -687719508
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_4: 1094110978
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_5: 855217969
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_6: -817588847
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_7: 809919926
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_8: -290331859
+      warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145_9: 1946348273
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

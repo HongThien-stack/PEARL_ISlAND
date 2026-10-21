@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "name": "Untitled Map",
+  "exportDate": "2026-10-21T07:37:58.477664Z",
+  "engine": "pixellab-map-editor",
+  "mapConfig": {
+    "tileSize": 32,
+    "dimensions": {
+      "width": 51,
+      "height": 36,
+      "pixelWidth": 1632,
+      "pixelHeight": 1152
+    },
+    "boundingBox": {
+      "maxX": 50,
+      "maxY": 36,
+      "minX": 0,
+      "minY": 1
+    }
+  },
+  "terrains": [
+    {
+      "id": 1,
+      "name": "warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and soft highlights and shadows defining gentle surface depth",
+      "color": "#9ca3af",
+      "baseTileId": "7c89b6d9-095e-4fab-912f-4e6617ead031",
+      "walkable": null
+    },
+    {
+      "id": 2,
+      "name": "light beige vertical wooden panels with soft tonal gradients, bordered by dark warm-brown timber framing and gentle shadow depth",
+      "color": "#9ca3af",
+      "baseTileId": "d2e0bce5-3fe2-4925-ac7d-c03d20439bce",
+      "walkable": null
+    },
+    {
+      "id": 3,
+      "name": "warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and soft highlights and shadows defining gentle surface depth \u2194 light beige vertical wooden panels with soft tonal gradients, bordered by dark warm-brown timber framing and gentle shadow depth",
+      "color": "#858b95",
+      "baseTileId": "transition-6320c47e-302f-45b5-9136-53ba5213fc40",
+      "walkable": null
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "6320c47e-302f-45b5-9136-53ba5213fc40",
+      "filename": "warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and sof-49b9c145.png",
+      "lowerTerrain": "warm medium-brown horizontal wooden planks featuring subtle grain, thin dark seams, and soft highlights and shadows defining gentle surface depth",
+      "upperTerrain": "light beige vertical wooden panels with soft tonal gradients, bordered by dark warm-brown timber framing and gentle shadow depth",
+      "lowerTerrainId": 1,
+      "upperTerrainId": 2,
+      "transitionSize": 1,
+      "transitionDescription": "tall crumbling muddy dirt wall showing exposed damp patches, embedded pebbles, and soft atmospheric shadows along its vertical strata",
+      "tileSize": 32,
+      "gridLayout": "4x8",
+      "wangIndexMapping": "transition",
+      "view": "high top-down"
+    }
+  ],
+  "overlays": [
+    {
+      "id": 0,
+      "filename": "overlay-0.png",
+      "type": "inpainting",
+      "dimensions": {
+        "width": 32,
+        "height": 160
+      },
+      "worldCoordinates": {
+        "x": 1600,
+        "y": 576
+      },
+      "layer": "custom"
+    }
+  ],
+  "background": null,
+  "mapId": "6ef8c45e-4939-4cef-99c5-0c3a4868362e"
+}
