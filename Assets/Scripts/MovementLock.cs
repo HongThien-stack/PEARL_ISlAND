@@ -104,14 +104,37 @@ public class MovementLock : MonoBehaviour
 
     private static void EnsureInstance(object source)
     {
-        if (Instance != null || !(source is Component component)) return;
-
-        MovementLock movementLock = component.GetComponent<MovementLock>();
-        if (movementLock == null)
+        if (Instance != null)
         {
-            movementLock = component.gameObject.AddComponent<MovementLock>();
+            if (Instance.playerMovement == null)
+            {
+                Instance.playerMovement = Object.FindAnyObjectByType<PlayerMovement>();
+            }
+            return;
         }
 
-        Instance = movementLock;
+        PlayerMovement pm = Object.FindAnyObjectByType<PlayerMovement>();
+        if (pm != null)
+        {
+            MovementLock movementLock = pm.GetComponent<MovementLock>();
+            if (movementLock == null)
+            {
+                movementLock = pm.gameObject.AddComponent<MovementLock>();
+            }
+            movementLock.playerMovement = pm;
+            Instance = movementLock;
+            return;
+        }
+
+        if (source is Component component)
+        {
+            MovementLock movementLock = component.GetComponent<MovementLock>();
+            if (movementLock == null)
+            {
+                movementLock = component.gameObject.AddComponent<MovementLock>();
+            }
+            movementLock.playerMovement = Object.FindAnyObjectByType<PlayerMovement>();
+            Instance = movementLock;
+        }
     }
 }

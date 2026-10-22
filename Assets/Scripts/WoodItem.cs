@@ -100,6 +100,11 @@ public class WoodItem : MonoBehaviour, IInteractable
 
         totalWoodCollected += woodAmount;
 
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.AddProgress(QuestType.CollectWood, woodAmount);
+        }
+
         Debug.Log($"[WoodItem] 🪵 MC đã nhặt +{woodAmount} Gỗ! Tổng số gỗ hiện có: {totalWoodCollected}");
 
         if (audioSource != null && pickupSound != null)

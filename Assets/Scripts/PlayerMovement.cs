@@ -39,9 +39,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (MovementLock.IsLocked || QuestWindowUI.IsOpen || VisualNovelDialogueUI.IsOpen)
+        {
+            moveInput = Vector2.zero;
+            isSprinting = false;
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+            if (animator != null && animator.isActiveAndEnabled)
+            {
+                animator.SetBool(isMovingParam, false);
+                animator.SetFloat(moveXParam, 0f);
+                animator.SetFloat(moveYParam, 0f);
+            }
+            return;
+        }
+
         // 1. Read input using New Input System
         float x = 0f;
         float y = 0f;
+        bool keyboardSprinting = false;
+        bool gamepadSprinting = false;
 
         Keyboard kb = Keyboard.current;
         if (kb != null)
@@ -51,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
             if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) x += 1f;
             if (kb.aKey.isPressed || kb.leftArrowKey.isPressed)  x -= 1f;
 
-            isSprinting = kb.leftShiftKey.isPressed || kb.rightShiftKey.isPressed;
+            keyboardSprinting = kb.leftShiftKey.isPressed || kb.rightShiftKey.isPressed;
         }
 
         // Gamepad support
@@ -61,11 +77,10 @@ public class PlayerMovement : MonoBehaviour
             Vector2 stick = gp.leftStick.ReadValue();
             x = stick.x;
             y = stick.y;
-            if (gp.leftShoulder.isPressed || gp.buttonSouth.isPressed)
-            {
-                isSprinting = true;
-            }
+            gamepadSprinting = gp.leftShoulder.isPressed || gp.buttonSouth.isPressed;
         }
+
+        isSprinting = keyboardSprinting || gamepadSprinting;
 
         moveInput = new Vector2(x, y);
         if (moveInput.sqrMagnitude > 1f)
@@ -115,6 +130,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (MovementLock.IsLocked || QuestWindowUI.IsOpen || VisualNovelDialogueUI.IsOpen)
+        {
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         float speed = moveSpeed * (isSprinting ? sprintMultiplier : 1f);
 
         if (rb != null)

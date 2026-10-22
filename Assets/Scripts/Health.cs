@@ -93,6 +93,11 @@ public class Health : MonoBehaviour
         OnDeath?.Invoke();
         Debug.Log($"[Health] 💀 {gameObject.name} đã bị tiêu diệt!");
 
+        if (QuestManager.Instance != null && !CompareTag("Player"))
+        {
+            QuestManager.Instance.AddProgress(QuestType.DefeatEnemy, 1);
+        }
+
         if (destroyOnDeath)
         {
             Destroy(gameObject, deathDelay);
