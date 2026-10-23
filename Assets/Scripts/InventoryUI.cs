@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class InventoryUI : MonoBehaviour
 {
     private const int Capacity = 25;
+    private const int MaxWoodPerSlot = 30;
 
     [Serializable]
     public class SlotView
@@ -26,6 +27,10 @@ public class InventoryUI : MonoBehaviour
 
     [SerializeField] private GameObject panel;
     [SerializeField] private SlotView[] slots = new SlotView[Capacity];
+    [SerializeField] private Sprite swordIcon;
+    [SerializeField] private Sprite fishingRodIcon;
+    [SerializeField] private Sprite axeIcon;
+    [SerializeField] private Sprite woodIcon;
 
     private readonly ItemStack[] items = new ItemStack[Capacity];
     private PlayerFishing fishing;
@@ -50,9 +55,9 @@ public class InventoryUI : MonoBehaviour
             foodCarrier = player.GetComponent<PlayerFoodCarrier>();
         }
 
-        items[0] = new ItemStack { name = "Sword", quantity = 1 };
-        items[1] = new ItemStack { name = "Fishing Rod", quantity = 1 };
-        items[2] = new ItemStack { name = "Axe", quantity = 1 };
+        items[0] = new ItemStack { name = "Sword", icon = swordIcon, quantity = 1 };
+        items[1] = new ItemStack { name = "Fishing Rod", icon = fishingRodIcon, quantity = 1 };
+        items[2] = new ItemStack { name = "Axe", icon = axeIcon, quantity = 1 };
         SyncExistingItems();
         RefreshAll();
         if (panel != null) panel.SetActive(false);
@@ -93,6 +98,8 @@ public class InventoryUI : MonoBehaviour
     public bool AddItem(string itemName, Sprite icon, int amount = 1)
     {
         if (string.IsNullOrWhiteSpace(itemName) || amount <= 0) return false;
+        if (string.Equals(itemName, "Wood", StringComparison.OrdinalIgnoreCase))
+            return TryAddWood(amount, icon);
         for (int i = 6; i < Capacity; i++)
         {
             if (items[i] == null || items[i].name != itemName) continue;
@@ -111,6 +118,25 @@ public class InventoryUI : MonoBehaviour
         return false;
     }
 
+    /// <summary>Collect wood only when every piece fits in the inventory.</summary>
+    public bool TryAddWood(int amount, Sprite icon = null)
+    {
+        if (amount <= 0) return false;
+
+        int availableSlots = 1; // Slot 4 is reserved for the first wood stack.
+        for (int i = 6; i < Capacity; i++)
+            if (items[i] == null || items[i].name == "Wood") availableSlots++;
+
+        if ((long)WoodItem.totalWoodCollected + amount > (long)availableSlots * MaxWoodPerSlot)
+            return false;
+
+        if (icon != null) woodIcon = icon;
+        WoodItem.totalWoodCollected += amount;
+        SyncExistingItems();
+        RefreshAll();
+        return true;
+    }
+
     private void SyncExistingItems()
     {
         int wood = WoodItem.totalWoodCollected;
@@ -118,9 +144,27 @@ public class InventoryUI : MonoBehaviour
         Sprite food = foodCarrier != null && foodCarrier.IsCarrying()
             ? foodCarrier.GetCurrentFoodSprite() : null;
 
-        if (wood != lastWood)
+        if (wood != lastWood || (wood > 0 && items[3] != null && items[3].icon != woodIcon))
         {
-            items[3] = wood > 0 ? new ItemStack { name = "Wood", quantity = wood } : null;
+            items[3] = null;
+            for (int i = 6; i < Capacity; i++)
+                if (items[i] != null && items[i].name == "Wood") items[i] = null;
+
+            if (wood > 0)
+            {
+                items[3] = new ItemStack
+                {
+                    name = "Wood", icon = woodIcon, quantity = Mathf.Min(wood, MaxWoodPerSlot)
+                };
+                int remaining = wood - items[3].quantity;
+                for (int i = 6; i < Capacity && remaining > 0; i++)
+                {
+                    if (items[i] != null) continue;
+                    int count = Mathf.Min(remaining, MaxWoodPerSlot);
+                    items[i] = new ItemStack { name = "Wood", icon = woodIcon, quantity = count };
+                    remaining -= count;
+                }
+            }
             lastWood = wood;
         }
         if (fish != lastFish)

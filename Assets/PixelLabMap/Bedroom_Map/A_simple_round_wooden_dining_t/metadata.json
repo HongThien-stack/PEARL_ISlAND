@@ -1,0 +1,29 @@
+{
+  "group_id": "d6da56ba-0656-45d0-80d4-07889d813970",
+  "objects": [
+    {
+      "id": "c72a31dc-d009-4ec8-aab3-e25eb093feca",
+      "name": "base",
+      "prompt": "A simple round wooden dining table for a cozy Vietnamese island restaurant, viewed from a high top-down angle. Circular tabletop made of warm brown wood with visible planks and a subtle darker rim, supported by short sturdy legs visible beneath the edge. Clean 2D pixel art, low top-down RPG style, crisp pixel edges, simple shading, matching a small 100\u00d7100 game sprite. Single centered object on a transparent background. No chairs, food, tablecloth, characters, text, or surrounding scenery.",
+      "size": {
+        "width": 113,
+        "height": 113
+      },
+      "directions": 8,
+      "view": "low top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-23T11:54:05.686415"
+}

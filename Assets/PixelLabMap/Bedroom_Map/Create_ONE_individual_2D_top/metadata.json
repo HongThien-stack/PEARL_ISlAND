@@ -1,0 +1,22 @@
+{
+  "group_id": "a920dfd9-c713-4293-b68d-49c9ad760228",
+  "objects": [
+    {
+      "id": "c3cc55f1-29e6-4a70-a62f-2ed896b9a0ca",
+      "name": "base",
+      "prompt": "Create ONE individual **2D top-down pixel-art furniture sprite** for a Unity game using a 32\u00d732 pixel tile grid.  Object: [INSERT OBJECT NAME, e.g. long wooden sofa].  Style: Cozy rustic island-house RPG, warm orange-brown wood, natural colors, matching a wooden house interior with orange wooden plank flooring. Inspired by classic farming and survival RPG pixel art.  Technical requirements: - Strict top-down / three-quarter top-down game perspective. - Crisp pixel art, hard pixel edges, no anti-aliasing, no blur. - Transparent background. - No floor, no room, no grid lines, no characters, no text, no watermark. - Center the entire object in the image. - Keep the complete silhouette visible with no cropping. - Use consistent lighting from the upper-left and a subtle pixel-art shadow underneath where appropriate. - Design the object to occupy a sensible number of 32\u00d732 tiles. - Keep the same pixel density, outline style, color palette, and perspective as other furniture sprites from this game. - Make the sprite suitable for direct import into Unity as a 2D Sprite. - Do not add extra furniture or decorative objects.  Output only the requested individual furniture sprite.",
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/Create_ONE_individual_2D_top.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-23T11:47:25.487924"
+}

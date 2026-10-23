@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// Dropped Wood item spawned when a tree is felled.
 /// Can be picked up by MC walking near it or interacting.
-/// Tracks collected wood count until a full Inventory system is built.
+/// Adds collected wood to the Inventory.
 /// </summary>
 public class WoodItem : MonoBehaviour, IInteractable
 {
@@ -98,7 +98,19 @@ public class WoodItem : MonoBehaviour, IInteractable
         if (isBeingPickedUp) return;
         isBeingPickedUp = true;
 
-        totalWoodCollected += woodAmount;
+        Sprite icon = woodSprite != null ? woodSprite : spriteRenderer != null ? spriteRenderer.sprite : null;
+        if (InventoryUI.Instance != null)
+        {
+            if (!InventoryUI.Instance.TryAddWood(woodAmount, icon))
+            {
+                isBeingPickedUp = false;
+                return;
+            }
+        }
+        else
+        {
+            totalWoodCollected += woodAmount;
+        }
 
         if (QuestManager.Instance != null)
         {

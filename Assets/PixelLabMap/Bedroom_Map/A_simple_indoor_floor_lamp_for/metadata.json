@@ -1,0 +1,29 @@
+{
+  "group_id": "e08b7f77-e3c9-424d-90e2-e2dbf5bd6f55",
+  "objects": [
+    {
+      "id": "8899b183-e7a0-4640-b094-9e421cce1007",
+      "name": "base",
+      "prompt": "A simple indoor floor lamp for a cozy Vietnamese island home, viewed from a high top-down angle. A short warm-brown wooden stand with a small woven bamboo lampshade, casting a soft golden glow. Clean 2D pixel art, low top-down RPG style, crisp pixel edges, simple shading, matching a 100\u00d7100 game sprite. Single centered object on a transparent background. No room, furniture, characters, text, or surrounding scenery.",
+      "size": {
+        "width": 85,
+        "height": 85
+      },
+      "directions": 8,
+      "view": "low top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-23T11:54:32.892855"
+}

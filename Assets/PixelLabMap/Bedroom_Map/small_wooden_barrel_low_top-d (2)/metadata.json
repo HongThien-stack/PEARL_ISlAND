@@ -1,0 +1,22 @@
+{
+  "group_id": "fc5490d0-a095-45b2-8166-afbc402178b3",
+  "objects": [
+    {
+      "id": "772a04e7-8aa8-41e6-92ca-400f9f4f5b8c",
+      "name": "base",
+      "prompt": "small wooden barrel, low top-down pixel art view, rustic farm decoration, warm brown wood with simple metal bands, clean readable silhouette, transparent background, isolated object, scaled appropriately for a 32x32 tile map",
+      "size": {
+        "width": 48,
+        "height": 48
+      },
+      "directions": 1,
+      "view": "low top-down",
+      "rotations": {
+        "unknown": "rotations/small_wooden_barrel_low_top-d.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-23T11:58:07.896836"
+}

@@ -1,0 +1,29 @@
+{
+  "group_id": "30858130-650a-403d-8859-334fd4bf8947",
+  "objects": [
+    {
+      "id": "9e038c2f-fe51-4137-9418-f90bd11666dc",
+      "name": "base",
+      "prompt": "A large flat-screen television mounted on a simple stand, viewed from a high top-down RPG angle. Wide rectangular black screen with a thin dark frame, clearly visible screen surface, subtle metallic details, realistic proportions. Clean 2D pixel art, low top-down perspective, simple shading. Screen turned off and solid dark black, no images, no text, no people, no background, no extra objects.",
+      "size": {
+        "width": 97,
+        "height": 97
+      },
+      "directions": 8,
+      "view": "low top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-23T11:47:15.892921"
+}

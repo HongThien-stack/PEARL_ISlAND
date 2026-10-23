@@ -1,0 +1,29 @@
+{
+  "group_id": "d7cf973d-9689-4c20-b36f-3d755d7d5420",
+  "objects": [
+    {
+      "id": "15488fa9-2e6f-4796-a4ee-fbeba9a1f134",
+      "name": "base",
+      "prompt": "A traditional wooden grandfather clock for a cozy Vietnamese island home, viewed from a high top-down RPG angle with the front clearly visible. Tall, narrow cabinet made of warm brown wood, a round cream clock face near the top, and a brass pendulum visible behind a small glass door. Simple readable silhouette, clean 2D pixel art, crisp pixel edges, warm colors, and subtle shading consistent with a 100\u00d7100 game sprite. Single centered object on a transparent background. No room, wall, other furniture, characters, or text.",
+      "size": {
+        "width": 97,
+        "height": 97
+      },
+      "directions": 8,
+      "view": "high top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-23T12:06:05.857986"
+}
