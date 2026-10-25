@@ -61,6 +61,8 @@ public class PlayerFishing : MonoBehaviour
 
     [Header("Inventory & Stats")]
     [SerializeField] private int fishCount = 0;
+    private FishCatalog fishCatalog;
+    private FishCatalog.Fish pendingFish;
 
     private PlayerCombat playerCombat;
     [SerializeField] private FishMinigameUI fishMinigameUI;
@@ -85,6 +87,7 @@ public class PlayerFishing : MonoBehaviour
 
         if (animator == null) animator = GetComponent<Animator>();
         playerCombat = GetComponent<PlayerCombat>();
+        fishCatalog = Resources.Load<FishCatalog>("FishCatalog");
         if (fishMinigameUI == null)
         {
             fishMinigameUI = FishMinigameUI.Instance;
@@ -243,9 +246,10 @@ public class PlayerFishing : MonoBehaviour
             }
 
             // Launch Minigame UI
+            pendingFish = fishCatalog != null ? fishCatalog.RandomFish() : default;
             if (fishMinigameUI != null)
             {
-                fishMinigameUI.StartMinigame(HandleCatchSuccess, HandleCatchFail);
+                fishMinigameUI.StartMinigame(HandleCatchSuccess, HandleCatchFail, pendingFish.icon);
             }
             else
             {
@@ -275,14 +279,30 @@ public class PlayerFishing : MonoBehaviour
 
     private void HandleCatchSuccess()
     {
+        FishCatalog.Fish caught = pendingFish.icon != null
+            ? pendingFish : fishCatalog != null ? fishCatalog.RandomFish() : default;
+        pendingFish = default;
+        if (caught.icon == null || InventoryUI.Instance == null ||
+            !InventoryUI.Instance.TryAddFish(caught.name, caught.icon))
+        {
+            Debug.LogWarning("[PlayerFishing] No fish sprite is configured or the inventory is full; the fish was released.");
+            FinishCatch();
+            return;
+        }
+
         fishCount++;
-        Debug.Log($"[PlayerFishing] 🐟 BẮT ĐƯỢC CÁ THÀNH CÔNG! (+1 Cá, Tổng số cá: {fishCount})");
+        Debug.Log($"[PlayerFishing] Caught {caught.name}! Total fish: {fishCount}");
 
         if (QuestManager.Instance != null)
         {
             QuestManager.Instance.AddProgress(QuestType.CatchFish, 1);
         }
 
+        FinishCatch();
+    }
+
+    private void FinishCatch()
+    {
         if (currentBobber != null)
         {
             currentBobber.ReelIn();
@@ -295,8 +315,17 @@ public class PlayerFishing : MonoBehaviour
         fishingRoutine = null;
     }
 
+#if UNITY_EDITOR
+    [ContextMenu("Test Catch Fish")]
+    private void TestCatchFish()
+    {
+        if (Application.isPlaying) HandleCatchSuccess();
+    }
+#endif
+
     private void HandleCatchFail()
     {
+        pendingFish = default;
         Debug.Log("[PlayerFishing] 💨 Cá đã cắn đứt dây và trốn thoát!");
 
         if (currentBobber != null)
@@ -313,6 +342,7 @@ public class PlayerFishing : MonoBehaviour
 
     private void CancelActiveFishing()
     {
+        pendingFish = default;
         if (fishingRoutine != null)
         {
             StopCoroutine(fishingRoutine);

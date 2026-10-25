@@ -95,10 +95,16 @@ public class FishMinigameUI : MonoBehaviour
     /// <summary>
     /// Starts the fishing minigame session.
     /// </summary>
-    public void StartMinigame(Action onSuccess, Action onFail)
+    public void StartMinigame(Action onSuccess, Action onFail, Sprite caughtFishIcon = null)
     {
         onCatchSuccess = onSuccess;
         onCatchFail = onFail;
+        if (fishIconImage != null)
+        {
+            fishIconImage.sprite = caughtFishIcon;
+            fishIconImage.preserveAspect = true;
+            fishIconImage.color = caughtFishIcon != null ? Color.white : new Color(1f, 0.75f, 0.2f);
+        }
 
         isPlaying = true;
         currentProgress = initialProgress;
@@ -411,17 +417,7 @@ public class FishMinigameUI : MonoBehaviour
         fishIconRect.anchoredPosition = Vector2.zero;
 
         fishIconImage = fishGO.AddComponent<Image>();
-        // Load fish sprite if available
-        Sprite fishSprite = LoadFishSprite();
-        if (fishSprite != null)
-        {
-            fishIconImage.sprite = fishSprite;
-            fishIconImage.preserveAspect = true;
-        }
-        else
-        {
-            fishIconImage.color = new Color(1f, 0.75f, 0.2f, 1f); // Gold fish fallback
-        }
+        fishIconImage.color = new Color(1f, 0.75f, 0.2f, 1f);
 
         // 4. Progress Bar & Border
         GameObject progressBorderGO = new GameObject("ProgressBorder");
@@ -489,16 +485,4 @@ public class FishMinigameUI : MonoBehaviour
         statusHintText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
     }
 
-    private Sprite LoadFishSprite()
-    {
-#if UNITY_EDITOR
-        string path = "Assets/Assets/Food/More_food/Crispy_Fried_Gourami_as_a_collectible_and_carryabl.png";
-        var assets = UnityEditor.AssetDatabase.LoadAllAssetsAtPath(path);
-        foreach (var a in assets)
-        {
-            if (a is Sprite s) return s;
-        }
-#endif
-        return null;
-    }
 }

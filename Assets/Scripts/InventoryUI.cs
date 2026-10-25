@@ -8,6 +8,7 @@ public class InventoryUI : MonoBehaviour
 {
     private const int Capacity = 25;
     private const int MaxWoodPerSlot = 30;
+    private const int MaxFishPerSlot = 20;
 
     [Serializable]
     public class SlotView
@@ -23,6 +24,7 @@ public class InventoryUI : MonoBehaviour
         public string name;
         public Sprite icon;
         public int quantity;
+        public bool isFish;
     }
 
     [SerializeField] private GameObject panel;
@@ -37,7 +39,6 @@ public class InventoryUI : MonoBehaviour
     private PlayerCombat combat;
     private PlayerFoodCarrier foodCarrier;
     private int lastWood = -1;
-    private int lastFish = -1;
     private Sprite lastFood;
 
     public static InventoryUI Instance { get; private set; }
@@ -102,7 +103,7 @@ public class InventoryUI : MonoBehaviour
             return TryAddWood(amount, icon);
         for (int i = 6; i < Capacity; i++)
         {
-            if (items[i] == null || items[i].name != itemName) continue;
+            if (items[i] == null || items[i].isFish || items[i].name != itemName) continue;
             items[i].quantity += amount;
             if (icon != null) items[i].icon = icon;
             RefreshSlot(i);
@@ -116,6 +117,45 @@ public class InventoryUI : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    /// <summary>Add fish to a stack of its own species, with at most 20 fish per slot.</summary>
+    public bool TryAddFish(string species, Sprite icon, int amount = 1)
+    {
+        if (string.IsNullOrWhiteSpace(species) || icon == null || amount <= 0) return false;
+
+        int available = 0;
+        for (int i = 4; i < Capacity; i++)
+        {
+            if (i == 5) continue; // Food being carried has its own slot.
+            ItemStack stack = items[i];
+            if (stack == null) available += MaxFishPerSlot;
+            else if (stack.isFish && stack.name == species)
+                available += MaxFishPerSlot - stack.quantity;
+        }
+        if (available < amount) return false;
+
+        int remaining = amount;
+        for (int i = 4; i < Capacity && remaining > 0; i++)
+        {
+            if (i == 5) continue;
+            ItemStack stack = items[i];
+            if (stack == null || !stack.isFish || stack.name != species || stack.quantity >= MaxFishPerSlot)
+                continue;
+            int added = Mathf.Min(remaining, MaxFishPerSlot - stack.quantity);
+            stack.quantity += added;
+            remaining -= added;
+            RefreshSlot(i);
+        }
+        for (int i = 4; i < Capacity && remaining > 0; i++)
+        {
+            if (i == 5 || items[i] != null) continue;
+            int added = Mathf.Min(remaining, MaxFishPerSlot);
+            items[i] = new ItemStack { name = species, icon = icon, quantity = added, isFish = true };
+            remaining -= added;
+            RefreshSlot(i);
+        }
+        return true;
     }
 
     /// <summary>Collect wood only when every piece fits in the inventory.</summary>
@@ -140,7 +180,6 @@ public class InventoryUI : MonoBehaviour
     private void SyncExistingItems()
     {
         int wood = WoodItem.totalWoodCollected;
-        int fish = fishing != null ? fishing.FishCount : 0;
         Sprite food = foodCarrier != null && foodCarrier.IsCarrying()
             ? foodCarrier.GetCurrentFoodSprite() : null;
 
@@ -166,11 +205,6 @@ public class InventoryUI : MonoBehaviour
                 }
             }
             lastWood = wood;
-        }
-        if (fish != lastFish)
-        {
-            items[4] = fish > 0 ? new ItemStack { name = "Fish", quantity = fish } : null;
-            lastFish = fish;
         }
         if (food != lastFood)
         {

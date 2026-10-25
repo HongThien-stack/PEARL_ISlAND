@@ -1,0 +1,29 @@
+{
+  "group_id": "68c2087b-8d92-4f4b-926e-dc6b2e166655",
+  "objects": [
+    {
+      "id": "1e0548ce-0b05-4dfa-aba6-74805640c853",
+      "name": "base",
+      "prompt": "golden sword",
+      "size": {
+        "width": 34,
+        "height": 34
+      },
+      "directions": 8,
+      "view": "high top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-24T05:31:09.948926"
+}

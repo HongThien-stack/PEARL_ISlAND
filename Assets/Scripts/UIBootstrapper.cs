@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Automatically bootstraps essential UI systems (Quest Window, Visual Novel Dialogue)
@@ -9,6 +10,15 @@ public static class UIBootstrapper
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void InitializeSystems()
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+    }
+
+    private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu") return;
+
         // 0. Ensure EventSystem exists for mouse clicks on UI
         if (Object.FindAnyObjectByType<UnityEngine.EventSystems.EventSystem>(FindObjectsInactive.Include) == null)
         {
@@ -52,6 +62,48 @@ public static class UIBootstrapper
             GameObject fixerGO = new GameObject("CollisionSetupFixer");
             fixerGO.AddComponent<CollisionSetupFixer>();
             Object.DontDestroyOnLoad(fixerGO);
+        }
+
+        GameObject player = GameObject.FindWithTag("Player");
+        if (Object.FindAnyObjectByType<CoinHud>() == null)
+        {
+            ShopCatalog coinCatalog = Resources.Load<ShopCatalog>("ShopCatalog");
+            GameObject coinHud = new GameObject("Coin HUD");
+            SceneManager.MoveGameObjectToScene(coinHud, scene);
+            coinHud.AddComponent<CoinHud>().Configure(coinCatalog != null ? coinCatalog.coinIcon : null);
+        }
+        if (scene.name == "PixelLabMap" && Object.FindAnyObjectByType<ShopUI>() == null)
+        {
+            ShopCatalog catalog = Resources.Load<ShopCatalog>("ShopCatalog");
+            SpriteRenderer houseSprite = null;
+            foreach (SpriteRenderer candidate in Object.FindObjectsByType<SpriteRenderer>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+                if (candidate.gameObject.scene == scene && candidate.name == "af323ed7-1897-4a35-b575-f101c414f08e_0")
+                {
+                    houseSprite = candidate;
+                    break;
+                }
+            if (houseSprite != null && catalog != null)
+            {
+                GameObject shopObject = new GameObject("Village Shop");
+                SceneManager.MoveGameObjectToScene(shopObject, scene);
+                shopObject.AddComponent<ShopUI>().Configure(player != null ? player.transform : null, houseSprite, catalog);
+            }
+            else Debug.LogError("[Shop] Shop house sprite or ShopCatalog is missing.");
+        }
+        GameObject homeExit = GameObject.Find("Home_Exit");
+        if (player != null && homeExit != null && player.GetComponent<PlayerDeathUI>() == null)
+        {
+            PlayerDeathUIConfig deathConfig = Resources.Load<PlayerDeathUIConfig>("PlayerDeathUIConfig");
+            if (deathConfig != null && deathConfig.youDiedSprite != null && deathConfig.replaySprite != null)
+            {
+                PlayerDeathUI deathUI = player.AddComponent<PlayerDeathUI>();
+                deathUI.Configure(deathConfig.youDiedSprite, deathConfig.replaySprite,
+                    homeExit.transform, deathConfig.homeSpawnOffset);
+            }
+            else
+            {
+                Debug.LogError("[UIBootstrapper] PlayerDeathUIConfig or its sprites are missing.");
+            }
         }
 
         Debug.Log("[UIBootstrapper] 🚀 Đã khởi tạo hoàn tất: Cửa sổ Nhiệm Vụ (Phím Q), Khung Chat Visual Novel, và Collision Setup!");

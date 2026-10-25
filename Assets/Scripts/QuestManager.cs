@@ -199,6 +199,7 @@ public class QuestManager : MonoBehaviour
         }
 
         q.status = QuestStatus.Claimed;
+        CoinWallet.Add(q.reward.gold);
 
         Debug.Log($"[QuestManager] 🎁 ĐÃ NHẬN THƯỞNG: {q.title}! (+{q.reward.gold} Vàng, +{q.reward.exp} EXP)");
 

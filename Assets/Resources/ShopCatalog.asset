@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f4862c52d048b8a823ac909891f0b0, type: 3}
+  m_Name: ShopCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::ShopCatalog
+  frame: {fileID: -5847695757057757111, guid: 4e46ed64a4750c945a44f925eb3548ec, type: 3}
+  slot: {fileID: 7566450651834225483, guid: 4e46ed64a4750c945a44f925eb3548ec, type: 3}
+  interactKey: {fileID: -2641865484597898574, guid: 6e96059e6a178ec48a1cd2ee0f4d0f65, type: 3}
+  coinIcon: {fileID: 4977965462779384717, guid: 1128c73cdb0da2d4f9df039837f0d5ea, type: 3}
+  farmSupplies:
+  - name: Cow Feed
+    icon: {fileID: 4219531425537560936, guid: 9539bb5e49eb0e64bb25c76d92dacb6c, type: 3}
+    price: 25
+  - name: Cow Feed 2
+    icon: {fileID: -4527455556697879574, guid: 8e9058ab8f4719542903f3028936c245, type: 3}
+    price: 30
+  - name: Cow Feed 3
+    icon: {fileID: -6928801319606188114, guid: 7502563d83838e741bd1a5e480672cf1, type: 3}
+    price: 35
+  - name: Cow Feed 4
+    icon: {fileID: -3877871103109427209, guid: ac50c0ad66d658d4a983ee2718cfea40, type: 3}
+    price: 40
+  - name: Cow Feed 5
+    icon: {fileID: -788387778430235139, guid: 050a652ac4d8f724db37839dc1c4b9c5, type: 3}
+    price: 45
+  - name: Chicken Feed
+    icon: {fileID: -813384005630298376, guid: 45d51a65acc61644fbade558eff564fb, type: 3}
+    price: 15
+  - name: Chicken Feed 2
+    icon: {fileID: 36622863704177314, guid: aaa9f44b23d408b42aa139df5a25be6b, type: 3}
+    price: 20
+  - name: Chicken Feed 3
+    icon: {fileID: -7083113802466644482, guid: 23250557350b6734b9f23bfd733fc8c2, type: 3}
+    price: 25
+  - name: Chicken Feed 4
+    icon: {fileID: -4845451780989152211, guid: 4e0351b051fefb847b28aeb5d68c41b0, type: 3}
+    price: 30
+  - name: Chicken Feed 5
+    icon: {fileID: -28381668513648960, guid: f8ccbec85eb1fcb44bed3e0f8be39409, type: 3}
+    price: 35
+  - name: Pig Feed
+    icon: {fileID: 1942345013659420145, guid: 2ea0cfebe166b1e4189a3dab9b0d87de, type: 3}
+    price: 20
+  - name: Pig Feed 2
+    icon: {fileID: 3742858121757694124, guid: 1a7629c7ea50e5f43af55d357bed7648, type: 3}
+    price: 25
+  - name: Pig Feed 3
+    icon: {fileID: 356989566215573676, guid: ea8d361f3e7cb2b4a9568675d90ee7ef, type: 3}
+    price: 30
+  - name: Pig Feed 4
+    icon: {fileID: -6619881346894478528, guid: 224a93d0b19cb184babc2425f7156a6a, type: 3}
+    price: 35
+  - name: Pig Feed 5
+    icon: {fileID: 3057892638232007666, guid: 1950e8e04aa00f44b91e9fe8afce514f, type: 3}
+    price: 40
+  items:
+  - name: Copper Axe
+    icon: {fileID: 2324236343598682440, guid: 2063b41bee533234eb96fb8d5a1da5cf, type: 3}
+    price: 150
+  - name: Copper Hoe
+    icon: {fileID: 2324236343598682440, guid: 39275a6b2f5e6774f9d2829cf472790b, type: 3}
+    price: 150
+  - name: Copper Pickaxe
+    icon: {fileID: 2324236343598682440, guid: 99ea1368489c1fc498da57210db1ff0b, type: 3}
+    price: 180
+  - name: Copper Sword
+    icon: {fileID: 2324236343598682440, guid: 21bab99fcf055b947b2fd084d77788b5, type: 3}
+    price: 200
+  - name: Golden Axe
+    icon: {fileID: 2324236343598682440, guid: 49b71696c1732f442ba82415cab52fae, type: 3}
+    price: 500
+  - name: Golden Hoe
+    icon: {fileID: 2324236343598682440, guid: 52c9846d3a26feb4fb31bb5751db7d3c, type: 3}
+    price: 500
+  - name: Golden Pickaxe
+    icon: {fileID: 2324236343598682440, guid: 3374a64ffabe39b4b96885e54676807c, type: 3}
+    price: 550
+  - name: Golden Sword
+    icon: {fileID: 2324236343598682440, guid: be2851c2d9b823d419e993e1de32022b, type: 3}
+    price: 600
+  - name: Iron Axe
+    icon: {fileID: 2324236343598682440, guid: 4777969c5eb40884ca64c97331953270, type: 3}
+    price: 300
+  - name: Iron Hoe
+    icon: {fileID: 2324236343598682440, guid: bed4aac872b06024985961719c741e06, type: 3}
+    price: 300
+  - name: Iron Pickaxe
+    icon: {fileID: 2324236343598682440, guid: 2cf84d92e0c64fe42b9ca201b508cf62, type: 3}
+    price: 350
+  - name: Iron Sword
+    icon: {fileID: 2324236343598682440, guid: 4725c33c0da37054e8e80bd47e88dfcf, type: 3}
+    price: 400
+  - name: Watering Can
+    icon: {fileID: 2324236343598682440, guid: d4859cd49cc31434a960523cd9a43951, type: 3}
+    price: 100

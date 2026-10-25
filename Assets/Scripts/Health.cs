@@ -87,6 +87,17 @@ public class Health : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
+    public void Revive()
+    {
+        StopAllCoroutines();
+        isDead = false;
+        isInvulnerable = false;
+        currentHealth = maxHealth;
+        if (spriteRenderer != null) spriteRenderer.color = originalSpriteColor;
+        if (rb != null) rb.linearVelocity = Vector2.zero;
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+    }
+
     private void Die()
     {
         isDead = true;

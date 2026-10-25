@@ -1,0 +1,29 @@
+{
+  "group_id": "fd6fc76c-3979-4da8-aa5a-629fade87388",
+  "objects": [
+    {
+      "id": "4fc5fb3c-4b5f-42ae-9e0c-593d481f5766",
+      "name": "base",
+      "prompt": "copper hoe",
+      "size": {
+        "width": 34,
+        "height": 34
+      },
+      "directions": 8,
+      "view": "high top-down",
+      "rotations": {
+        "south": "rotations/south.png",
+        "south-east": "rotations/south-east.png",
+        "east": "rotations/east.png",
+        "north-east": "rotations/north-east.png",
+        "north": "rotations/north.png",
+        "north-west": "rotations/north-west.png",
+        "west": "rotations/west.png",
+        "south-west": "rotations/south-west.png"
+      },
+      "animations": {}
+    }
+  ],
+  "export_version": "1.1",
+  "export_date": "2026-10-24T05:31:18.937671"
+}
