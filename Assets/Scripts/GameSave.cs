@@ -34,6 +34,8 @@ public static class GameSave
         public int fish;
         public int day;
         public float hour;
+        public bool indoors;
+        public bool hasFootstepEnvironment;
         public List<QuestData> quests = new List<QuestData>();
         public List<ItemData> items = new List<ItemData>();
     }
@@ -80,6 +82,12 @@ public static class GameSave
             day = DayNightClockSystem.Instance != null ? DayNightClockSystem.Instance.CurrentDay : 1,
             hour = DayNightClockSystem.Instance != null ? DayNightClockSystem.Instance.TimeOfDay : 6f
         };
+        PlayerFootsteps footsteps = player.GetComponent<PlayerFootsteps>();
+        if (footsteps != null)
+        {
+            data.indoors = footsteps.IsIndoors;
+            data.hasFootstepEnvironment = true;
+        }
         if (QuestManager.Instance != null)
             foreach (Quest quest in QuestManager.Instance.AllQuests)
                 data.quests.Add(new QuestData { id = quest.id, amount = quest.currentAmount, status = quest.status });
@@ -122,6 +130,15 @@ public static class GameSave
                 body.position = data.playerPosition;
             }
             player.transform.position = data.playerPosition;
+            PlayerFootsteps footsteps = player.GetComponent<PlayerFootsteps>();
+            if (footsteps != null)
+            {
+                // Older saves predate the indoor/outdoor flag. Infer their location once.
+                bool indoors = data.hasFootstepEnvironment ? data.indoors :
+                    Vector2.Distance(data.playerPosition, new Vector2(30f, -8f)) < 35f ||
+                    Vector2.Distance(data.playerPosition, new Vector2(0f, -105f)) < 35f;
+                footsteps.SetIndoors(indoors);
+            }
             player.GetComponent<Health>()?.Restore(data.health);
             player.GetComponent<PlayerFishing>()?.RestoreFishCount(data.fish);
             CoinWallet.Restore(data.coins);

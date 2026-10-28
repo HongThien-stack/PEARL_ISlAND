@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Animator Parameter Names")]
     [SerializeField] private string isMovingParam = "IsMoving";
+    [SerializeField] private string isRunningParam = "IsRunning";
     [SerializeField] private string moveXParam = "MoveX";
     [SerializeField] private string moveYParam = "MoveY";
     [SerializeField] private string lastMoveXParam = "LastMoveX";
@@ -24,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 lastDirection = Vector2.down;
     private bool isSprinting = false;
+
+    public bool IsSprinting => isSprinting && moveInput.sqrMagnitude > 0.001f;
 
     private void Awake()
     {
@@ -47,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
             if (animator != null && animator.isActiveAndEnabled)
             {
                 animator.SetBool(isMovingParam, false);
+                animator.SetBool(isRunningParam, false);
                 animator.SetFloat(moveXParam, 0f);
                 animator.SetFloat(moveYParam, 0f);
             }
@@ -121,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
         {
             bool isMoving = moveInput.sqrMagnitude > 0.001f;
             animator.SetBool(isMovingParam, isMoving);
+            animator.SetBool(isRunningParam, isMoving && isSprinting);
             animator.SetFloat(moveXParam, isMoving ? animDir.x : 0f);
             animator.SetFloat(moveYParam, isMoving ? animDir.y : 0f);
             animator.SetFloat(lastMoveXParam, lastDirection.x);
@@ -151,6 +156,16 @@ public class PlayerMovement : MonoBehaviour
     public void SetMovementEnabled(bool value)
     {
         enabled = value;
-        if (!value && rb != null) rb.linearVelocity = Vector2.zero;
+        if (!value)
+        {
+            moveInput = Vector2.zero;
+            isSprinting = false;
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+            if (animator != null && animator.isActiveAndEnabled)
+            {
+                animator.SetBool(isMovingParam, false);
+                animator.SetBool(isRunningParam, false);
+            }
+        }
     }
 }

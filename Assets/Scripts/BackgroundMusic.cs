@@ -4,11 +4,13 @@ using UnityEngine.SceneManagement;
 /// <summary>Plays menu music and switches to game music after the game scene loads.</summary>
 public sealed class BackgroundMusic : MonoBehaviour
 {
+    private const float InGameMusicLevel = 0.25f;
     private static BackgroundMusic instance;
 
     private AudioSource source;
     private AudioClip gameClip;
     private bool waitingForGame;
+    private bool playingGameMusic;
 
     public static BackgroundMusic GetOrCreate()
     {
@@ -24,7 +26,8 @@ public sealed class BackgroundMusic : MonoBehaviour
     public static void SetVolume(float volume)
     {
         if (instance != null && instance.source != null)
-            instance.source.volume = volume;
+            instance.source.volume = Mathf.Clamp01(volume) *
+                (instance.playingGameMusic ? InGameMusicLevel : 1f);
     }
 
     private void Awake()
@@ -47,6 +50,7 @@ public sealed class BackgroundMusic : MonoBehaviour
     public void PlayMenu(AudioClip menuClip, AudioClip inGameClip)
     {
         waitingForGame = false;
+        playingGameMusic = false;
         gameClip = inGameClip;
         Play(menuClip);
     }
@@ -62,6 +66,7 @@ public sealed class BackgroundMusic : MonoBehaviour
             return;
 
         waitingForGame = false;
+        playingGameMusic = true;
         Play(gameClip);
     }
 
@@ -69,6 +74,7 @@ public sealed class BackgroundMusic : MonoBehaviour
     {
         source.Stop();
         source.clip = clip;
+        SetVolume(GameSettings.MusicVolume);
         if (clip != null)
             source.Play();
     }

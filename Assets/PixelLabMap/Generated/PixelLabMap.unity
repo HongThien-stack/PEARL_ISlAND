@@ -3924,6 +3924,7 @@ GameObject:
   - component: {fileID: 109110217}
   - component: {fileID: 109110218}
   - component: {fileID: 109110219}
+  - component: {fileID: 109110220}
   m_Layer: 0
   m_Name: MC
   m_TagString: Player
@@ -3971,8 +3972,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
-  sprintMultiplier: 5
+  sprintMultiplier: 1.6
   isMovingParam: IsMoving
+  isRunningParam: IsRunning
   moveXParam: MoveX
   moveYParam: MoveY
   lastMoveXParam: LastMoveX
@@ -4327,6 +4329,24 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: e403bd52cf93ff24193875e0c4f612a9, type: 3}
   hearingDistance: 11
   volume: 0.7
+--- !u!114 &109110220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109110203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09b8d33a782435b9c84db7cb71b9202, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerFootsteps
+  outdoorWalkGrass: {fileID: 8300000, guid: 9d300fd20f5f01a4bb8b35b2a5501898, type: 3}
+  outdoorWalkMixedTerrain: {fileID: 8300000, guid: 1f950c3e93b826a4aab579262cdacefd, type: 3}
+  outdoorRunGrass: {fileID: 8300000, guid: d37eddc9be5643044919d7400b0955c9, type: 3}
+  indoorSteps: {fileID: 8300000, guid: 4893afe704119274790022fc358e2f5d, type: 3}
+  indoors: 1
+  volume: 1
 --- !u!1 &109829007
 GameObject:
   m_ObjectHideFlags: 0
@@ -8674,6 +8694,7 @@ MonoBehaviour:
   targetTeleportPoint: {fileID: 1091215542}
   targetPositionOffset: {x: 0, y: -1.09, z: 0}
   targetSceneName: 
+  destinationIndoors: 1
   triggerMode: 1
   changeCameraMode: 1
   arrivalCameraMode: 1
@@ -31676,6 +31697,7 @@ MonoBehaviour:
   targetTeleportPoint: {fileID: 304229258}
   targetPositionOffset: {x: 0, y: -1.78, z: 0}
   targetSceneName: 
+  destinationIndoors: 0
   triggerMode: 1
   changeCameraMode: 1
   arrivalCameraMode: 0
@@ -31937,6 +31959,7 @@ MonoBehaviour:
   targetTeleportPoint: {fileID: 1728203222}
   targetPositionOffset: {x: 0, y: 2.04, z: 0}
   targetSceneName: 
+  destinationIndoors: 1
   triggerMode: 1
   changeCameraMode: 1
   arrivalCameraMode: 0
@@ -634495,6 +634518,7 @@ MonoBehaviour:
   targetTeleportPoint: {fileID: 1103982589}
   targetPositionOffset: {x: 0, y: -2.14, z: 0}
   targetSceneName: 
+  destinationIndoors: 0
   triggerMode: 1
   changeCameraMode: 1
   arrivalCameraMode: 0

@@ -25,6 +25,9 @@ public class MapTeleporter : MonoBehaviour, IInteractable
     [Tooltip("Optional: Name of target Unity scene to load. Leave empty if teleporting within the same scene.")]
     [SerializeField] private string targetSceneName = "";
 
+    [Tooltip("Use indoor footstep sounds at this teleport destination.")]
+    [SerializeField] private bool destinationIndoors;
+
     [Header("Trigger Mode")]
     [SerializeField] private TriggerMode triggerMode = TriggerMode.OnKeyPressF;
 
@@ -142,6 +145,7 @@ public class MapTeleporter : MonoBehaviour, IInteractable
                 rb.position = destPos;
             }
             player.transform.position = destPos;
+            player.GetComponent<PlayerFootsteps>()?.SetIndoors(destinationIndoors);
 
             // Update Camera Mode (Follow Player vs Fixed Indoor Anchor)
             CameraFollow camFollow = FindAnyObjectByType<CameraFollow>();
