@@ -95,8 +95,8 @@ public class ChefAI : MonoBehaviour
         BoxCollider2D collider = GetComponent<BoxCollider2D>();
         if (collider != null)
         {
-            collider.isTrigger = false;
-            collider.size = new Vector2(1f, 1f);
+            collider.enabled = true;
+            collider.isTrigger = true;
         }
 
         if (serveCounter == null)
