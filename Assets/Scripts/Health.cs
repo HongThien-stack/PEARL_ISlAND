@@ -98,6 +98,16 @@ public class Health : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
+    public void Restore(float amount)
+    {
+        StopAllCoroutines();
+        isDead = false;
+        isInvulnerable = false;
+        currentHealth = Mathf.Clamp(amount, 1f, maxHealth);
+        if (spriteRenderer != null) spriteRenderer.color = originalSpriteColor;
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+    }
+
     private void Die()
     {
         isDead = true;

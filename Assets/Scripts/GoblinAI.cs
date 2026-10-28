@@ -47,6 +47,13 @@ public class GoblinAI : MonoBehaviour
     [SerializeField] private float attackKnockback = 3.0f;
     [SerializeField] private float attackDuration = 0.6f;
 
+    [Header("Monster Audio")]
+    [SerializeField] private AudioClip nearbyGrowlSound;
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField, Min(0f)] private float growlRadius = 7f;
+    [SerializeField, Range(0f, 1f)] private float growlVolume = 0.8f;
+    [SerializeField, Range(0f, 1f)] private float deathVolume = 0.8f;
+
     [Header("Animator Parameter Names")]
     [SerializeField] private string isMovingParam = "IsMoving";
     [SerializeField] private string moveXParam = "MoveX";
@@ -59,6 +66,7 @@ public class GoblinAI : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private Health health;
+    private AudioSource growlAudio;
     private Transform playerTarget;
 
     private Vector2 spawnPoint;
@@ -75,6 +83,11 @@ public class GoblinAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         health = GetComponent<Health>();
+        growlAudio = gameObject.AddComponent<AudioSource>();
+        growlAudio.clip = nearbyGrowlSound;
+        growlAudio.playOnAwake = false;
+        growlAudio.loop = true;
+        growlAudio.spatialBlend = 0f;
 
         // Physics setup
         if (rb != null)
@@ -109,6 +122,7 @@ public class GoblinAI : MonoBehaviour
 
     private void OnDisable()
     {
+        if (growlAudio != null) growlAudio.Stop();
         if (health != null)
         {
             health.OnDeath -= HandleDeath;
@@ -124,6 +138,8 @@ public class GoblinAI : MonoBehaviour
         {
             FindPlayerTarget();
         }
+
+        UpdateGrowl();
 
         switch (currentState)
         {
@@ -478,6 +494,25 @@ public class GoblinAI : MonoBehaviour
         }
     }
 
+    private void UpdateGrowl()
+    {
+        if (growlAudio == null || nearbyGrowlSound == null || playerTarget == null || growlRadius <= 0f)
+        {
+            if (growlAudio != null && growlAudio.isPlaying) growlAudio.Stop();
+            return;
+        }
+
+        float distance = Vector2.Distance(transform.position, playerTarget.position);
+        if (distance >= growlRadius)
+        {
+            if (growlAudio.isPlaying) growlAudio.Stop();
+            return;
+        }
+
+        growlAudio.volume = growlVolume * GameSettings.EffectsVolume * (1f - distance / growlRadius);
+        if (!growlAudio.isPlaying) growlAudio.Play();
+    }
+
     private void HandleTakeDamage(float damage)
     {
         // Aggro on hit even if outside normal detection range
@@ -491,6 +526,19 @@ public class GoblinAI : MonoBehaviour
     {
         currentState = State.Dead;
         isAttacking = false;
+
+        if (growlAudio != null) growlAudio.Stop();
+        if (deathSound != null)
+        {
+            GameObject soundObject = new GameObject("Goblin Death Sound");
+            AudioSource soundSource = soundObject.AddComponent<AudioSource>();
+            soundSource.playOnAwake = false;
+            soundSource.spatialBlend = 0f;
+            soundSource.volume = deathVolume * GameSettings.EffectsVolume;
+            soundSource.clip = deathSound;
+            soundSource.Play();
+            Destroy(soundObject, deathSound.length + 0.1f);
+        }
 
         if (rb != null)
         {

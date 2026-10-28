@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af363654e821421681620e09646f9739, type: 3}
+  m_Name: GameSettingsVisuals
+  m_EditorClassIdentifier: Assembly-CSharp::GameSettingsVisuals
+  gear: {fileID: 7560926027115075561, guid: 4aef3d7deefd63b46abcbca836b17b44, type: 3}
+  panel: {fileID: 1064201914846730425, guid: 4aef3d7deefd63b46abcbca836b17b44, type: 3}

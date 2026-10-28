@@ -121,7 +121,7 @@ public class WoodItem : MonoBehaviour, IInteractable
 
         if (audioSource != null && pickupSound != null)
         {
-            audioSource.PlayOneShot(pickupSound);
+            audioSource.PlayOneShot(pickupSound, GameSettings.EffectsVolume);
         }
 
         StartCoroutine(PickupFlyRoutine(player));

@@ -20,4 +20,18 @@ public static class CoinWallet
         Balance = (int)Math.Min((long)Balance + amount, int.MaxValue);
         BalanceChanged?.Invoke(Balance);
     }
+
+    public static bool TrySpend(int amount)
+    {
+        if (amount < 0 || Balance < amount) return false;
+        Balance -= amount;
+        BalanceChanged?.Invoke(Balance);
+        return true;
+    }
+
+    public static void Restore(int amount)
+    {
+        Balance = Math.Max(0, amount);
+        BalanceChanged?.Invoke(Balance);
+    }
 }

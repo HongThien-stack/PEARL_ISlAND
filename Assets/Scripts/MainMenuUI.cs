@@ -8,16 +8,21 @@ using UnityEngine.UI;
 public sealed class MainMenuUI : MonoBehaviour
 {
     [SerializeField] private Sprite background;
-    [SerializeField] private Sprite startButton;
+    [SerializeField] private Sprite newGameButton;
+    [SerializeField] private Sprite resumeButton;
     [SerializeField] private Sprite settingsButton;
     [SerializeField] private Sprite quitButton;
     [SerializeField] private Sprite gearButton;
     [SerializeField] private Sprite settingsPanel;
+    [SerializeField] private AudioClip menuMusic;
+    [SerializeField] private AudioClip gameMusic;
 
     private GameObject settingsRoot;
 
     private void Awake()
     {
+        BackgroundMusic.GetOrCreate().PlayMenu(menuMusic, gameMusic);
+
         if (EventSystem.current == null)
         {
             GameObject eventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
@@ -48,16 +53,20 @@ public sealed class MainMenuUI : MonoBehaviour
         Text subtitle = MakeTitle("Adventure Subtitle", canvasObject.transform, "ADVENTURE", 43);
         Place(subtitle.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0, 111), new Vector2(440, 64));
 
-        MakeButton("Start Game", canvasObject.transform, startButton, new Vector2(0.5f, 0.5f),
-            new Vector2(0, -15), new Vector2(258, 81), StartGame);
+        bool hasSave = GameSave.HasSave;
+        MakeButton("New Game", canvasObject.transform, newGameButton, new Vector2(0.5f, 0.5f),
+            new Vector2(0, hasSave ? -3 : -15), new Vector2(258, 81), NewGame);
+        if (hasSave)
+            MakeButton("Resume", canvasObject.transform, resumeButton, new Vector2(0.5f, 0.5f),
+                new Vector2(0, -95), new Vector2(258, 81), ResumeGame);
         MakeButton("Settings", canvasObject.transform, settingsButton, new Vector2(0.5f, 0.5f),
-            new Vector2(0, -112), new Vector2(258, 81), ToggleSettings);
+            new Vector2(0, hasSave ? -187 : -112), new Vector2(258, 81), ToggleSettings);
         MakeButton("Quit Game", canvasObject.transform, quitButton, new Vector2(0.5f, 0.5f),
-            new Vector2(0, -209), new Vector2(258, 81), QuitGame);
+            new Vector2(0, hasSave ? -279 : -209), new Vector2(258, 81), QuitGame);
         MakeButton("Settings Gear", canvasObject.transform, gearButton, Vector2.one,
             new Vector2(-54, -54), new Vector2(72, 72), ToggleSettings);
 
-        CreateSettingsPanel(canvasObject.transform);
+        gameObject.AddComponent<GameSettingsUI>().ShowLauncher(false);
     }
 
     private void CreateSettingsPanel(Transform parent)
@@ -175,9 +184,25 @@ public sealed class MainMenuUI : MonoBehaviour
         rect.offsetMax = -margin;
     }
 
-    private void ToggleSettings() => settingsRoot.SetActive(!settingsRoot.activeSelf);
+    private void ToggleSettings() => GameSettingsUI.Instance?.Toggle();
 
-    private static void StartGame() => SceneManager.LoadScene("PixelLabMap");
+    private static void NewGame()
+    {
+        if (!GameSave.BeginNewGame()) return;
+        EnterGame();
+    }
+
+    private static void ResumeGame()
+    {
+        GameSave.RequestLoad();
+        EnterGame();
+    }
+
+    private static void EnterGame()
+    {
+        BackgroundMusic.GetOrCreate().StartGameWhenLoaded();
+        SceneManager.LoadScene("PixelLabMap");
+    }
 
     private static void QuitGame()
     {

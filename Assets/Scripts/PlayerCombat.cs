@@ -37,7 +37,12 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private float knockbackForce = 4f;
     [SerializeField] private Hitbox attackHitbox;
 
+    [Header("Combat Audio")]
+    [SerializeField] private AudioClip swordSwingSound;
+    [SerializeField, Range(0f, 1f)] private float swordSwingVolume = 0.8f;
+
     private PlayerMovement playerMovement;
+    private AudioSource combatAudio;
     private Health playerHealth;
     private Hurtbox playerHurtbox;
     private bool isFighting = false;
@@ -53,6 +58,9 @@ public class PlayerCombat : MonoBehaviour
             animator = GetComponent<Animator>();
         }
         playerMovement = GetComponent<PlayerMovement>();
+        combatAudio = gameObject.AddComponent<AudioSource>();
+        combatAudio.playOnAwake = false;
+        combatAudio.spatialBlend = 0f;
 
         // Ensure Player Health & Hurtbox
         playerHealth = GetComponent<Health>();
@@ -209,6 +217,8 @@ public class PlayerCombat : MonoBehaviour
             }
 
             Debug.Log("[PlayerCombat] 🥊 MC thực hiện đòn đánh (Fight Attack - Nút J)!");
+            if (swordSwingSound != null)
+                combatAudio.PlayOneShot(swordSwingSound, swordSwingVolume * GameSettings.EffectsVolume);
 
             // Enable Hitbox during swing peak
             if (attackHitbox != null)

@@ -90,7 +90,7 @@ public class ChoppableTree : MonoBehaviour, IInteractable
 
         if (audioSource != null && hitSound != null)
         {
-            audioSource.PlayOneShot(hitSound);
+            audioSource.PlayOneShot(hitSound, GameSettings.EffectsVolume);
         }
 
         StartCoroutine(HitShakeRoutine());
@@ -128,7 +128,7 @@ public class ChoppableTree : MonoBehaviour, IInteractable
 
         if (audioSource != null && fallSound != null)
         {
-            audioSource.PlayOneShot(fallSound);
+            audioSource.PlayOneShot(fallSound, GameSettings.EffectsVolume);
         }
 
         // Play Fall animation if Animator is attached

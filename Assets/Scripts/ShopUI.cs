@@ -19,7 +19,11 @@ public sealed class ShopUI : MonoBehaviour
     private RectTransform products;
     private Button suppliesTab;
     private Button itemsTab;
+    private Text balanceLabel;
+    private Text feedbackLabel;
     private bool showItems;
+
+    public bool IsOpen => panel != null && panel.activeSelf;
 
     public void Configure(Transform playerTransform, SpriteRenderer houseRenderer, ShopCatalog shopCatalog)
     {
@@ -27,7 +31,12 @@ public sealed class ShopUI : MonoBehaviour
         house = houseRenderer;
         catalog = shopCatalog;
         Build();
+        CoinWallet.BalanceChanged -= UpdateBalance;
+        CoinWallet.BalanceChanged += UpdateBalance;
+        UpdateBalance(CoinWallet.Balance);
     }
+
+    private void OnDestroy() => CoinWallet.BalanceChanged -= UpdateBalance;
 
     private void Update()
     {
@@ -103,10 +112,12 @@ public sealed class ShopUI : MonoBehaviour
         panel = MakeRect(canvas.transform, "Shop Panel", new Vector2(680, 545), Vector2.zero).gameObject;
         MakeImage(panel.transform, "Wood Frame", catalog.frame, Vector2.zero, new Vector2(680, 545), Color.white);
         MakeText(panel.transform, "SHOP", 27, new Vector2(0, 235), new Vector2(350, 38), Cream);
+        balanceLabel = MakeText(panel.transform, "", 18, new Vector2(198, 235), new Vector2(160, 32), Cream);
         suppliesTab = MakeButton(panel.transform, "FARM SUPPLIES", new Vector2(-145, 183), new Vector2(215, 43), () => ShowTab(false));
         itemsTab = MakeButton(panel.transform, "ITEMS", new Vector2(145, 183), new Vector2(215, 43), () => ShowTab(true));
         MakeButton(panel.transform, "X", new Vector2(300, 235), new Vector2(38, 38), () => SetOpen(false));
         products = MakeRect(panel.transform, "Products", new Vector2(605, 400), new Vector2(0, -45));
+        feedbackLabel = MakeText(panel.transform, "", 15, new Vector2(0, -247), new Vector2(580, 27), Cream);
         ShowTab(false);
         panel.SetActive(false);
     }
@@ -114,6 +125,7 @@ public sealed class ShopUI : MonoBehaviour
     private void ShowTab(bool items)
     {
         showItems = items;
+        if (feedbackLabel != null) feedbackLabel.text = "Click an item to buy";
         suppliesTab.image.color = items ? new Color(.54f, .32f, .19f) : new Color(.84f, .59f, .32f);
         itemsTab.image.color = items ? new Color(.84f, .59f, .32f) : new Color(.54f, .32f, .19f);
         for (int i = products.childCount - 1; i >= 0; i--)
@@ -126,20 +138,52 @@ public sealed class ShopUI : MonoBehaviour
         if (list == null) return;
         for (int i = 0; i < list.Length; i++)
         {
+            ShopCatalog.Product product = list[i];
             int col = i % 5;
             int row = i / 5;
-            RectTransform cell = MakeRect(products, "Product " + list[i].name, new Vector2(108, 115),
+            RectTransform cell = MakeRect(products, "Product " + product.name, new Vector2(108, 115),
                 new Vector2((col - 2) * 119, 125 - row * 122));
-            MakeImage(cell, "Slot", catalog.slot, Vector2.zero, new Vector2(108, 108), new Color(.85f, .77f, .64f));
-            Image icon = MakeImage(cell, "Icon", list[i].icon, new Vector2(0, 21), new Vector2(61, 61), Color.white);
+            Image slot = MakeImage(cell, "Slot", catalog.slot, Vector2.zero, new Vector2(108, 108), new Color(.85f, .77f, .64f));
+            slot.raycastTarget = true;
+            Button buyButton = cell.gameObject.AddComponent<Button>();
+            buyButton.targetGraphic = slot;
+            buyButton.onClick.AddListener(() => Buy(product));
+            Image icon = MakeImage(cell, "Icon", product.icon, new Vector2(0, 21), new Vector2(61, 61), Color.white);
             icon.preserveAspect = true;
-            MakeText(cell, list[i].name, 12, new Vector2(0, -28), new Vector2(101, 24), Cream);
-            MakeText(cell, list[i].price.ToString("N0"), 12, new Vector2(9, -48),
+            MakeText(cell, product.name, 12, new Vector2(0, -28), new Vector2(101, 24), Cream);
+            MakeText(cell, product.price.ToString("N0"), 12, new Vector2(9, -48),
                 new Vector2(72, 18), Cream);
             Image coin = MakeImage(cell, "Price Coin", catalog.coinIcon, new Vector2(-30, -48),
                 new Vector2(16, 16), Color.white);
             coin.preserveAspect = true;
         }
+    }
+
+    private void Buy(ShopCatalog.Product product)
+    {
+        InventoryUI inventory = InventoryUI.Instance;
+        if (inventory == null || !inventory.CanAddItem(product.name))
+        {
+            feedbackLabel.text = "Inventory is full";
+            return;
+        }
+        if (!CoinWallet.TrySpend(product.price))
+        {
+            feedbackLabel.text = "Not enough coins";
+            return;
+        }
+        if (!inventory.AddItem(product.name, product.icon))
+        {
+            CoinWallet.Add(product.price);
+            feedbackLabel.text = "Could not add item";
+            return;
+        }
+        feedbackLabel.text = "Bought " + product.name + "!";
+    }
+
+    private void UpdateBalance(int balance)
+    {
+        if (balanceLabel != null) balanceLabel.text = balance.ToString("N0") + " COINS";
     }
 
     public void SetOpen(bool open)

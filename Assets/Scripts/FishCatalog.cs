@@ -27,4 +27,12 @@ public sealed class FishCatalog : ScriptableObject
         }
         return default;
     }
+
+    public Sprite FindIcon(string species)
+    {
+        if (fish == null) return null;
+        foreach (Fish entry in fish)
+            if (entry.name == species) return entry.icon;
+        return null;
+    }
 }

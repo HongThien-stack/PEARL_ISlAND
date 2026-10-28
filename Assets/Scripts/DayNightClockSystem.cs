@@ -156,4 +156,12 @@ public class DayNightClockSystem : MonoBehaviour
         timeOfDay = Mathf.Repeat(hour, 24f);
         UpdateClockHands();
     }
+
+    public void RestoreDayAndTime(int day, float hour)
+    {
+        currentDay = Mathf.Max(1, day);
+        SetTime(hour);
+        OnDayChanged?.Invoke(currentDay);
+        OnTimeChanged?.Invoke(CurrentHour, CurrentMinute);
+    }
 }

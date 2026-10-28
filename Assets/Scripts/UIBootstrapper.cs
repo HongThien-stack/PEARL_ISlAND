@@ -33,6 +33,9 @@ public static class UIBootstrapper
             Debug.Log("[UIBootstrapper] 🖱️ Đã tạo EventSystem cho chuột tương tác UI!");
         }
 
+        if (Object.FindAnyObjectByType<GameSettingsUI>(FindObjectsInactive.Include) == null)
+            new GameObject("Game Settings").AddComponent<GameSettingsUI>();
+
         // 1. Ensure Quest Manager & Quest Window UI exist (skip if user already added to scene)
         if (QuestManager.Instance == null && Object.FindAnyObjectByType<QuestManager>(FindObjectsInactive.Include) == null)
         {
@@ -65,6 +68,7 @@ public static class UIBootstrapper
         }
 
         GameObject player = GameObject.FindWithTag("Player");
+        if (scene.name == "PixelLabMap") GameSave.LoadPending();
         if (Object.FindAnyObjectByType<CoinHud>() == null)
         {
             ShopCatalog coinCatalog = Resources.Load<ShopCatalog>("ShopCatalog");

@@ -364,8 +364,11 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   background: {fileID: -1955448553306655712, guid: 57a9f10ef7d6f444d8d1a8f7194c70dc, type: 3}
-  startButton: {fileID: -3668500097631183494, guid: 4ed59df48877fcc4a97284b70918002d, type: 3}
+  newGameButton: {fileID: -7164538615590243812, guid: f32aa49f5bf1e824190a26e334d8f2ab, type: 3}
+  resumeButton: {fileID: -5191842052228415205, guid: 41e27bfd1a727cb42a911a7ce028963b, type: 3}
   settingsButton: {fileID: 3370780919055775263, guid: 4ed59df48877fcc4a97284b70918002d, type: 3}
   quitButton: {fileID: -8354027826119777798, guid: 4ed59df48877fcc4a97284b70918002d, type: 3}
   gearButton: {fileID: 7560926027115075561, guid: 4aef3d7deefd63b46abcbca836b17b44, type: 3}
   settingsPanel: {fileID: 1064201914846730425, guid: 4aef3d7deefd63b46abcbca836b17b44, type: 3}
+  menuMusic: {fileID: 8300000, guid: c8d6079722ef3a848827b724b0101468, type: 3}
+  gameMusic: {fileID: 8300000, guid: 93277b57bdaa60f4b969a2ea5b70bacd, type: 3}

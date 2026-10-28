@@ -218,4 +218,6 @@ public class QuestManager : MonoBehaviour
     {
         return quests.Find(x => x.id == questId);
     }
+
+    public void RefreshAfterLoad() => OnQuestListChanged?.Invoke();
 }

@@ -344,7 +344,7 @@ public class VisualNovelDialogueUI : MonoBehaviour
         // 3. Play voice clip if available
         if (audioSource != null && line.voiceClip != null)
         {
-            audioSource.PlayOneShot(line.voiceClip);
+            audioSource.PlayOneShot(line.voiceClip, GameSettings.EffectsVolume);
         }
 
         // 4. Start Typewriter Effect
@@ -400,7 +400,7 @@ public class VisualNovelDialogueUI : MonoBehaviour
             // Typing audio tick
             if (audioSource != null && typeSound != null && (charIndex % 2 == 0))
             {
-                audioSource.PlayOneShot(typeSound, 0.4f);
+                audioSource.PlayOneShot(typeSound, 0.4f * GameSettings.EffectsVolume);
             }
 
             // Slight pause on punctuation

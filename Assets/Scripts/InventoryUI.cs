@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -119,6 +120,21 @@ public class InventoryUI : MonoBehaviour
         return false;
     }
 
+    public bool CanAddItem(string itemName)
+    {
+        if (string.IsNullOrWhiteSpace(itemName)) return false;
+        if (string.Equals(itemName, "Wood", StringComparison.OrdinalIgnoreCase))
+        {
+            int slots = 1;
+            for (int i = 6; i < Capacity; i++)
+                if (items[i] == null || items[i].name == "Wood") slots++;
+            return (long)WoodItem.totalWoodCollected < (long)slots * MaxWoodPerSlot;
+        }
+        for (int i = 6; i < Capacity; i++)
+            if (items[i] == null || (!items[i].isFish && items[i].name == itemName)) return true;
+        return false;
+    }
+
     /// <summary>Add fish to a stack of its own species, with at most 20 fish per slot.</summary>
     public bool TryAddFish(string species, Sprite icon, int amount = 1)
     {
@@ -175,6 +191,45 @@ public class InventoryUI : MonoBehaviour
         SyncExistingItems();
         RefreshAll();
         return true;
+    }
+
+    public List<GameSave.ItemData> CaptureItems()
+    {
+        SyncExistingItems();
+        List<GameSave.ItemData> saved = new List<GameSave.ItemData>();
+        for (int i = 4; i < Capacity; i++)
+        {
+            if (i == 5 || items[i] == null || items[i].name == "Wood") continue;
+            saved.Add(new GameSave.ItemData
+            {
+                slot = i, name = items[i].name, quantity = items[i].quantity, isFish = items[i].isFish
+            });
+        }
+        return saved;
+    }
+
+    public void RestoreItems(List<GameSave.ItemData> saved)
+    {
+        for (int i = 4; i < Capacity; i++)
+            if (i != 5) items[i] = null;
+        lastWood = -1;
+        if (saved != null)
+        {
+            FishCatalog fishCatalog = Resources.Load<FishCatalog>("FishCatalog");
+            ShopCatalog shopCatalog = Resources.Load<ShopCatalog>("ShopCatalog");
+            foreach (GameSave.ItemData entry in saved)
+            {
+                if (entry.slot < 4 || entry.slot >= Capacity || entry.slot == 5 || entry.quantity <= 0) continue;
+                Sprite icon = entry.isFish && fishCatalog != null ? fishCatalog.FindIcon(entry.name) :
+                    shopCatalog != null ? shopCatalog.FindProductIcon(entry.name) : null;
+                items[entry.slot] = new ItemStack
+                {
+                    name = entry.name, quantity = entry.quantity, isFish = entry.isFish, icon = icon
+                };
+            }
+        }
+        SyncExistingItems();
+        RefreshAll();
     }
 
     private void SyncExistingItems()

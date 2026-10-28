@@ -25,7 +25,8 @@ public sealed class CoinHud : MonoBehaviour
         RectTransform backgroundRect = backgroundObject.GetComponent<RectTransform>();
         backgroundRect.anchorMin = backgroundRect.anchorMax = Vector2.one;
         backgroundRect.pivot = Vector2.one;
-        backgroundRect.anchoredPosition = new Vector2(-20f, -20f);
+        // Leave room for the Settings button at the upper-right corner.
+        backgroundRect.anchoredPosition = new Vector2(-112f, -20f);
         backgroundRect.sizeDelta = new Vector2(150f, 42f);
         Image background = backgroundObject.GetComponent<Image>();
         background.color = new Color(.18f, .10f, .06f, .84f);

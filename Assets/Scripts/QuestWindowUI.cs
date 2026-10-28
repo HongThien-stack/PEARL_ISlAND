@@ -877,8 +877,8 @@ public class QuestWindowUI : MonoBehaviour
         hudRT.anchorMin = new Vector2(1f, 1f);
         hudRT.anchorMax = new Vector2(1f, 1f);
         hudRT.pivot = new Vector2(1f, 1f);
-        hudRT.anchoredPosition = new Vector2(-20f, -80f);
-        hudRT.sizeDelta = new Vector2(250f, 65f);
+        hudRT.anchoredPosition = new Vector2(-20f, -106f);
+        hudRT.sizeDelta = new Vector2(300f, 72f);
 
         Image hudBg = hudTrackerPanel.AddComponent<Image>();
         hudBg.color = new Color(0.08f, 0.10f, 0.16f, 0.80f);

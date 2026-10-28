@@ -111,7 +111,7 @@ public class MapTeleporter : MonoBehaviour, IInteractable
 
         if (audioSource != null && teleportSound != null)
         {
-            audioSource.PlayOneShot(teleportSound);
+            audioSource.PlayOneShot(teleportSound, GameSettings.EffectsVolume);
         }
 
         // 1. Temporarily disable Player Movement & Rigidbody velocity

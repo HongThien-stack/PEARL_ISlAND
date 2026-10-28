@@ -45,7 +45,7 @@ public class MovementLock : MonoBehaviour
         }
         catch { }
 
-        if (escapePressed && lockSources.Count > 0)
+        if (escapePressed && lockSources.Count > 0 && GameSettingsUI.EscapeHandledFrame != Time.frameCount)
         {
             Debug.LogWarning("[MovementLock] 🔓 ESCAPE pressed — Force unlocking all movement locks!");
             ForceUnlockAll();

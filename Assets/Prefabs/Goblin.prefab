@@ -188,6 +188,11 @@ MonoBehaviour:
   attackDamage: 15
   attackKnockback: 3
   attackDuration: 0.5
+  nearbyGrowlSound: {fileID: 8300000, guid: 771c6d6c6fa38a64aa379960c1cadfcb, type: 3}
+  deathSound: {fileID: 8300000, guid: 9d91bbffcb8768341a98c832aca7b114, type: 3}
+  growlRadius: 7
+  growlVolume: 0.8
+  deathVolume: 0.8
   isMovingParam: IsMoving
   moveXParam: MoveX
   moveYParam: MoveY

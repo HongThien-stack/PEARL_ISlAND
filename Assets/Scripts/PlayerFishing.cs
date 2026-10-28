@@ -76,6 +76,8 @@ public class PlayerFishing : MonoBehaviour
     public bool IsCastingOrFishing => isCastingOrFishing;
     public int FishCount => fishCount;
 
+    public void RestoreFishCount(int amount) => fishCount = Mathf.Max(0, amount);
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
