@@ -1,0 +1,167 @@
+{
+  "group_id": "c585346e-8725-454a-9cbe-273589f7ae78",
+  "states": [
+    {
+      "character": {
+        "id": "cf3ba331-fe0d-4dcb-9492-7c04cbfa91cd",
+        "name": "Idle",
+        "prompt": "A young male high school student NPC standing in a relaxed, upright pose. He has messy short brown hair, fair skin, and a friendly, youthful expression. He wears a clean white short-sleeved school shirt, a dark blue necktie, black school trousers, and simple brown school shoes. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style with clear details and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T08:35:05.866779+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Walking": {
+            "north": [
+              "Idle/animations/Walking/north/frame_000.png",
+              "Idle/animations/Walking/north/frame_001.png",
+              "Idle/animations/Walking/north/frame_002.png",
+              "Idle/animations/Walking/north/frame_003.png",
+              "Idle/animations/Walking/north/frame_004.png",
+              "Idle/animations/Walking/north/frame_005.png",
+              "Idle/animations/Walking/north/frame_006.png",
+              "Idle/animations/Walking/north/frame_007.png"
+            ],
+            "east": [
+              "Idle/animations/Walking/east/frame_000.png",
+              "Idle/animations/Walking/east/frame_001.png",
+              "Idle/animations/Walking/east/frame_002.png",
+              "Idle/animations/Walking/east/frame_003.png",
+              "Idle/animations/Walking/east/frame_004.png",
+              "Idle/animations/Walking/east/frame_005.png",
+              "Idle/animations/Walking/east/frame_006.png",
+              "Idle/animations/Walking/east/frame_007.png"
+            ],
+            "south": [
+              "Idle/animations/Walking/south/frame_000.png",
+              "Idle/animations/Walking/south/frame_001.png",
+              "Idle/animations/Walking/south/frame_002.png",
+              "Idle/animations/Walking/south/frame_003.png",
+              "Idle/animations/Walking/south/frame_004.png",
+              "Idle/animations/Walking/south/frame_005.png",
+              "Idle/animations/Walking/south/frame_006.png",
+              "Idle/animations/Walking/south/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Walking/west/frame_000.png",
+              "Idle/animations/Walking/west/frame_001.png",
+              "Idle/animations/Walking/west/frame_002.png",
+              "Idle/animations/Walking/west/frame_003.png",
+              "Idle/animations/Walking/west/frame_004.png",
+              "Idle/animations/Walking/west/frame_005.png",
+              "Idle/animations/Walking/west/frame_006.png",
+              "Idle/animations/Walking/west/frame_007.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "Idle/portrait.png",
+        "size": 128,
+        "generated_at": "2026-10-24T09:03:08.126925"
+      }
+    },
+    {
+      "character": {
+        "id": "a3eb0229-b49d-40cd-b242-699d91cef02e",
+        "name": "The character sits n",
+        "prompt": "A young male high school student NPC standing in a relaxed, upright pose. He has messy short brown hair, fair skin, and a friendly, youthful expression. He wears a clean white short-sleeved school shirt, a dark blue necktie, black school trousers, and simple brown school shoes. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style with clear details and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T08:50:44.122644+00:00"
+      },
+      "folder": "The_character_sits_n",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n/rotations/south.png",
+          "south-east": "The_character_sits_n/rotations/south-east.png",
+          "east": "The_character_sits_n/rotations/east.png",
+          "north-east": "The_character_sits_n/rotations/north-east.png",
+          "north": "The_character_sits_n/rotations/north.png",
+          "north-west": "The_character_sits_n/rotations/north-west.png",
+          "west": "The_character_sits_n/rotations/west.png",
+          "south-west": "The_character_sits_n/rotations/south-west.png"
+        },
+        "animations": {
+          "The_character_holds_a_pair_of_chopsticks_in_one_ha": {
+            "west": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_008.png"
+            ],
+            "east": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_008.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "6776178f-311c-4017-b2a2-78eaa803b1bf",
+        "name": "The character sits n",
+        "prompt": "A young male high school student NPC standing in a relaxed, upright pose. He has messy short brown hair, fair skin, and a friendly, youthful expression. He wears a clean white short-sleeved school shirt, a dark blue necktie, black school trousers, and simple brown school shoes. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style with clear details and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T08:58:38.806480+00:00"
+      },
+      "folder": "The_character_sits_n_2",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n_2/rotations/south.png",
+          "south-east": "The_character_sits_n_2/rotations/south-east.png",
+          "east": "The_character_sits_n_2/rotations/east.png",
+          "north-east": "The_character_sits_n_2/rotations/north-east.png",
+          "north": "The_character_sits_n_2/rotations/north.png",
+          "north-west": "The_character_sits_n_2/rotations/north-west.png",
+          "west": "The_character_sits_n_2/rotations/west.png",
+          "south-west": "The_character_sits_n_2/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-24T14:23:03.913314"
+}

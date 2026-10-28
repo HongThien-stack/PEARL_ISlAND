@@ -1,0 +1,212 @@
+{
+  "group_id": "c201afe2-7acf-4ec1-aafe-dbaba48a7c03",
+  "states": [
+    {
+      "character": {
+        "id": "95a83bdf-1c1a-487d-8f07-4f961105bacc",
+        "name": "Idle",
+        "prompt": "A male office worker NPC standing in a relaxed, upright pose. He has neat short dark brown hair, fair skin, and a calm, friendly, professional expression. He wears a white button-up office shirt, a dark navy necktie, black formal trousers, and simple black dress shoes. His appearance is tidy, professional, and suitable for a modern office environment. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T14:30:30.974623+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Walking": {
+            "west-057142f3": [
+              "Idle/animations/Walking/west-057142f3/frame_000.png",
+              "Idle/animations/Walking/west-057142f3/frame_001.png",
+              "Idle/animations/Walking/west-057142f3/frame_002.png",
+              "Idle/animations/Walking/west-057142f3/frame_003.png",
+              "Idle/animations/Walking/west-057142f3/frame_004.png",
+              "Idle/animations/Walking/west-057142f3/frame_005.png",
+              "Idle/animations/Walking/west-057142f3/frame_006.png",
+              "Idle/animations/Walking/west-057142f3/frame_007.png"
+            ],
+            "east": [
+              "Idle/animations/Walking/east/frame_000.png",
+              "Idle/animations/Walking/east/frame_001.png",
+              "Idle/animations/Walking/east/frame_002.png",
+              "Idle/animations/Walking/east/frame_003.png",
+              "Idle/animations/Walking/east/frame_004.png",
+              "Idle/animations/Walking/east/frame_005.png",
+              "Idle/animations/Walking/east/frame_006.png",
+              "Idle/animations/Walking/east/frame_007.png"
+            ],
+            "west-7c984a45": [
+              "Idle/animations/Walking/west-7c984a45/frame_000.png",
+              "Idle/animations/Walking/west-7c984a45/frame_001.png",
+              "Idle/animations/Walking/west-7c984a45/frame_002.png",
+              "Idle/animations/Walking/west-7c984a45/frame_003.png",
+              "Idle/animations/Walking/west-7c984a45/frame_004.png",
+              "Idle/animations/Walking/west-7c984a45/frame_005.png",
+              "Idle/animations/Walking/west-7c984a45/frame_006.png",
+              "Idle/animations/Walking/west-7c984a45/frame_007.png"
+            ],
+            "north": [
+              "Idle/animations/Walking/north/frame_000.png",
+              "Idle/animations/Walking/north/frame_001.png",
+              "Idle/animations/Walking/north/frame_002.png",
+              "Idle/animations/Walking/north/frame_003.png",
+              "Idle/animations/Walking/north/frame_004.png",
+              "Idle/animations/Walking/north/frame_005.png",
+              "Idle/animations/Walking/north/frame_006.png",
+              "Idle/animations/Walking/north/frame_007.png"
+            ],
+            "south": [
+              "Idle/animations/Walking/south/frame_000.png",
+              "Idle/animations/Walking/south/frame_001.png",
+              "Idle/animations/Walking/south/frame_002.png",
+              "Idle/animations/Walking/south/frame_003.png",
+              "Idle/animations/Walking/south/frame_004.png",
+              "Idle/animations/Walking/south/frame_005.png",
+              "Idle/animations/Walking/south/frame_006.png",
+              "Idle/animations/Walking/south/frame_007.png"
+            ],
+            "west-f60b78f8": [
+              "Idle/animations/Walking/west-f60b78f8/frame_000.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_001.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_002.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_003.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_004.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_005.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_006.png",
+              "Idle/animations/Walking/west-f60b78f8/frame_007.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "Idle/portrait.png",
+        "size": 128,
+        "generated_at": "2026-10-24T15:24:48.704423"
+      }
+    },
+    {
+      "character": {
+        "id": "62e2983b-e2dc-4725-a7a2-d68155e267c4",
+        "name": "The character sits n",
+        "prompt": "A male office worker NPC standing in a relaxed, upright pose. He has neat short dark brown hair, fair skin, and a calm, friendly, professional expression. He wears a white button-up office shirt, a dark navy necktie, black formal trousers, and simple black dress shoes. His appearance is tidy, professional, and suitable for a modern office environment. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T14:51:43.304548+00:00"
+      },
+      "folder": "The_character_sits_n",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n/rotations/south.png",
+          "south-east": "The_character_sits_n/rotations/south-east.png",
+          "east": "The_character_sits_n/rotations/east.png",
+          "north-east": "The_character_sits_n/rotations/north-east.png",
+          "north": "The_character_sits_n/rotations/north.png",
+          "north-west": "The_character_sits_n/rotations/north-west.png",
+          "west": "The_character_sits_n/rotations/west.png",
+          "south-west": "The_character_sits_n/rotations/south-west.png"
+        },
+        "animations": {
+          "Animate_the_character_smoothly_sitting_down_onto_a": {
+            "west": [
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_000.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_001.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_002.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_003.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_004.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_005.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_006.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_007.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/west/frame_008.png"
+            ],
+            "east": [
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_000.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_001.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_002.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_003.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_004.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_005.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_006.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_007.png",
+              "The_character_sits_n/animations/Animate_the_character_smoothly_sitting_down_onto_a/east/frame_008.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "d3eb8e1b-a2cc-4eef-967f-38ac0f450601",
+        "name": "The character sits n",
+        "prompt": "A male office worker NPC standing in a relaxed, upright pose. He has neat short dark brown hair, fair skin, and a calm, friendly, professional expression. He wears a white button-up office shirt, a dark navy necktie, black formal trousers, and simple black dress shoes. His appearance is tidy, professional, and suitable for a modern office environment. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T14:57:40.393092+00:00"
+      },
+      "folder": "The_character_sits_n_2",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n_2/rotations/south.png",
+          "south-east": "The_character_sits_n_2/rotations/south-east.png",
+          "east": "The_character_sits_n_2/rotations/east.png",
+          "north-east": "The_character_sits_n_2/rotations/north-east.png",
+          "north": "The_character_sits_n_2/rotations/north.png",
+          "north-west": "The_character_sits_n_2/rotations/north-west.png",
+          "west": "The_character_sits_n_2/rotations/west.png",
+          "south-west": "The_character_sits_n_2/rotations/south-west.png"
+        },
+        "animations": {
+          "The_character_holds_a_pair_of_chopsticks_in_one_ha": {
+            "east": [
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_000.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_001.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_002.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_003.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_004.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_005.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_006.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_007.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_008.png"
+            ],
+            "west": [
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_000.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_001.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_002.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_003.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_004.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_005.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_006.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_007.png",
+              "The_character_sits_n_2/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_008.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-27T13:36:25.877762"
+}

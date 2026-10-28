@@ -1,0 +1,172 @@
+{
+  "group_id": "1d49ff04-c78c-4350-bea7-30d9d659ec18",
+  "states": [
+    {
+      "character": {
+        "id": "883402a7-e3ee-4e24-9348-bc3642e4920b",
+        "name": "Idle",
+        "prompt": "A female office worker NPC standing in a relaxed, upright pose. She has neat shoulder-length dark brown hair, fair skin, and a friendly, professional expression. She wears a smart white blouse, a dark navy pencil skirt, and simple black low-heeled shoes, with a professional and tidy appearance. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style with clear details and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T09:02:35.950294+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Walking": {
+            "east": [
+              "Idle/animations/Walking/east/frame_000.png",
+              "Idle/animations/Walking/east/frame_001.png",
+              "Idle/animations/Walking/east/frame_002.png",
+              "Idle/animations/Walking/east/frame_003.png",
+              "Idle/animations/Walking/east/frame_004.png",
+              "Idle/animations/Walking/east/frame_005.png",
+              "Idle/animations/Walking/east/frame_006.png",
+              "Idle/animations/Walking/east/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Walking/west/frame_000.png",
+              "Idle/animations/Walking/west/frame_001.png",
+              "Idle/animations/Walking/west/frame_002.png",
+              "Idle/animations/Walking/west/frame_003.png",
+              "Idle/animations/Walking/west/frame_004.png",
+              "Idle/animations/Walking/west/frame_005.png",
+              "Idle/animations/Walking/west/frame_006.png",
+              "Idle/animations/Walking/west/frame_007.png"
+            ],
+            "north": [
+              "Idle/animations/Walking/north/frame_000.png",
+              "Idle/animations/Walking/north/frame_001.png",
+              "Idle/animations/Walking/north/frame_002.png",
+              "Idle/animations/Walking/north/frame_003.png",
+              "Idle/animations/Walking/north/frame_004.png",
+              "Idle/animations/Walking/north/frame_005.png",
+              "Idle/animations/Walking/north/frame_006.png",
+              "Idle/animations/Walking/north/frame_007.png"
+            ],
+            "south": [
+              "Idle/animations/Walking/south/frame_000.png",
+              "Idle/animations/Walking/south/frame_001.png",
+              "Idle/animations/Walking/south/frame_002.png",
+              "Idle/animations/Walking/south/frame_003.png",
+              "Idle/animations/Walking/south/frame_004.png",
+              "Idle/animations/Walking/south/frame_005.png",
+              "Idle/animations/Walking/south/frame_006.png",
+              "Idle/animations/Walking/south/frame_007.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "Idle/portrait.png",
+        "size": 128,
+        "generated_at": "2026-10-24T09:52:58.248574"
+      }
+    },
+    {
+      "character": {
+        "id": "3a95b35c-4186-4ee4-9a25-969d89a72eab",
+        "name": "The character sits n",
+        "prompt": "A female office worker NPC standing in a relaxed, upright pose. She has neat shoulder-length dark brown hair, fair skin, and a friendly, professional expression. She wears a smart white blouse, a dark navy pencil skirt, and simple black low-heeled shoes, with a professional and tidy appearance. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style with clear details and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T09:26:10.051799+00:00"
+      },
+      "folder": "The_character_sits_n",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n/rotations/south.png",
+          "south-east": "The_character_sits_n/rotations/south-east.png",
+          "east": "The_character_sits_n/rotations/east.png",
+          "north-east": "The_character_sits_n/rotations/north-east.png",
+          "north": "The_character_sits_n/rotations/north.png",
+          "north-west": "The_character_sits_n/rotations/north-west.png",
+          "west": "The_character_sits_n/rotations/west.png",
+          "south-west": "The_character_sits_n/rotations/south-west.png"
+        },
+        "animations": {
+          "The_character_holds_a_pair_of_chopsticks_in_one_ha": {
+            "west": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_008.png"
+            ],
+            "east": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_008.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "The_character_sits_n/portrait.png",
+        "size": 128,
+        "generated_at": "2026-10-24T09:52:16.207505"
+      }
+    },
+    {
+      "character": {
+        "id": "0129be41-b0b2-4df8-9a9f-a4844456a051",
+        "name": "The character sits n",
+        "prompt": "A female office worker NPC standing in a relaxed, upright pose. She has neat shoulder-length dark brown hair, fair skin, and a friendly, professional expression. She wears a smart white blouse, a dark navy pencil skirt, and simple black low-heeled shoes, with a professional and tidy appearance. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style with clear details and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T09:30:58.182888+00:00"
+      },
+      "folder": "The_character_sits_n_2",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n_2/rotations/south.png",
+          "south-east": "The_character_sits_n_2/rotations/south-east.png",
+          "east": "The_character_sits_n_2/rotations/east.png",
+          "north-east": "The_character_sits_n_2/rotations/north-east.png",
+          "north": "The_character_sits_n_2/rotations/north.png",
+          "north-west": "The_character_sits_n_2/rotations/north-west.png",
+          "west": "The_character_sits_n_2/rotations/west.png",
+          "south-west": "The_character_sits_n_2/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-24T14:24:03.496572"
+}

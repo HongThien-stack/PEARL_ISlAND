@@ -1,0 +1,167 @@
+{
+  "group_id": "4c20dbe7-1d7c-4cf4-84c0-d9e90cef0e0a",
+  "states": [
+    {
+      "character": {
+        "id": "9fc5525e-8048-4243-9b92-e95895f598a4",
+        "name": "Remove the fishing r",
+        "prompt": "A female fisherman NPC standing in a relaxed, sturdy pose. She has dark brown hair tied in a low ponytail, sun-tanned skin, and a friendly, weathered expression. She wears a simple faded blue shirt with rolled-up sleeves, dark brown fishing trousers, rubber boots, and a wide-brimmed straw hat. Her outfit looks practical and slightly worn, suitable for a traditional coastal fisherwoman. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-27T10:57:20.865555+00:00"
+      },
+      "folder": "Remove_the_fishing_r",
+      "frames": {
+        "rotations": {
+          "south": "Remove_the_fishing_r/rotations/south.png",
+          "south-east": "Remove_the_fishing_r/rotations/south-east.png",
+          "east": "Remove_the_fishing_r/rotations/east.png",
+          "north-east": "Remove_the_fishing_r/rotations/north-east.png",
+          "north": "Remove_the_fishing_r/rotations/north.png",
+          "north-west": "Remove_the_fishing_r/rotations/north-west.png",
+          "west": "Remove_the_fishing_r/rotations/west.png",
+          "south-west": "Remove_the_fishing_r/rotations/south-west.png"
+        },
+        "animations": {
+          "Walking": {
+            "north": [
+              "Remove_the_fishing_r/animations/Walking/north/frame_000.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_001.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_002.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_003.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_004.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_005.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_006.png",
+              "Remove_the_fishing_r/animations/Walking/north/frame_007.png"
+            ],
+            "east": [
+              "Remove_the_fishing_r/animations/Walking/east/frame_000.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_001.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_002.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_003.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_004.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_005.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_006.png",
+              "Remove_the_fishing_r/animations/Walking/east/frame_007.png"
+            ],
+            "south": [
+              "Remove_the_fishing_r/animations/Walking/south/frame_000.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_001.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_002.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_003.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_004.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_005.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_006.png",
+              "Remove_the_fishing_r/animations/Walking/south/frame_007.png"
+            ],
+            "west": [
+              "Remove_the_fishing_r/animations/Walking/west/frame_000.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_001.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_002.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_003.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_004.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_005.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_006.png",
+              "Remove_the_fishing_r/animations/Walking/west/frame_007.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "Remove_the_fishing_r/portrait.png",
+        "size": 128,
+        "generated_at": "2026-10-27T13:34:27.957562"
+      }
+    },
+    {
+      "character": {
+        "id": "84213053-14e1-4f1e-a324-34c6fea60fd2",
+        "name": "The character sits n",
+        "prompt": "A female fisherman NPC standing in a relaxed, sturdy pose. She has dark brown hair tied in a low ponytail, sun-tanned skin, and a friendly, weathered expression. She wears a simple faded blue shirt with rolled-up sleeves, dark brown fishing trousers, rubber boots, and a wide-brimmed straw hat. Her outfit looks practical and slightly worn, suitable for a traditional coastal fisherwoman. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-27T12:47:23.579380+00:00"
+      },
+      "folder": "The_character_sits_n",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n/rotations/south.png",
+          "south-east": "The_character_sits_n/rotations/south-east.png",
+          "east": "The_character_sits_n/rotations/east.png",
+          "north-east": "The_character_sits_n/rotations/north-east.png",
+          "north": "The_character_sits_n/rotations/north.png",
+          "north-west": "The_character_sits_n/rotations/north-west.png",
+          "west": "The_character_sits_n/rotations/west.png",
+          "south-west": "The_character_sits_n/rotations/south-west.png"
+        },
+        "animations": {
+          "The_character_holds_a_pair_of_chopsticks_in_one_ha": {
+            "east": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_008.png"
+            ],
+            "west": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_008.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "e13c4ab5-67aa-4628-9046-51703a92545d",
+        "name": "The character sits n",
+        "prompt": "A female fisherman NPC standing in a relaxed, sturdy pose. She has dark brown hair tied in a low ponytail, sun-tanned skin, and a friendly, weathered expression. She wears a simple faded blue shirt with rolled-up sleeves, dark brown fishing trousers, rubber boots, and a wide-brimmed straw hat. Her outfit looks practical and slightly worn, suitable for a traditional coastal fisherwoman. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-27T13:16:33.094219+00:00"
+      },
+      "folder": "The_character_sits_n_2",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n_2/rotations/south.png",
+          "south-east": "The_character_sits_n_2/rotations/south-east.png",
+          "east": "The_character_sits_n_2/rotations/east.png",
+          "north-east": "The_character_sits_n_2/rotations/north-east.png",
+          "north": "The_character_sits_n_2/rotations/north.png",
+          "north-west": "The_character_sits_n_2/rotations/north-west.png",
+          "west": "The_character_sits_n_2/rotations/west.png",
+          "south-west": "The_character_sits_n_2/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-27T13:36:36.964980"
+}

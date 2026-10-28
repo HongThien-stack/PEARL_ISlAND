@@ -1,0 +1,167 @@
+{
+  "group_id": "f42579ce-e039-4479-ae4c-86c2aca19ddd",
+  "states": [
+    {
+      "character": {
+        "id": "0461b2ff-7328-42bb-af08-2b3cc2d53e89",
+        "name": "Idle",
+        "prompt": "A young Vietnamese street-style male NPC standing in a relaxed, confident pose. He has trendy short dark hair with a textured, slightly messy fringe, fair skin, and a cool, laid-back expression. He wears an oversized graphic T-shirt, loose black cargo pants, a stylish crossbody bag, chunky sneakers, and a silver chain necklace. His appearance reflects modern Vietnamese street fashion, with a youthful urban vibe and a slightly rebellious attitude. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T15:27:58.757678+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Walking": {
+            "north": [
+              "Idle/animations/Walking/north/frame_000.png",
+              "Idle/animations/Walking/north/frame_001.png",
+              "Idle/animations/Walking/north/frame_002.png",
+              "Idle/animations/Walking/north/frame_003.png",
+              "Idle/animations/Walking/north/frame_004.png",
+              "Idle/animations/Walking/north/frame_005.png",
+              "Idle/animations/Walking/north/frame_006.png",
+              "Idle/animations/Walking/north/frame_007.png"
+            ],
+            "east": [
+              "Idle/animations/Walking/east/frame_000.png",
+              "Idle/animations/Walking/east/frame_001.png",
+              "Idle/animations/Walking/east/frame_002.png",
+              "Idle/animations/Walking/east/frame_003.png",
+              "Idle/animations/Walking/east/frame_004.png",
+              "Idle/animations/Walking/east/frame_005.png",
+              "Idle/animations/Walking/east/frame_006.png",
+              "Idle/animations/Walking/east/frame_007.png"
+            ],
+            "south": [
+              "Idle/animations/Walking/south/frame_000.png",
+              "Idle/animations/Walking/south/frame_001.png",
+              "Idle/animations/Walking/south/frame_002.png",
+              "Idle/animations/Walking/south/frame_003.png",
+              "Idle/animations/Walking/south/frame_004.png",
+              "Idle/animations/Walking/south/frame_005.png",
+              "Idle/animations/Walking/south/frame_006.png",
+              "Idle/animations/Walking/south/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Walking/west/frame_000.png",
+              "Idle/animations/Walking/west/frame_001.png",
+              "Idle/animations/Walking/west/frame_002.png",
+              "Idle/animations/Walking/west/frame_003.png",
+              "Idle/animations/Walking/west/frame_004.png",
+              "Idle/animations/Walking/west/frame_005.png",
+              "Idle/animations/Walking/west/frame_006.png",
+              "Idle/animations/Walking/west/frame_007.png"
+            ]
+          }
+        }
+      },
+      "portrait": {
+        "path": "Idle/portrait.png",
+        "size": 128,
+        "generated_at": "2026-10-26T14:22:27.094252"
+      }
+    },
+    {
+      "character": {
+        "id": "d7acdde7-b32e-4518-bfce-44fbff696f47",
+        "name": "The character sits n",
+        "prompt": "A young Vietnamese street-style male NPC standing in a relaxed, confident pose. He has trendy short dark hair with a textured, slightly messy fringe, fair skin, and a cool, laid-back expression. He wears an oversized graphic T-shirt, loose black cargo pants, a stylish crossbody bag, chunky sneakers, and a silver chain necklace. His appearance reflects modern Vietnamese street fashion, with a youthful urban vibe and a slightly rebellious attitude. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-24T16:03:23.098935+00:00"
+      },
+      "folder": "The_character_sits_n",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n/rotations/south.png",
+          "south-east": "The_character_sits_n/rotations/south-east.png",
+          "east": "The_character_sits_n/rotations/east.png",
+          "north-east": "The_character_sits_n/rotations/north-east.png",
+          "north": "The_character_sits_n/rotations/north.png",
+          "north-west": "The_character_sits_n/rotations/north-west.png",
+          "west": "The_character_sits_n/rotations/west.png",
+          "south-west": "The_character_sits_n/rotations/south-west.png"
+        },
+        "animations": {
+          "The_character_holds_a_pair_of_chopsticks_in_one_ha": {
+            "west": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/west/frame_008.png"
+            ],
+            "east": [
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_000.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_001.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_002.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_003.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_004.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_005.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_006.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_007.png",
+              "The_character_sits_n/animations/The_character_holds_a_pair_of_chopsticks_in_one_ha/east/frame_008.png"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "character": {
+        "id": "0d9e31a0-509c-49c6-a468-4aca0024b3b9",
+        "name": "The character sits n",
+        "prompt": "A young Vietnamese street-style male NPC standing in a relaxed, confident pose. He has trendy short dark hair with a textured, slightly messy fringe, fair skin, and a cool, laid-back expression. He wears an oversized graphic T-shirt, loose black cargo pants, a stylish crossbody bag, chunky sneakers, and a silver chain necklace. His appearance reflects modern Vietnamese street fashion, with a youthful urban vibe and a slightly rebellious attitude. The character features clean, crisp black outlines, readable shapes, and a cozy, earthy color palette with simple, effective shading suitable for a low top-down perspective. Preserve a consistent 2D pixel-art style, clear pixel details, and proportions suitable for a top-down RPG game.",
+        "size": {
+          "width": 80,
+          "height": 80
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-10-26T14:14:52.129459+00:00"
+      },
+      "folder": "The_character_sits_n_2",
+      "frames": {
+        "rotations": {
+          "south": "The_character_sits_n_2/rotations/south.png",
+          "south-east": "The_character_sits_n_2/rotations/south-east.png",
+          "east": "The_character_sits_n_2/rotations/east.png",
+          "north-east": "The_character_sits_n_2/rotations/north-east.png",
+          "north": "The_character_sits_n_2/rotations/north.png",
+          "north-west": "The_character_sits_n_2/rotations/north-west.png",
+          "west": "The_character_sits_n_2/rotations/west.png",
+          "south-west": "The_character_sits_n_2/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-27T13:36:34.682499"
+}
