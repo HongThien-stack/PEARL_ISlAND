@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -6,6 +7,20 @@ using UnityEngine;
 /// </summary>
 public class RestaurantManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class SeatTarget
+    {
+        [SerializeField] public Transform point;
+        [SerializeField] public CustomerAI.SeatSide side = CustomerAI.SeatSide.Right;
+        [Tooltip("Route for this seat, for example Waypoint 1 -> Waypoint 1_1.")]
+        [SerializeField] public Transform[] waypoints;
+        [HideInInspector] public bool occupied;
+
+        public Transform Point => point;
+        public CustomerAI.SeatSide Side => side;
+        public Transform[] Waypoints => waypoints;
+    }
+
     public static RestaurantManager Instance { get; private set; }
 
     [Header("Restaurant References")]
@@ -15,10 +30,15 @@ public class RestaurantManager : MonoBehaviour
     [Tooltip("Point where customer spawns and leaves (e.g. Door).")]
     [SerializeField] private Transform doorPoint;
 
-    [Tooltip("Point where customer sits (e.g. Table / Chair).")]
+    [Tooltip("Available seats. Each seat owns its route and must be marked Left or Right.")]
+    [SerializeField] private SeatTarget[] seats;
+    [Tooltip("Legacy single-seat reference. Used when Seats is empty.")]
     [SerializeField] private Transform tableSeatPoint;
 
-    [Tooltip("Prefab of Customer GameObject to instantiate.")]
+    [Tooltip("Customer prefabs to choose from randomly when spawning.")]
+    [SerializeField] private GameObject[] customerPrefabs;
+
+    [Tooltip("Legacy single customer prefab. Used when Customer Prefabs is empty.")]
     [SerializeField] private GameObject customerPrefab;
 
     [Tooltip("Existing Customer instance in scene (if not using Prefab).")]
@@ -33,7 +53,11 @@ public class RestaurantManager : MonoBehaviour
 
     [Header("Shop State")]
     [SerializeField] private bool isShopOpen = false;
-    [SerializeField] private bool hasActiveCustomer = false;
+    [SerializeField] private int maxCustomers = 10;
+    [SerializeField] private float customerSpawnInterval = 5f;
+
+    private Coroutine spawnRoutine;
+    private bool previousShopOpenState;
 
     private void Awake()
     {
@@ -43,6 +67,41 @@ public class RestaurantManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DisableSceneCustomerTemplateWhenPrefabIsAssigned();
+    }
+
+    private void Start()
+    {
+        previousShopOpenState = isShopOpen;
+        if (isShopOpen)
+        {
+            SpawnCustomer();
+            spawnRoutine = StartCoroutine(TimedSpawnRoutine());
+        }
+    }
+
+    private void Update()
+    {
+        if (isShopOpen == previousShopOpenState)
+        {
+            return;
+        }
+
+        previousShopOpenState = isShopOpen;
+
+        if (isShopOpen)
+        {
+            SpawnCustomer();
+            if (spawnRoutine == null)
+            {
+                spawnRoutine = StartCoroutine(TimedSpawnRoutine());
+            }
+        }
+        else if (spawnRoutine != null)
+        {
+            StopCoroutine(spawnRoutine);
+            spawnRoutine = null;
+        }
     }
 
     public bool IsShopOpen()
@@ -52,15 +111,59 @@ public class RestaurantManager : MonoBehaviour
 
     public bool HasActiveCustomer()
     {
-        if (hasActiveCustomer)
+        return FindObjectsByType<CustomerAI>(FindObjectsSortMode.None).Length > 0;
+    }
+
+    private void DisableSceneCustomerTemplateWhenPrefabIsAssigned()
+    {
+        if (!HasCustomerPrefab() || sceneCustomer == null)
         {
-            CustomerAI activeCust = FindAnyObjectByType<CustomerAI>();
-            if (activeCust == null)
+            return;
+        }
+
+        if (customerPrefab == sceneCustomer.gameObject || (customerPrefabs != null && System.Array.IndexOf(customerPrefabs, sceneCustomer.gameObject) >= 0))
+        {
+            sceneCustomer.gameObject.SetActive(false);
+            Debug.Log("[RestaurantManager] Scene Customer template disabled because Customer Prefab is assigned.");
+        }
+    }
+
+    private bool HasCustomerPrefab()
+    {
+        if (customerPrefabs != null)
+        {
+            foreach (GameObject prefab in customerPrefabs)
             {
-                hasActiveCustomer = false;
+                if (prefab != null)
+                {
+                    return true;
+                }
             }
         }
-        return hasActiveCustomer;
+
+        return customerPrefab != null;
+    }
+
+    private GameObject GetRandomCustomerPrefab()
+    {
+        if (customerPrefabs != null && customerPrefabs.Length > 0)
+        {
+            var validPrefabs = new System.Collections.Generic.List<GameObject>();
+            foreach (GameObject prefab in customerPrefabs)
+            {
+                if (prefab != null)
+                {
+                    validPrefabs.Add(prefab);
+                }
+            }
+
+            if (validPrefabs.Count > 0)
+            {
+                return validPrefabs[Random.Range(0, validPrefabs.Count)];
+            }
+        }
+
+        return customerPrefab;
     }
 
     /// <summary>
@@ -71,11 +174,16 @@ public class RestaurantManager : MonoBehaviour
         if (isShopOpen) return;
 
         isShopOpen = true;
+        previousShopOpenState = true;
         Debug.Log("==========================================");
         Debug.Log("[RestaurantManager] BUSINESS STARTED! Open for customers.");
         Debug.Log("==========================================");
 
         SpawnCustomer();
+        if (spawnRoutine == null)
+        {
+            spawnRoutine = StartCoroutine(TimedSpawnRoutine());
+        }
     }
 
     /// <summary>
@@ -97,15 +205,19 @@ public class RestaurantManager : MonoBehaviour
     /// </summary>
     public void SpawnCustomer()
     {
-        if (HasActiveCustomer())
+        int configuredCapacity = seats != null && seats.Length > 0
+            ? seats.Length
+            : 1;
+        int customerCapacity = Mathf.Min(Mathf.Max(1, maxCustomers), configuredCapacity);
+
+        if (FindObjectsByType<CustomerAI>(FindObjectsSortMode.None).Length >= customerCapacity)
         {
-            Debug.LogWarning("[RestaurantManager] ⚠️ Đã có khách hàng trong nhà hàng!");
             return;
         }
 
         // Auto-find references if missing
         if (chefAI == null) chefAI = FindAnyObjectByType<ChefAI>();
-        if (sceneCustomer == null && customerPrefab == null) sceneCustomer = FindAnyObjectByType<CustomerAI>();
+        if (sceneCustomer == null && !HasCustomerPrefab()) sceneCustomer = FindAnyObjectByType<CustomerAI>();
 
         // Check specifically what is missing and print clear debug warnings
         if (doorPoint == null)
@@ -114,18 +226,33 @@ public class RestaurantManager : MonoBehaviour
             return;
         }
 
-        if (tableSeatPoint == null)
+        SeatTarget seat = FindAvailableSeat();
+        if (seat == null || seat.Point == null)
         {
-            Debug.LogError("[RestaurantManager] ❌ THIẾU 'Table Seat Point'! Hãy kéo Transform vị trí Bàn Ăn vào ô Table Seat Point trên RestaurantManager.");
+            Debug.LogWarning("[RestaurantManager] Không còn ghế trống hoặc chưa cấu hình Seats.");
+            return;
+        }
+
+        if (seats != null && seats.Length > 0 && (seat.Waypoints == null || seat.Waypoints.Length < 2))
+        {
+            Debug.LogError($"[RestaurantManager] Ghế '{seat.Point.name}' cần ít nhất 2 waypoint trong route riêng của ghế.");
             return;
         }
 
         CustomerAI customer = null;
 
-        if (customerPrefab != null)
+        GameObject selectedPrefab = GetRandomCustomerPrefab();
+        if (selectedPrefab != null)
         {
-            GameObject customerGO = Instantiate(customerPrefab, doorPoint.position, Quaternion.identity);
+            GameObject customerGO = Instantiate(selectedPrefab, doorPoint.position, Quaternion.identity);
+            customerGO.SetActive(true);
             customer = customerGO.GetComponent<CustomerAI>();
+            if (customer == null)
+            {
+                Debug.LogError($"[RestaurantManager] Customer prefab '{selectedPrefab.name}' does not contain CustomerAI.");
+                Destroy(customerGO);
+                return;
+            }
         }
         else if (sceneCustomer != null)
         {
@@ -140,14 +267,15 @@ public class RestaurantManager : MonoBehaviour
 
         if (customer != null)
         {
-            hasActiveCustomer = true;
+            seat.occupied = true;
             Sprite foodToOrder = GetCustomerOrderSprite();
-
             customer.InitCustomer(
                 doorPoint.position, 
-                tableSeatPoint.position, 
+                seat.Point.position,
+                seat.Side,
                 foodToOrder, 
-                OnCustomerLeft
+                seat.Waypoints,
+                () => OnCustomerLeft(seat)
             );
 
             if (foodToOrder != null)
@@ -178,22 +306,52 @@ public class RestaurantManager : MonoBehaviour
         }
     }
 
-    private void OnCustomerLeft()
+    private SeatTarget FindAvailableSeat()
     {
-        hasActiveCustomer = false;
-        Debug.Log("[RestaurantManager] Customer left the restaurant. Next customer arriving soon!");
-
-        if (isShopOpen)
+        if (seats == null || seats.Length == 0)
         {
-            StartCoroutine(AutoSpawnNextCustomerRoutine());
+            if (tableSeatPoint == null) return null;
+
+            return new SeatTarget
+            {
+                point = tableSeatPoint,
+                side = CustomerAI.SeatSide.Right,
+                waypoints = new Transform[0]
+            };
         }
+
+        var availableSeats = new System.Collections.Generic.List<SeatTarget>();
+        foreach (SeatTarget seat in seats)
+        {
+            if (seat != null && !seat.occupied && seat.Point != null)
+            {
+                availableSeats.Add(seat);
+            }
+        }
+
+        if (availableSeats.Count == 0)
+        {
+            return null;
+        }
+
+        return availableSeats[Random.Range(0, availableSeats.Count)];
     }
 
-    private System.Collections.IEnumerator AutoSpawnNextCustomerRoutine()
+    private void OnCustomerLeft(SeatTarget seat)
     {
-        yield return new WaitForSeconds(2.5f);
-        if (isShopOpen && !hasActiveCustomer)
+        if (seat != null)
         {
+            seat.occupied = false;
+        }
+
+        Debug.Log("[RestaurantManager] Customer left the restaurant. A seat is available.");
+    }
+
+    private IEnumerator TimedSpawnRoutine()
+    {
+        while (isShopOpen)
+        {
+            yield return new WaitForSeconds(Mathf.Max(0.1f, customerSpawnInterval));
             SpawnCustomer();
         }
     }

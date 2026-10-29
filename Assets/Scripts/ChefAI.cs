@@ -68,6 +68,8 @@ public class ChefAI : MonoBehaviour
     [Header("State")]
     [SerializeField] private bool isBusy = false;
 
+    private readonly Queue<Sprite> orderQueue = new Queue<Sprite>();
+
     private Animator animator;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -123,14 +125,31 @@ public class ChefAI : MonoBehaviour
     /// </summary>
     public void StartCookingOrder(Sprite foodSprite)
     {
-        if (isBusy) return;
-        StartCoroutine(CookingRoutine(foodSprite));
+        orderQueue.Enqueue(foodSprite);
+        Debug.Log($"[ChefAI] 📋 Đã thêm đơn vào hàng đợi. Số đơn đang chờ: {orderQueue.Count}");
+
+        if (!isBusy)
+        {
+            StartCoroutine(ProcessOrderQueueRoutine());
+        }
+    }
+
+    private IEnumerator ProcessOrderQueueRoutine()
+    {
+        isBusy = true;
+
+        while (orderQueue.Count > 0)
+        {
+            Sprite nextFood = orderQueue.Dequeue();
+            yield return StartCoroutine(CookingRoutine(nextFood));
+        }
+
+        isBusy = false;
+        PlayAnimationState(idleDownState);
     }
 
     private IEnumerator CookingRoutine(Sprite foodSprite)
     {
-        isBusy = true;
-
         if (serveCounter == null)
         {
             serveCounter = FindAnyObjectByType<ServeCounter>();
@@ -170,6 +189,11 @@ public class ChefAI : MonoBehaviour
         // 4. Place Food on Serve Counter
         if (serveCounter != null)
         {
+            while (serveCounter.HasFood())
+            {
+                yield return new WaitForSeconds(0.1f);
+            }
+
             serveCounter.PlaceFood(foodSprite);
             Debug.Log("[ChefAI] 🍲 Chef đã đặt đồ ăn lên Serve Counter!");
         }
@@ -190,8 +214,6 @@ public class ChefAI : MonoBehaviour
             yield return StartCoroutine(NavigateToTarget(homePoint.position));
         }
 
-        PlayAnimationState(idleDownState);
-        isBusy = false;
     }
 
     private IEnumerator NavigateToTarget(Vector3 targetPos)

@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 /// <summary>
 /// Manages Customer states: Spawning -> Walking to Table -> Seated Waiting Order -> Waiting for Food -> Eating -> Leaving.
@@ -11,6 +13,19 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class CustomerAI : MonoBehaviour, IInteractable
 {
+    [System.Serializable]
+    public class WaypointGroup
+    {
+        [Tooltip("One waypoint is selected randomly from this group.")]
+        public Transform[] options;
+    }
+
+    public enum SeatSide
+    {
+        Left,
+        Right
+    }
+
     public enum CustomerState
     {
         None,
@@ -35,6 +50,8 @@ public class CustomerAI : MonoBehaviour, IInteractable
     [Header("Navigation & Pathing")]
     [Tooltip("Optional waypoints from Door to Seat to avoid tables and obstacles.")]
     [SerializeField] private Transform[] waypointsToSeat;
+    [Tooltip("Legacy waypoint groups. Prefer assigning the route on each seat in RestaurantManager.")]
+    [SerializeField] private WaypointGroup[] waypointGroups;
 
     [Tooltip("Move along X then Y axis if no waypoints are assigned.")]
     [SerializeField] private bool useAxisAlignedMovement = true;
@@ -51,6 +68,10 @@ public class CustomerAI : MonoBehaviour, IInteractable
     [Tooltip("SpriteRenderer on child object displaying food on the table while eating.")]
     [SerializeField] private SpriteRenderer tableFoodRenderer;
     [SerializeField] private Vector3 foodDisplayLocalOffset = new Vector3(0.4f, 0.1f, 0f);
+    [Tooltip("Local position of the food when the customer sits on the left side.")]
+    [SerializeField] private Vector3 foodDisplayLeftLocalOffset = new Vector3(-0.4f, 0.1f, 0f);
+    [Tooltip("Local position of the food when the customer sits on the right side.")]
+    [SerializeField] private Vector3 foodDisplayRightLocalOffset = new Vector3(0.4f, 0.1f, 0f);
     [SerializeField] private Vector3 foodDisplayScale = new Vector3(0.5f, 0.5f, 1f);
     [SerializeField] private int foodSortingOffset = 2;
 
@@ -63,8 +84,12 @@ public class CustomerAI : MonoBehaviour, IInteractable
     [SerializeField] private string walkUpState = "customer-walk-up";
     [SerializeField] private string walkLeftState = "customer-walk-left";
     [SerializeField] private string walkRightState = "customer-walk-right";
-    [SerializeField] private string sitState = "customer-sit-right";
-    [SerializeField] private string eatingState = "customer-eat-right";
+    [SerializeField] private string sitLeftState = "customer-sit-left";
+    [FormerlySerializedAs("sitState")]
+    [SerializeField] private string sitRightState = "customer-sit-right";
+    [SerializeField] private string eatingLeftState = "customer-eat-left";
+    [FormerlySerializedAs("eatingState")]
+    [SerializeField] private string eatingRightState = "customer-eat-right";
 
     [Header("Animator Parameter Names (Fallback for Blend Trees)")]
     [SerializeField] private string isMovingParam = "IsMoving";
@@ -78,6 +103,14 @@ public class CustomerAI : MonoBehaviour, IInteractable
     [Header("UI Speech Bubbles / Indicators (Optional)")]
     [Tooltip("Icon or GameObject shown when customer wants to order.")]
     [SerializeField] private GameObject orderBubbleUI;
+    [Tooltip("Bubble background sprite shown behind the requested food.")]
+    [SerializeField] private Sprite orderBubbleSprite;
+    [Tooltip("SpriteRenderer inside the order bubble that displays the requested food.")]
+    [SerializeField] private SpriteRenderer orderFoodRenderer;
+    [Tooltip("Optional UI Image inside the order bubble that displays the requested food.")]
+    [SerializeField] private Image orderFoodImage;
+    [SerializeField] private Vector3 orderBubbleLocalOffset = new Vector3(0f, 0.75f, 0f);
+    [SerializeField] private Vector3 orderBubbleScale = new Vector3(0.65f, 0.65f, 1f);
 
     [Tooltip("Icon or GameObject shown when customer is waiting for food.")]
     [SerializeField] private GameObject waitingFoodBubbleUI;
@@ -87,9 +120,12 @@ public class CustomerAI : MonoBehaviour, IInteractable
 
     private Vector3 doorPosition;
     private Vector3 seatPosition;
+    private SeatSide seatSide = SeatSide.Right;
+    private Transform[] selectedWaypoints;
     private Animator animator;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private SpriteRenderer orderBubbleRenderer;
     private string currentStateName = "";
     private System.Action onCustomerLeftCallback;
 
@@ -122,6 +158,18 @@ public class CustomerAI : MonoBehaviour, IInteractable
             }
         }
 
+        if (orderFoodRenderer == null && orderBubbleUI != null)
+        {
+            orderFoodRenderer = orderBubbleUI.GetComponentInChildren<SpriteRenderer>(true);
+        }
+
+        if (orderFoodImage == null && orderBubbleUI != null)
+        {
+            orderFoodImage = orderBubbleUI.GetComponentInChildren<Image>(true);
+        }
+
+        EnsureOrderBubbleVisual();
+
         if (animator != null && animator.runtimeAnimatorController != null && animator.layerCount == 0)
         {
             animator.Rebind();
@@ -147,11 +195,11 @@ public class CustomerAI : MonoBehaviour, IInteractable
     {
         if (currentState == CustomerState.WaitingToOrder || currentState == CustomerState.WaitingForFood)
         {
-            PlayAnimationState(sitState);
+            PlayAnimationState(GetSitState());
         }
         else if (currentState == CustomerState.Eating)
         {
-            PlayAnimationState(eatingState);
+            PlayAnimationState(GetEatingState());
         }
     }
 
@@ -168,6 +216,18 @@ public class CustomerAI : MonoBehaviour, IInteractable
                 tableFoodRenderer.sortingLayerID = spriteRenderer.sortingLayerID;
                 tableFoodRenderer.sortingOrder = spriteRenderer.sortingOrder + foodSortingOffset;
             }
+
+            if (orderFoodRenderer != null)
+            {
+                orderFoodRenderer.sortingLayerID = spriteRenderer.sortingLayerID;
+                orderFoodRenderer.sortingOrder = spriteRenderer.sortingOrder + 10;
+            }
+
+            if (orderBubbleRenderer != null)
+            {
+                orderBubbleRenderer.sortingLayerID = spriteRenderer.sortingLayerID;
+                orderBubbleRenderer.sortingOrder = spriteRenderer.sortingOrder + 9;
+            }
         }
     }
 
@@ -176,10 +236,25 @@ public class CustomerAI : MonoBehaviour, IInteractable
     /// </summary>
     public void InitCustomer(Vector3 doorPos, Vector3 seatPos, Sprite foodToOrder, System.Action onCustomerLeft = null)
     {
+        InitCustomer(doorPos, seatPos, SeatSide.Right, foodToOrder, null, onCustomerLeft);
+    }
+
+    public void InitCustomer(
+        Vector3 doorPos,
+        Vector3 seatPos,
+        SeatSide targetSeatSide,
+        Sprite foodToOrder,
+        Transform[] routeWaypoints,
+        System.Action onCustomerLeft = null)
+    {
         doorPosition = doorPos;
         seatPosition = seatPos;
+        seatSide = targetSeatSide;
         desiredFoodSprite = foodToOrder;
         onCustomerLeftCallback = onCustomerLeft;
+        selectedWaypoints = routeWaypoints != null && routeWaypoints.Length > 0
+            ? routeWaypoints
+            : BuildRandomWaypointRoute();
 
         transform.position = doorPosition;
         StartCoroutine(WalkToSeatRoutine());
@@ -196,9 +271,9 @@ public class CustomerAI : MonoBehaviour, IInteractable
         UpdateBubbles();
 
         // Walk through waypoints if assigned
-        if (waypointsToSeat != null && waypointsToSeat.Length > 0)
+        if (selectedWaypoints != null && selectedWaypoints.Length > 0)
         {
-            foreach (Transform wp in waypointsToSeat)
+            foreach (Transform wp in selectedWaypoints)
             {
                 if (wp != null) yield return StartCoroutine(NavigateToTarget(wp.position));
             }
@@ -209,7 +284,7 @@ public class CustomerAI : MonoBehaviour, IInteractable
         // Arrived at seat
         currentState = CustomerState.WaitingToOrder;
         UpdateBubbles();
-        PlayAnimationState(sitState);
+        PlayAnimationState(GetSitState());
         Debug.Log("[CustomerAI] ✅ Khách hàng đã tới ghế và sẵn sàng gọi món!");
     }
 
@@ -261,7 +336,7 @@ public class CustomerAI : MonoBehaviour, IInteractable
     {
         currentState = CustomerState.Eating;
         UpdateBubbles();
-        PlayAnimationState(eatingState);
+        PlayAnimationState(GetEatingState());
         ShowFoodOnTable(foodSprite);
 
         yield return new WaitForSeconds(eatingDuration);
@@ -274,11 +349,11 @@ public class CustomerAI : MonoBehaviour, IInteractable
         Debug.Log("[CustomerAI] 💵 Khách hàng đã ăn xong, trả tiền và đi ra cửa!");
 
         // Walk back through waypoints in reverse
-        if (waypointsToSeat != null && waypointsToSeat.Length > 0)
+        if (selectedWaypoints != null && selectedWaypoints.Length > 0)
         {
-            for (int i = waypointsToSeat.Length - 1; i >= 0; i--)
+            for (int i = selectedWaypoints.Length - 1; i >= 0; i--)
             {
-                if (waypointsToSeat[i] != null) yield return StartCoroutine(NavigateToTarget(waypointsToSeat[i].position));
+                if (selectedWaypoints[i] != null) yield return StartCoroutine(NavigateToTarget(selectedWaypoints[i].position));
             }
         }
 
@@ -294,10 +369,24 @@ public class CustomerAI : MonoBehaviour, IInteractable
         if (tableFoodRenderer != null && spriteToDisplay != null)
         {
             tableFoodRenderer.sprite = spriteToDisplay;
-            tableFoodRenderer.transform.localPosition = foodDisplayLocalOffset;
+            tableFoodRenderer.transform.localPosition = GetFoodDisplayLocalOffset();
             tableFoodRenderer.transform.localScale = foodDisplayScale;
             tableFoodRenderer.gameObject.SetActive(true);
         }
+    }
+
+    private Vector3 GetFoodDisplayLocalOffset()
+    {
+        Vector3 sideOffset = seatSide == SeatSide.Left
+            ? foodDisplayLeftLocalOffset
+            : foodDisplayRightLocalOffset;
+
+        if (sideOffset == Vector3.zero && foodDisplayLocalOffset != Vector3.zero)
+        {
+            return foodDisplayLocalOffset;
+        }
+
+        return sideOffset;
     }
 
     private void HideFoodOnTable()
@@ -310,7 +399,7 @@ public class CustomerAI : MonoBehaviour, IInteractable
 
     private IEnumerator NavigateToTarget(Vector3 targetPos)
     {
-        if (useAxisAlignedMovement && (waypointsToSeat == null || waypointsToSeat.Length == 0))
+        if (useAxisAlignedMovement && (selectedWaypoints == null || selectedWaypoints.Length == 0))
         {
             Vector3 intermediateX = new Vector3(targetPos.x, transform.position.y, transform.position.z);
             if (Mathf.Abs(transform.position.x - targetPos.x) > 0.05f)
@@ -382,13 +471,13 @@ public class CustomerAI : MonoBehaviour, IInteractable
         {
             if (currentState == CustomerState.Eating)
             {
-                PlayAnimationState(eatingState);
+                PlayAnimationState(GetEatingState());
                 return;
             }
 
             if (currentState == CustomerState.WaitingToOrder || currentState == CustomerState.WaitingForFood)
             {
-                PlayAnimationState(sitState);
+                PlayAnimationState(GetSitState());
                 return;
             }
 
@@ -421,6 +510,47 @@ public class CustomerAI : MonoBehaviour, IInteractable
         else if (primaryDirection.y < 0f) PlayAnimationState(walkDownState);
         else if (primaryDirection.x < 0f) PlayAnimationState(walkLeftState);
         else PlayAnimationState(walkRightState);
+    }
+
+    private Transform[] BuildRandomWaypointRoute()
+    {
+        if (waypointGroups == null || waypointGroups.Length == 0)
+        {
+            return waypointsToSeat;
+        }
+
+        var route = new System.Collections.Generic.List<Transform>();
+        foreach (WaypointGroup group in waypointGroups)
+        {
+            if (group == null || group.options == null || group.options.Length == 0)
+            {
+                continue;
+            }
+
+            Transform selected = group.options[Random.Range(0, group.options.Length)];
+            if (selected != null)
+            {
+                route.Add(selected);
+            }
+        }
+
+        if (route.Count < 2)
+        {
+            Debug.LogWarning("[CustomerAI] Waypoint route needs at least two valid waypoints. Falling back to the legacy route.");
+            return waypointsToSeat;
+        }
+
+        return route.ToArray();
+    }
+
+    private string GetSitState()
+    {
+        return seatSide == SeatSide.Left ? sitLeftState : sitRightState;
+    }
+
+    private string GetEatingState()
+    {
+        return seatSide == SeatSide.Left ? eatingLeftState : eatingRightState;
     }
 
     private void PlayAnimationState(string stateName)
@@ -474,8 +604,62 @@ public class CustomerAI : MonoBehaviour, IInteractable
 
     private void UpdateBubbles()
     {
-        if (orderBubbleUI != null) orderBubbleUI.SetActive(currentState == CustomerState.WaitingToOrder);
+        bool isOrdering = currentState == CustomerState.WaitingToOrder;
+        if (orderBubbleUI != null) orderBubbleUI.SetActive(isOrdering);
+        if (orderFoodRenderer != null)
+        {
+            orderFoodRenderer.sprite = desiredFoodSprite;
+            orderFoodRenderer.enabled = isOrdering && desiredFoodSprite != null;
+        }
+        if (orderFoodImage != null)
+        {
+            orderFoodImage.sprite = desiredFoodSprite;
+            orderFoodImage.enabled = isOrdering && desiredFoodSprite != null;
+        }
         if (waitingFoodBubbleUI != null) waitingFoodBubbleUI.SetActive(currentState == CustomerState.WaitingForFood);
         if (eatingBubbleUI != null) eatingBubbleUI.SetActive(currentState == CustomerState.Eating);
+    }
+
+    private void EnsureOrderBubbleVisual()
+    {
+        if (orderBubbleUI == null)
+        {
+            orderBubbleUI = new GameObject("OrderBubbleUI");
+            orderBubbleUI.transform.SetParent(transform, false);
+            orderBubbleUI.transform.localPosition = orderBubbleLocalOffset;
+            orderBubbleUI.transform.localScale = orderBubbleScale;
+
+            orderBubbleRenderer = orderBubbleUI.AddComponent<SpriteRenderer>();
+            orderBubbleRenderer.sprite = orderBubbleSprite;
+            orderBubbleRenderer.sortingLayerID = spriteRenderer != null ? spriteRenderer.sortingLayerID : 0;
+            orderBubbleRenderer.sortingOrder = 19;
+
+            GameObject foodIcon = new GameObject("FoodIcon");
+            foodIcon.transform.SetParent(orderBubbleUI.transform, false);
+            foodIcon.transform.localPosition = Vector3.zero;
+            orderFoodRenderer = foodIcon.AddComponent<SpriteRenderer>();
+            orderFoodRenderer.sortingLayerID = orderBubbleRenderer.sortingLayerID;
+            orderFoodRenderer.sortingOrder = 20;
+            return;
+        }
+
+        if (orderBubbleRenderer == null)
+        {
+            orderBubbleRenderer = orderBubbleUI.GetComponent<SpriteRenderer>();
+            if (orderBubbleRenderer == null)
+            {
+                orderBubbleRenderer = orderBubbleUI.AddComponent<SpriteRenderer>();
+            }
+        }
+
+        orderBubbleRenderer.sprite = orderBubbleSprite;
+
+        if (orderFoodRenderer == null && orderFoodImage == null)
+        {
+            GameObject foodIcon = new GameObject("FoodIcon");
+            foodIcon.transform.SetParent(orderBubbleUI.transform, false);
+            foodIcon.transform.localPosition = Vector3.zero;
+            orderFoodRenderer = foodIcon.AddComponent<SpriteRenderer>();
+        }
     }
 }
